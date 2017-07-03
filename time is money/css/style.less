@@ -6,6 +6,8 @@
 @TeamEllipseColor: #eeeef0;
 @Navigationffcolor: #484c55;
 
+@headersize : 100px;
+
 #mainff(){
 	font-family: 'open_sansregular', sans-serif;
 }
@@ -14,13 +16,10 @@
 	font-family: 'lobsterregular'; 
 }
 
-#headersize() {
-	line-height: 100px;
-}
-
 .container {
 	width: 100%;
 }
+
 
 @font-face {
     font-family: 'lobsterregular';
@@ -65,29 +64,48 @@
 
 html {
   color: @MainColorText;
-  width: 100%;
   background: @MainColorBackground;
 	#mainff();
   
+	*{
+		box-sizing: border-box;
+	}
+	
+	#wrapper_container {
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+
+	#wrapper_container_fluid {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+	
   body {
-    margin: 0 auto;
-    max-width: 1440px;
+    #wrapper_container_fluid;
     
-    .wrapper {
-      max-width: 1170px;
+		img {
 			width: 100%;
-			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+		
+    .wrapper {
+			width: 100%;
+			#wrapper_container_fluid;
 			
 			header {
+				#wrapper_container;
 				min-height: 100px;
 				width: 100%;
+				overflow: hidden;
 				
 				.logo {
 					float: left;
 					
 					span{
 						font-size: 43px;
-						#headersize();
+						line-height: @headersize;
 						#logoff();
 						color: @LogoColor;
 					}
@@ -119,7 +137,7 @@ html {
 							
 							a {
 								color: @Navigationffcolor;
-								#headersize();
+								line-height: @headersize - 3px;
 								font-size: 15px;
 								font-weight: 500;
 								text-decoration: none;
@@ -129,9 +147,8 @@ html {
 				}
 			}
 			.container{
-				.slider{
-					
-				}
+				#wrapper_container_fluid;
+				
 			}
     }
   }

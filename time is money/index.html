@@ -2,8 +2,60 @@
 <html>
   <head>
     <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
     <title>DOCTYPE</title>
+		
+		<!--		main css	-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<!--	start	slider.css 	-->
+		<link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+		<!--	end	slider.css 	-->
+		
+		<!--	start	jquery 3.1.1 	-->
+		<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<!--	start	jquery 3.1.1 	-->
+		
+		<!--	start	slick.js 	-->
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+		<!--	end	slick.js 	-->
+		
+		<!-- Scroll start -->
+		<script type="text/javascript">
+				$(function() {
+					$('a[href*="#"]:not([href="#"])').click(function() {
+						if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+							var target = $(this.hash);
+							target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+							if (target.length) {
+								$('html, body').stop().animate({
+									scrollTop: target.offset().top
+								}, 300);
+							return false;
+							}
+						}
+					});
+				});
+			
+		</script>
+		<!-- Scroll end -->
+		
+		<!-- Slider start -->
+		<script type="text/javascript">
+    	jQuery(document).ready(function(){
+    	    jQuery('.slider').slick({
+						dots:false,
+    	     	infinite: true,
+    	     	fade: true,
+    	     	cssEase: 'linear',
+    	    });
+    	});
+		</script>
+		<!-- Slider end -->
   </head>
   <body>
       <div class="wrapper">
@@ -24,9 +76,15 @@
 				</header>
 				<div class="conteiner">
 					<div class="slider">
-						<div></div>
-						<div></div>
-						<div></div>
+						<div>
+							<img src="images/01.gif">
+						</div>
+						<div>
+							<img src="images/02.png">
+						</div>
+						<div>
+							<img src="images/03.jpg">
+						</div>
 					</div>
 				</div>
     </div>
