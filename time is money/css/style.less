@@ -4,20 +4,135 @@
 @HoverColor: #49cbcd;
 @PlanColor: #788492;
 @TeamEllipseColor: #eeeef0;
+@Navigationffcolor: #484c55;
+
+#mainff(){
+	font-family: 'open_sansregular', sans-serif;
+}
+
+#logoff(){
+	font-family: 'lobsterregular'; 
+}
+
+#headersize() {
+	line-height: 100px;
+}
+
+.container {
+	width: 100%;
+}
+
+@font-face {
+    font-family: 'lobsterregular';
+    src: url('../fonts/lobster-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lobster-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('../fonts/opensans-italic-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 html {
-  font-family: 'open-sans', sans-serif;
   color: @MainColorText;
   width: 100%;
   background: @MainColorBackground;
+	#mainff();
   
   body {
     margin: 0 auto;
     max-width: 1440px;
     
-    .wrapper{
+    .wrapper {
       max-width: 1170px;
-      margin: 0 auto; 
+			width: 100%;
+			margin: 0 auto;
+			
+			header {
+				min-height: 100px;
+				width: 100%;
+				
+				.logo {
+					float: left;
+					
+					span{
+						font-size: 43px;
+						#headersize();
+						#logoff();
+						color: @LogoColor;
+					}
+				}
+				
+				.navigation {
+					min-height: 100px;
+					float: right;
+					
+					ul{
+						display: flex;
+						flex-wrap: nowrap;
+						justify-content: center;
+						margin: auto;
+						
+						li {
+							margin: 0 0 0 8px;
+							list-style: none;
+							text-align: center;
+							width: 85px;
+							
+							&:hover {
+								border-bottom: 3px solid @HoverColor;
+								
+								a {
+									color: @HoverColor;
+								}
+							}
+							
+							a {
+								color: @Navigationffcolor;
+								#headersize();
+								font-size: 15px;
+								font-weight: 500;
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+			.container{
+				.slider{
+					
+				}
+			}
     }
   }
 }
