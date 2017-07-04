@@ -209,12 +209,18 @@ html body .wrapper .container .team-container .team-block .circle {
   margin-bottom: 50px;
 }
 html body .wrapper .container .team-container .team-block .name {
+  font-size: 22px;
   margin: 0;
 }
 html body .wrapper .container .team-container .team-block .prefission {
+  font-size: 14px;
+  font-weight: 950;
   margin: 0;
   padding: 0;
 }
 html body .wrapper .container .team-container .team-block .biografy {
+  font-size: 14px;
+  font-weight: 950;
+  line-height: 30px;
   text-align: center;
 }
