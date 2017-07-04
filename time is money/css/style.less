@@ -6,6 +6,7 @@
 @TeamEllipseColor: #eeeef0;
 @Navigationffcolor: #484c55;
 @BannerColorff: @MainColorBackground;
+@Teamnamecolorff: #4e525d;
 
 @headersize : 100px;
 
@@ -228,7 +229,42 @@ html {
 							background:  url(../images/slick-next.png) no-repeat 52% 50%;
 						}
 					}
-				}			
+				}	
+				.team-container {
+					#wrapper_container;
+					width: 100%;
+					.caption {
+						margin: 0;
+						font-size: 42px;
+						line-height: 240px;
+						text-align: center;
+					}
+					.team-block{
+						float: left;
+						width: 25%;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						color: @Teamnamecolorff;
+						.circle{
+							max-height: 200px;
+							max-width: 200px;
+							border-radius: 200px;
+							margin-bottom: 50px;
+							
+						}
+						.name {
+							margin: 0;
+						}
+						.prefission {
+							margin: 0;
+							padding: 0;
+						}
+						.biografy{
+							text-align: center;
+						}
+					}
+				}
 			}
     }
   }
