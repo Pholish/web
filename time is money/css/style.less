@@ -5,11 +5,16 @@
 @PlanColor: #788492;
 @TeamEllipseColor: #eeeef0;
 @Navigationffcolor: #484c55;
+@BannerColorff: @MainColorBackground;
 
 @headersize : 100px;
 
 #mainff(){
 	font-family: 'open_sansregular', sans-serif;
+}
+
+#captionff(){
+	font-family: 'open_sanssemibold', sans-serif;
 }
 
 #logoff(){
@@ -30,11 +35,12 @@
 }
 
 @font-face {
-    font-family: 'open_sansbold';
-    src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
-         url('../fonts/opensans-bold-webfont.woff') format('woff');
+    font-family: 'open_sanssemibold';
+    src: url('..fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
 
 @font-face {
@@ -63,46 +69,68 @@
 }
 
 html {
-  color: @MainColorText;
-  background: @MainColorBackground;
-	#mainff();
-  
-	*{
-		box-sizing: border-box;
-	}
-	
-	#wrapper_container {
-		max-width: 1170px;
-		margin: 0 auto;
-	}
 
-	#wrapper_container_fluid {
-		max-width: 1440px;
-		margin: 0 auto;
-	}
 	
   body {
     #wrapper_container_fluid;
-    
-		img {
+		color: @MainColorText;
+  	background: @MainColorBackground;
+		#mainff();
+  
+		*{
+			box-sizing: border-box;
+		}
+		
+		.absolute {
+			position: absolute;
+		}
+	
+		.relative {
+			position: relative;
+		}
+		
+		#mainff(){
+			font-family: 'open_sansregular', sans-serif;
+		}
+
+		#captionff(){
+			font-family: 'open_sanssemibold', sans-serif;
+		}
+
+		#logoff(){
+			font-family: 'lobsterregular'; 
+		}
+
+		.container {
+			width: 100%;
+		}	
+	
+		#wrapper_container {
+			max-width: 1170px;
+			margin: 0 auto;
+		}
+
+		#wrapper_container_fluid {
+			max-width: 1440px;
+			margin: 0 auto;
+		}
+		
+    img {
 			width: 100%;
 			max-width: 100%;
 			height: auto;
 		}
 		
-    .wrapper {
+		.wrapper {
 			width: 100%;
 			#wrapper_container_fluid;
-			
 			header {
 				#wrapper_container;
 				min-height: 100px;
 				width: 100%;
 				overflow: hidden;
-				
 				.logo {
 					float: left;
-					
 					span{
 						font-size: 43px;
 						line-height: @headersize;
@@ -110,31 +138,25 @@ html {
 						color: @LogoColor;
 					}
 				}
-				
 				.navigation {
 					min-height: 100px;
 					float: right;
-					
 					ul{
 						display: flex;
 						flex-wrap: nowrap;
 						justify-content: center;
 						margin: auto;
-						
 						li {
 							margin: 0 0 0 8px;
 							list-style: none;
 							text-align: center;
 							width: 85px;
-							
 							&:hover {
 								border-bottom: 3px solid @HoverColor;
-								
 								a {
 									color: @HoverColor;
 								}
 							}
-							
 							a {
 								color: @Navigationffcolor;
 								line-height: @headersize - 3px;
@@ -148,7 +170,65 @@ html {
 			}
 			.container{
 				#wrapper_container_fluid;
-				
+				.slider{
+					.slick-slide{
+						.relative;
+						.text {
+							color: @BannerColorff;
+							.absolute;
+							top: 18%;
+							right: 0;
+							left: 0;
+							bottom: 0;
+							text-align: center;
+							z-index: 10;
+							h1 {
+								#captionff();
+								font-size: 63px;
+								margin: 0;
+							}
+							p {
+								#mainff();
+								font-size: 23px;
+								line-height: 38px;
+								font-weight: 100px;
+								margin: 3.5% 0 4.2%;
+							}
+							a {
+								#captionff();
+								font-size: 26px;
+								color: @BannerColorff;
+								text-decoration: none;
+								padding: 0.85% 1.1%;
+								border: 3px @BannerColorff solid;
+								border-radius: 5px;
+								&:hover {
+									color: @HoverColor;
+									border: 3px @HoverColor solid;
+								}
+							}
+						}	
+					}
+					.slick-prev {
+						min-width: 50px;
+						min-height: 50px;
+						border-radius: 50px;
+						background: @MainColorBackground;
+						color: @MainColorBackground;
+						&:before {
+							margin-left: -3px;
+							background:  url(../images/slick-prev.png) no-repeat 48% 50%;
+							content: 'arrow';
+						}
+					}
+					.slick-next {
+						.slick-prev;
+						&:before {
+							content: ' arrow';
+							background:  url(../images/slick-next.png) no-repeat 52% 50%;
+						}
+					}
+				}			
 			}
     }
   }

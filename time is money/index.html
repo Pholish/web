@@ -6,13 +6,13 @@
 		
     <title>DOCTYPE</title>
 		
-		<!--		main css	-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-		
 		<!--	start	slider.css 	-->
 		<link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 		<!--	end	slider.css 	-->
+		
+		<!--		main css	-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 		
 		<!--	start	jquery 3.1.1 	-->
 		<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
@@ -58,35 +58,63 @@
 		<!-- Slider end -->
   </head>
   <body>
-      <div class="wrapper">
-      	<header>
-					<div class="logo">
-						<span>Author</span>
-					</div>
-					<div class="navigation">
-						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Service</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a href="#">Team</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-					</div>
-				</header>
-				<div class="conteiner">
-					<div class="slider">
-						<div>
-							<img src="images/01.gif">
+		<div class="wrapper">
+			<header>
+				<div class="logo">
+					<span>Author</span>
+				</div>
+				<div class="navigation">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#servise">Service</a></li>
+						<li><a href="#portfilio">Portfolio</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</header>
+			<div id="home" class="container">
+				<div class="slider">
+					<div>
+						<img src="images/03.jpg">
+						<div class="text">
+							<h1>This is a main heading</h1>
+							<p>
+								Lorem Ipsum is simply dummy text <br> of the printing 
+							</p>
+							<a href="#">Learn more</a>
 						</div>
-						<div>
-							<img src="images/02.png">
+					</div>
+					<div>
+						<img src="images/03.jpg">
+						<div class="text">
+							<h1>This is a main heading</h1>
+							<p>
+								Lorem Ipsum is simply dummy text <br> of the printing 
+							</p>
+							<a href="#">Learn more</a>
 						</div>
-						<div>
-							<img src="images/03.jpg">
+					</div>
+					<div>
+						<img src="images/03.jpg">
+						<div class="text">
+							<h1>This is a main heading</h1>
+							<p>
+								Lorem Ipsum is simply dummy text <br> of the printing 
+							</p>
+							<a href="#">Learn more</a>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div id="team" class="team-container">
+				<div class="team-block">
+					<h3 class="name">Adrian Thomas</h3>
+					<p class="profession">CEO & Founder</p>
+					<p class="biografy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+				</div>			
+			</div>
     </div>
   </body>	
 </html>
