@@ -187,6 +187,7 @@ html body .wrapper .container .team-container {
   max-width: 1170px;
   margin: 0 auto;
   width: 100%;
+  color: #4e525d;
 }
 html body .wrapper .container .team-container .caption {
   margin: 0;
@@ -200,7 +201,6 @@ html body .wrapper .container .team-container .team-block {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #4e525d;
 }
 html body .wrapper .container .team-container .team-block .circle {
   max-height: 200px;
