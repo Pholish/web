@@ -248,18 +248,26 @@ html body .wrapper .container .service-container-bg .service-container {
   max-width: 1170px;
   margin: 0 auto;
 }
-html body .wrapper .container .service-container-bg .service-container .service {
+html body .wrapper .container .service-container-bg .service-container .service-block-wrapper {
+  float: left;
   margin: 120px 0 100px;
   width: 33.3333%;
+  padding: 0 15px;
 }
-html body .wrapper .container .service-container-bg .service-container .service ul {
+html body .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
+  padding-left: 0;
+}
+html body .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
+  padding-right: 0;
+}
+html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
   border: 1px solid #ecf0f1;
   width: 100%;
   padding: 0;
   margin: 0;
   text-align: center;
 }
-html body .wrapper .container .service-container-bg .service-container .service ul li {
+html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
   color: #8c9299;
   background: #ffffff;
   border-bottom: 1px solid #ecf0f1;
@@ -267,7 +275,7 @@ html body .wrapper .container .service-container-bg .service-container .service 
   list-style: none;
   line-height: 45px;
 }
-html body .wrapper .container .service-container-bg .service-container .service ul li:nth-child(1) {
+html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
   background: #485460;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -275,18 +283,18 @@ html body .wrapper .container .service-container-bg .service-container .service 
   font-size: 26px;
   line-height: 76px;
 }
-html body .wrapper .container .service-container-bg .service-container .service ul li:nth-child(2) {
+html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
   background: #f8f9fb;
   font-size: 20px;
   line-height: 68px;
 }
-html body .wrapper .container .service-container-bg .service-container .service ul li:last-child {
+html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
   border: none;
   border-bottom-left-radius: 1px;
   border-bottom-right-radius: 1px;
   line-height: 100px;
 }
-html body .wrapper .container .service-container-bg .service-container .service ul li button {
+html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
   background: #788492;
   border-radius: 3px;
   border: none;
@@ -295,4 +303,10 @@ html body .wrapper .container .service-container-bg .service-container .service 
   font-size: 17px;
   line-height: 40px;
   width: 45%;
+}
+html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button:hover {
+  background: #49cbcd;
+}
+html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button:hover {
+  background: #49cbcd;
 }

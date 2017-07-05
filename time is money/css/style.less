@@ -311,9 +311,17 @@ html {
 						margin: 120px 0px 100px;
 						width: 100%;
 						#wrapper-container;
-						.service{
+						.service-block-wrapper{
+							float: left;
 							margin: 120px 0 100px;
 							width: 33.3333%;
+							padding: 0 15px;
+							&:first-child{
+								padding-left: 0;	
+							}
+							&:last-child{
+								padding-right: 0;
+							}
 							ul{
 								border: 1px solid @Servicecolorbg;
 								width: 100%;
@@ -355,6 +363,12 @@ html {
 										font-size: 17px;
 										line-height: 40px;
 										width: 45%;
+										&:hover {
+											background: @HoverColor;
+										}
+										&:hover {
+											background: @HoverColor;
+										}
 									}
 								}
 							}
