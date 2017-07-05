@@ -6,7 +6,13 @@
 @TeamEllipseColor: #eeeef0;
 @Navigationffcolor: #484c55;
 @BannerColorff: @MainColorBackground;
+@colorarrows:#ffffff;
 @Teamnamecolorff: #4e525d;
+@Servicecontainerbg: #f1f1f1;
+@Servicecolorff: #8c9299;
+@Servicecolorbg:#ecf0f1;
+@Servicecolorcaption: #485460;
+@Servicebutton: #788492;
 
 @headersize : 100px;
 @teampadding: 20px;
@@ -85,7 +91,7 @@ html {
 
 	
   body {
-    #wrapper_container_fluid;
+    #wrapper-container-fluid;
 		color: @MainColorText;
   	background: @MainColorBackground;
 		#mainff();
@@ -118,12 +124,12 @@ html {
 			width: 100%;
 		}	
 	
-		#wrapper_container {
+		#wrapper-container {
 			max-width: 1170px;
 			margin: 0 auto;
 		}
 
-		#wrapper_container_fluid {
+		#wrapper-container-fluid {
 			max-width: 1440px;
 			margin: 0 auto;
 		}
@@ -136,9 +142,9 @@ html {
 		
 		.wrapper {
 			width: 100%;
-			#wrapper_container_fluid;
+			#wrapper-container-fluid;
 			header {
-				#wrapper_container;
+				#wrapper-container;
 				min-height: 100px;
 				width: 100%;
 				overflow: hidden;
@@ -182,7 +188,7 @@ html {
 				}
 			}
 			.container{
-				#wrapper_container_fluid;
+				#wrapper-container-fluid;
 				.slider{
 					.slick-slide{
 						.relative;
@@ -226,7 +232,7 @@ html {
 						min-width: 50px;
 						min-height: 50px;
 						border-radius: 50px;
-						background: @MainColorBackground;
+						background: @colorarrows;
 						color: @HoverColor;
 						font-family: 'icomoon' !important;
 						&:before {  
@@ -241,7 +247,7 @@ html {
 						min-width: 50px;
 						min-height: 50px;
 						border-radius: 50px;
-						background: @MainColorBackground;
+						background: @colorarrows;
 						color: @HoverColor;
 						font-family: 'icomoon' !important;
 						&:before {
@@ -254,7 +260,7 @@ html {
 					}
 				}	
 				.team-container {
-					#wrapper_container;
+					#wrapper-container;
 					width: 100%;
 					color:@Teamnamecolorff;
 					.caption {
@@ -292,6 +298,66 @@ html {
 							font-weight: 950;
 							line-height: 30px;
 							text-align: center;
+						}
+					}
+				}
+				.service-container-bg{
+					background: @Servicecontainerbg;
+					overflow: hidden;
+					width: 100%;
+					#wrapper-container-fluid;
+					.service-container{
+						overflow: hidden;
+						margin: 120px 0px 100px;
+						width: 100%;
+						#wrapper-container;
+						.service{
+							margin: 120px 0 100px;
+							width: 33.3333%;
+							ul{
+								border: 1px solid @Servicecolorbg;
+								width: 100%;
+								padding: 0;
+								margin: 0;
+								text-align: center;
+								li{
+									color: @Servicecolorff;
+									background: #ffffff;
+									border-bottom: 1px solid @Servicecolorbg;
+									font-size: 14px;
+									list-style: none;
+									line-height: 45px;
+									&:nth-child(1){
+										background: @Servicecolorcaption;
+										border-top-left-radius: 2px;
+										border-top-right-radius: 2px;
+										color: @MainColorBackground;
+										font-size: 26px;
+										line-height: 76px;
+									}
+									&:nth-child(2){
+										background: #f8f9fb;
+										font-size: 20px;
+										line-height: 68px;
+									}
+									&:last-child{
+										border: none;
+										border-bottom-left-radius: 1px;
+										border-bottom-right-radius: 1px;
+										line-height: 100px;
+									}
+									button{
+										background: @Servicebutton;
+										border-radius: 3px;
+										border: none;
+										color: @MainColorBackground;
+										#captionff();
+										font-size: 17px;
+										line-height: 40px;
+										width: 45%;
+									}
+								}
+							}
 						}
 					}
 				}
