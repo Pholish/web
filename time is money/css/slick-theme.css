@@ -15,6 +15,19 @@
     src: url('./fonts/slick.eot');
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('..fonts/icons/icomoon.eot?8nmruc');
+  src:  url('..fonts/icons/icomoon.eot?8nmruc#iefix') format('embedded-opentype'),
+    url('..fonts/icons/icomoon.ttf?8nmruc') format('truetype'),
+    url('..fonts/icons/icomoon.woff?8nmruc') format('woff'),
+    url('..fonts/icons/icomoon.svg?8nmruc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /* Arrows */
 .slick-prev,
 .slick-next
@@ -87,7 +100,14 @@
     right: 30px;
     left: auto;
 }
-
+.slick-prev:before
+{
+    content: "\5c";
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: "\5c";
+}
 
 .slick-next
 {
@@ -98,7 +118,14 @@
     right: auto;
     left: 30px;
 }
-
+.slick-next:before
+{
+/*    content: "\70";*/
+}
+[dir='rtl'] .slick-next:before
+{
+/*    content: "\70";*/
+}
 
 /* Dots */
 .slick-dotted.slick-slider
