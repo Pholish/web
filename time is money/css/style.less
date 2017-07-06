@@ -22,6 +22,7 @@
 @wrapper-container-fluid: 1440px;
 @headersize : 100px;
 @teampadding: 20px;
+@inputpadding: 7px;
 
 #mainff(){
 	font-family: 'open_sansregular', sans-serif;
@@ -328,19 +329,20 @@ html {
 					#wrapper-container-fluid;
 					.service-container{
 						overflow: hidden;
-						margin: 120px 0px 100px;
 						width: 100%;
 						#wrapper-container;
 						.service-block-wrapper{
 							float: left;
 							margin: 120px 0 100px;
 							width: 33.3333%;
-							padding: 0 15px;
+							padding: 0 10px;
 							&:first-child{
-								padding-left: 0;	
+								padding-left: 0px;
+								padding-right: 20px;
 							}
 							&:last-child{
-								padding-right: 0;
+								padding-right: 0px;
+								padding-left: 20px;
 							}
 							ul{
 								border: 1px solid @Servicecolorbg;
@@ -397,10 +399,10 @@ html {
 				background-attachment: fixed;
 				background-image:url('../images/footer-bg.png');
 				background-repeat:no-repeat;
-				background-size:contain;
-				background-position:center;
+				background-size:100%;
+				background-position:50% 100%;
 				overflow: hidden;
-				width: 100%;	
+				width: 100%;
 				#wrapper-container-fluid;
 				.footer-wrapper{
 					overflow: hidden;
@@ -419,6 +421,7 @@ html {
 					.footer-block {
 						float: left;
 						width: 50%;
+						margin-bottom: 5%;
 						h3 {
 							color:@MainColorBackground;
 							margin: 0;
@@ -458,10 +461,9 @@ html {
 									color: @MainColorBackground;
 									text-decoration: none;
 									width: 100%;
-									font-size: 22	px;
 									.fa {
 										margin: 0 auto;
-										font-size: 24	px;
+										font-size: 24px;
 									}
 								}
 							}
@@ -477,6 +479,7 @@ html {
 							}
 						}
 						form {
+							#mainff();
 							margin: 0;
 							overflow: hidden;
 							padding-left: 15px;
@@ -485,10 +488,24 @@ html {
 								float: left;
 								width: 100%;
 								margin-bottom: 30px;
-								.form-name {
-									#mainff();
+								.form-field-name{
 									float: left;
-									width: 50%;
+									margin: 0;
+									overflow: hidden;
+									width: 48.5%;
+									padding-right: @inputpadding;
+									
+								}
+								.form-field-email{
+									.form-field-name;
+									padding-right: 0px;
+									padding-left: @inputpadding;
+									margin-left: @inputpadding * 1.9;
+									
+								}
+								.form-name {	
+									float: left;
+									width: 100%;
 									border-radius: 3px;
 									border: none;
 									line-height: 45px;
@@ -496,16 +513,43 @@ html {
 								}
 								.form-email {
 									.form-name;
+									
 								}
 								.form-textarea {
 									width: 100%;
+									height: 180px;
+									border-radius: 3px;
+									resize: none;	
+									line-height: 45px;
+									padding-left: 20px;
+								}
+								::-webkit-input-placeholder {
+									#mainff();
+								}
+								:-moz-placeholder {
+									#mainff();
+								}
+								::-moz-placeholder {
+									#mainff();
+								}
+								:-ms-input-placeholder {
+									#mainff();
 								}
 								.form-input {
+									background: @HoverColor;
 									float:right;
 									width: 30%;
+									border-radius: 3px;
+									border: none;
+									line-height: 50px;
+									
+								}
+								input[value="Send"] {
+									color: #ffffff;
+									#mainff();
+									font-size: 22px;
 								}
 							}
-							
 						}
 					}
 				}
