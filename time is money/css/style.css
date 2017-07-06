@@ -33,14 +33,21 @@
 }
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icons/icomoon.eot?8nmruc');
-  src: url('../fonts/icons/icomoon.eot?8nmruc#iefix') format('embedded-opentype'), url('../fonts/icons/icomoon.ttf?8nmruc') format('truetype'), url('../fonts/icons/icomoon.woff?8nmruc') format('woff'), url('../fonts/icons/icomoon.svg?8nmruc#icomoon') format('svg');
+  src: url('../fonts/icons/icomoon.eot?y2ri5h');
+  src: url('../fonts/icons/icomoon.eot?y2ri5h#iefix') format('embedded-opentype'), url('../fonts/icons/icomoon.ttf?y2ri5h') format('truetype'), url('../fonts/icons/icomoon.woff?y2ri5h') format('woff'), url('../fonts/icons/icomoon.svg?y2ri5h#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 html body {
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   color: #97999e;
   background: #ffffff;
   font-family: 'open_sansregular', sans-serif;
@@ -165,7 +172,7 @@ html body .wrapper .container .slider .slick-slide .text a:hover {
 html body .wrapper .container .slider .slick-prev {
   min-width: 50px;
   min-height: 50px;
-  border-radius: 50px;
+  border-radius: 50%;
   background: #ffffff;
   color: #49cbcd;
   font-family: 'icomoon' !important;
@@ -180,7 +187,7 @@ html body .wrapper .container .slider .slick-prev:before {
 html body .wrapper .container .slider .slick-next {
   min-width: 50px;
   min-height: 50px;
-  border-radius: 50px;
+  border-radius: 50%;
   background: #ffffff;
   color: #49cbcd;
   font-family: 'icomoon' !important;
@@ -189,7 +196,7 @@ html body .wrapper .container .slider .slick-next:before {
   color: #49cbcd;
   font-family: 'icomoon' !important;
   margin-left: 0;
-  content: "\5c";
+  content: "\6e";
   z-index: 10;
 }
 html body .wrapper .container .team-container {
@@ -215,7 +222,7 @@ html body .wrapper .container .team-container .team-block {
 html body .wrapper .container .team-container .team-block .circle {
   max-height: 200px;
   max-width: 200px;
-  border-radius: 200px;
+  border-radius: 50%;
   margin-bottom: 50px;
 }
 html body .wrapper .container .team-container .team-block .name {
@@ -307,6 +314,127 @@ html body .wrapper .container .service-container-bg .service-container .service-
 html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button:hover {
   background: #49cbcd;
 }
-html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button:hover {
-  background: #49cbcd;
+html body .wrapper footer {
+  background-attachment: fixed;
+  background-image: url('../images/footer-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+html body .wrapper footer .footer-wrapper {
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+html body .wrapper footer .footer-wrapper .caption {
+  color: #ffffff;
+  margin: 0;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 240px;
+  overflow: hidden;
+  text-align: center;
+}
+html body .wrapper footer .footer-wrapper .footer-block {
+  float: left;
+  width: 50%;
+}
+html body .wrapper footer .footer-wrapper .footer-block h3 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26px;
+}
+html body .wrapper footer .footer-wrapper .footer-block p {
+  padding-right: 25%;
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+html body .wrapper footer .footer-wrapper .footer-block .social {
+  display: inline-flex;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+}
+html body .wrapper footer .footer-wrapper .footer-block .social li {
+  align-items: center;
+  display: flex;
+  margin-right: 13px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+}
+html body .wrapper footer .footer-wrapper .footer-block .social li:nth-child(1) {
+  background: #3b5997;
+}
+html body .wrapper footer .footer-wrapper .footer-block .social li:nth-child(2) {
+  background: #3ec2f3;
+}
+html body .wrapper footer .footer-wrapper .footer-block .social li:nth-child(3) {
+  background: #e44c41;
+}
+html body .wrapper footer .footer-wrapper .footer-block .social li a {
+  color: #ffffff;
+  text-decoration: none;
+  width: 100%;
+  font-size: 22	px;
+}
+html body .wrapper footer .footer-wrapper .footer-block .social li a .fa {
+  margin: 0 auto;
+  font-size: 24	px;
+}
+html body .wrapper footer .footer-wrapper .footer-block .author-info {
+  color: #bface2;
+  padding: 0;
+  margin: 0;
+}
+html body .wrapper footer .footer-wrapper .footer-block .author-info li {
+  font-size: 14px;
+  line-height: 21px;
+  display: block;
+}
+html body .wrapper footer .footer-wrapper .footer-block form {
+  margin: 0;
+  overflow: hidden;
+  padding-left: 15px;
+  width: 100%;
+}
+html body .wrapper footer .footer-wrapper .footer-block form .form-field {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+html body .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
+  font-family: 'open_sansregular', sans-serif;
+  float: left;
+  width: 50%;
+  border-radius: 3px;
+  border: none;
+  line-height: 45px;
+  padding-left: 20px;
+}
+html body .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
+  font-family: 'open_sansregular', sans-serif;
+  float: left;
+  width: 50%;
+  border-radius: 3px;
+  border: none;
+  line-height: 45px;
+  padding-left: 20px;
+}
+html body .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
+  width: 100%;
+}
+html body .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
+  float: right;
+  width: 30%;
 }

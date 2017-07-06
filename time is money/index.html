@@ -11,6 +11,10 @@
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 		<!--	end	slider.css 	-->
 		
+		<!--	start fa icons 	-->
+		<link rel="stylesheet" href="fonts/icons/font-awesome.min.css">
+		<!--	end fa icons	-->
+		
 		<!--		main css	-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 		
@@ -59,7 +63,7 @@
 		<script>
 			jQuery(document).ready(function(){
 				$('button').on('mouseover', function(){
-  				$(this).parents().css({'background': '#49cbcd'});
+  				$(this).parents('.service-block-wrapper ul li:nth-child(1)').css({'background': '#49cbcd'});
 				});
 			})
 		</script>
@@ -193,6 +197,40 @@
 					</div>
 				</div>
 			</div>
+			<footer id="contact">
+				<div class="footer-wrapper">
+					<h2 class="caption">Contact Us</h2>
+					<div class="footer-block">
+						<h3>Get in touch with us</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting  industry. Lorem Ipsum has been the industry's 
+						</p>
+						<ul class="social">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-google"></i></a></li>
+						</ul>
+						<ul class="author-info">
+							<li>Posted by Dospel & GanjaParker </li>
+							<li>+XX-XXXX - XXXX - XX </li>
+							<li>info@mail.com</li>
+						</ul>
+					</div>
+					<div class="footer-block">
+						<form name="test-form" method="POST">
+							<div class="form-field">
+								<input class="form-name" type="text" name="custom-name" id="custom-name" placeholder="Name" value="" required/>
+								<input class="form-email" type="email" name="custom-email" id="custom-email" placeholder="Email" value="" required />
+							</div>
+							<div class="form-field">
+								<textarea class="form-textarea" name="custom-textarea" id="custom-textarea" placeholder="Message" required></textarea>
+							</div>
+							<div class="form-field">
+								<input class="form-input" type="submit" name="custom-button" value="SEND MELDING" />
+              </div>
+						</form>
+					</div>
+				</div>
+			</footer>
     </div>
   </body>	
 </html>
