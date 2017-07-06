@@ -54,93 +54,108 @@
 .hover {
   background: #49cbcd !important;
 }
-html body {
-  width: 100%;
+.wrapper {
   margin: 0;
   color: #97999e;
   background: #ffffff;
   font-family: 'open_sansregular', sans-serif;
-}
-html body * {
-  box-sizing: border-box;
-}
-html body .absolute {
-  position: absolute;
-}
-html body .relative {
-  position: relative;
-}
-html body #wrapper-container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-html body #wrapper-container-fluid {
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
 }
-html body img {
+.wrapper * {
+  box-sizing: border-box;
+}
+.wrapper .absolute {
+  position: absolute;
+}
+.wrapper .relative {
+  position: relative;
+}
+.wrapper #wrapper-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.wrapper #wrapper-container-fluid {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.wrapper img {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
-html body .wrapper {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-html body .wrapper header {
+.wrapper .header {
   max-width: 1170px;
   margin: 0 auto;
   min-height: 100px;
   width: 100%;
   overflow: hidden;
 }
-html body .wrapper header .logo {
+.wrapper .header.headhesive {
+  position: fixed !important;
+  z-index: 1 !important;
+  top: 0 !important;
+  left: 0 !important;
+  background: #c95a5d !important;
+  -webkit-transform: translateY(-100%) !important;
+  -ms-transform: translateY(-100%) !important;
+  transform: translateY(-100%) !important;
+  -webkit-transition: all 300ms ease-in-out !important;
+  -moz-transition: all 300ms ease-in-out !important;
+  transition: all 300ms ease-in-out !important;
+}
+.wrapper .header.headhesive.headhesive--stick {
+  -webkit-transform: translateY(0%) !important;
+  -ms-transform: translateY(0%) !important;
+  transform: translateY(0%) !important;
+}
+.wrapper .header .logo {
   float: left;
 }
-html body .wrapper header .logo span {
+.wrapper .header .logo span {
   font-size: 43px;
   line-height: 100px;
   font-family: 'lobsterregular', sans-serif;
   color: #44c0c2;
 }
-html body .wrapper header .navigation {
+.wrapper .header .navigation {
   min-height: 100px;
   float: right;
 }
-html body .wrapper header .navigation ul {
+.wrapper .header .navigation ul {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   margin: auto;
 }
-html body .wrapper header .navigation ul li {
+.wrapper .header .navigation ul li {
   margin: 0 0 0 8px;
   list-style: none;
   text-align: center;
   width: 85px;
 }
-html body .wrapper header .navigation ul li:hover {
+.wrapper .header .navigation ul li:hover {
   border-bottom: 3px solid #49cbcd;
 }
-html body .wrapper header .navigation ul li:hover a {
+.wrapper .header .navigation ul li:hover a {
   color: #49cbcd;
 }
-html body .wrapper header .navigation ul li a {
+.wrapper .header .navigation ul li a {
   color: #484c55;
   line-height: 97px;
   font-size: 15px;
   font-weight: 500;
   text-decoration: none;
 }
-html body .wrapper .container {
+.wrapper .container {
   max-width: 1440px;
   margin: 0 auto;
 }
-html body .wrapper .container .slider .slick-slide {
+.wrapper .container .slider .slick-slide {
   position: relative;
 }
-html body .wrapper .container .slider .slick-slide .text {
+.wrapper .container .slider .slick-slide .text {
   color: #ffffff;
   position: absolute;
   top: 18%;
@@ -150,19 +165,19 @@ html body .wrapper .container .slider .slick-slide .text {
   text-align: center;
   z-index: 10;
 }
-html body .wrapper .container .slider .slick-slide .text h1 {
+.wrapper .container .slider .slick-slide .text h1 {
   font-family: 'open_sanssemibold', sans-serif;
   font-size: 63px;
   margin: 0;
 }
-html body .wrapper .container .slider .slick-slide .text p {
+.wrapper .container .slider .slick-slide .text p {
   font-family: 'open_sansregular', sans-serif;
   font-size: 23px;
   line-height: 38px;
   font-weight: 100px;
   margin: 3.5% 0 4.2%;
 }
-html body .wrapper .container .slider .slick-slide .text a {
+.wrapper .container .slider .slick-slide .text a {
   font-family: 'open_sanssemibold', sans-serif;
   font-size: 26px;
   color: #ffffff;
@@ -171,11 +186,11 @@ html body .wrapper .container .slider .slick-slide .text a {
   border: 3px #ffffff solid;
   border-radius: 5px;
 }
-html body .wrapper .container .slider .slick-slide .text a:hover {
+.wrapper .container .slider .slick-slide .text a:hover {
   color: #49cbcd;
   border: 3px #49cbcd solid;
 }
-html body .wrapper .container .slider .slick-prev {
+.wrapper .container .slider .slick-prev {
   min-width: 50px;
   min-height: 50px;
   border-radius: 50%;
@@ -183,14 +198,14 @@ html body .wrapper .container .slider .slick-prev {
   color: #49cbcd;
   font-family: 'icomoon' !important;
 }
-html body .wrapper .container .slider .slick-prev:before {
+.wrapper .container .slider .slick-prev:before {
   color: #49cbcd;
   font-family: 'icomoon' !important;
   margin-left: -3px;
   content: "\70";
   z-index: 10;
 }
-html body .wrapper .container .slider .slick-next {
+.wrapper .container .slider .slick-next {
   min-width: 50px;
   min-height: 50px;
   border-radius: 50%;
@@ -198,26 +213,26 @@ html body .wrapper .container .slider .slick-next {
   color: #49cbcd;
   font-family: 'icomoon' !important;
 }
-html body .wrapper .container .slider .slick-next:before {
+.wrapper .container .slider .slick-next:before {
   color: #49cbcd;
   font-family: 'icomoon' !important;
   margin-left: 0;
   content: "\6e";
   z-index: 10;
 }
-html body .wrapper .container .team-container {
+.wrapper .container .team-container {
   max-width: 1170px;
   margin: 0 auto;
   width: 100%;
   color: #4e525d;
 }
-html body .wrapper .container .team-container .caption {
+.wrapper .container .team-container .caption {
   margin: 0;
   font-size: 42px;
   line-height: 240px;
   text-align: center;
 }
-html body .wrapper .container .team-container .team-block {
+.wrapper .container .team-container .team-block {
   float: left;
   width: 25%;
   display: flex;
@@ -225,13 +240,13 @@ html body .wrapper .container .team-container .team-block {
   align-items: center;
   padding: 20px;
 }
-html body .wrapper .container .team-container .team-block .circle {
+.wrapper .container .team-container .team-block .circle {
   max-height: 200px;
   max-width: 200px;
   border-radius: 50%;
   margin-bottom: 50px;
 }
-html body .wrapper .container .team-container .team-block .circle .hover-item {
+.wrapper .container .team-container .team-block .circle .hover-item {
   display: flex;
   top: 0;
   right: 0;
@@ -239,10 +254,10 @@ html body .wrapper .container .team-container .team-block .circle .hover-item {
   bottom: 0;
   margin: 0 auto;
 }
-html body .wrapper .container .team-container .team-block .circle .hover-item:hover span {
+.wrapper .container .team-container .team-block .circle .hover-item:hover span {
   opacity: 1;
 }
-html body .wrapper .container .team-container .team-block .circle .hover-item span {
+.wrapper .container .team-container .team-block .circle .hover-item span {
   opacity: 0;
   font-family: 'open_sansextrabold', sans-serif;
   font-size: 85px;
@@ -252,57 +267,57 @@ html body .wrapper .container .team-container .team-block .circle .hover-item sp
   line-height: 85px;
   color: #f46d6d;
 }
-html body .wrapper .container .team-container .team-block .name {
+.wrapper .container .team-container .team-block .name {
   font-size: 22px;
   margin: 0;
 }
-html body .wrapper .container .team-container .team-block .prefission {
+.wrapper .container .team-container .team-block .prefission {
   font-size: 14px;
   font-weight: 950;
   margin: 0;
   padding: 0;
 }
-html body .wrapper .container .team-container .team-block .biografy {
+.wrapper .container .team-container .team-block .biografy {
   font-size: 14px;
   font-weight: 950;
   line-height: 30px;
   text-align: center;
 }
-html body .wrapper .container .service-container-bg {
+.wrapper .container .service-container-bg {
   background: #f1f1f1;
   overflow: hidden;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
 }
-html body .wrapper .container .service-container-bg .service-container {
+.wrapper .container .service-container-bg .service-container {
   overflow: hidden;
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
-html body .wrapper .container .service-container-bg .service-container .service-block-wrapper {
+.wrapper .container .service-container-bg .service-container .service-block-wrapper {
   float: left;
   margin: 120px 0 100px;
   width: 33.3333%;
   padding: 0 10px;
 }
-html body .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
+.wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
   padding-left: 0px;
   padding-right: 20px;
 }
-html body .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
+.wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
   padding-right: 0px;
   padding-left: 20px;
 }
-html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
+.wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
   border: 1px solid #ecf0f1;
   width: 100%;
   padding: 0;
   margin: 0;
   text-align: center;
 }
-html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
+.wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
   color: #8c9299;
   background: #ffffff;
   border-bottom: 1px solid #ecf0f1;
@@ -310,7 +325,7 @@ html body .wrapper .container .service-container-bg .service-container .service-
   list-style: none;
   line-height: 45px;
 }
-html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
+.wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
   background: #485460;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -318,18 +333,18 @@ html body .wrapper .container .service-container-bg .service-container .service-
   font-size: 26px;
   line-height: 76px;
 }
-html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
+.wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
   background: #f8f9fb;
   font-size: 20px;
   line-height: 68px;
 }
-html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
+.wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
   border: none;
   border-bottom-left-radius: 1px;
   border-bottom-right-radius: 1px;
   line-height: 100px;
 }
-html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
+.wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
   background: #788492;
   border-radius: 3px;
   border: none;
@@ -339,10 +354,10 @@ html body .wrapper .container .service-container-bg .service-container .service-
   line-height: 40px;
   width: 45%;
 }
-html body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button:hover {
+.wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button:hover {
   background: #49cbcd;
 }
-html body .wrapper footer {
+.wrapper footer {
   background-attachment: fixed;
   background-image: url('../images/footer-bg.png');
   background-repeat: no-repeat;
@@ -353,14 +368,14 @@ html body .wrapper footer {
   max-width: 1440px;
   margin: 0 auto;
 }
-html body .wrapper footer .footer-wrapper {
+.wrapper footer .footer-wrapper {
   overflow: hidden;
   margin: 0;
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
-html body .wrapper footer .footer-wrapper .caption {
+.wrapper footer .footer-wrapper .caption {
   color: #ffffff;
   margin: 0;
   font-size: 42px;
@@ -369,31 +384,31 @@ html body .wrapper footer .footer-wrapper .caption {
   overflow: hidden;
   text-align: center;
 }
-html body .wrapper footer .footer-wrapper .footer-block {
+.wrapper footer .footer-wrapper .footer-block {
   float: left;
   width: 50%;
   margin-bottom: 5%;
 }
-html body .wrapper footer .footer-wrapper .footer-block h3 {
+.wrapper footer .footer-wrapper .footer-block h3 {
   color: #ffffff;
   margin: 0;
   font-size: 24px;
   font-weight: 500;
   line-height: 26px;
 }
-html body .wrapper footer .footer-wrapper .footer-block p {
+.wrapper footer .footer-wrapper .footer-block p {
   padding-right: 25%;
   margin: 0;
   font-size: 14px;
   line-height: 21px;
 }
-html body .wrapper footer .footer-wrapper .footer-block .social {
+.wrapper footer .footer-wrapper .footer-block .social {
   display: inline-flex;
   list-style: none;
   overflow: hidden;
   padding: 0;
 }
-html body .wrapper footer .footer-wrapper .footer-block .social li {
+.wrapper footer .footer-wrapper .footer-block .social li {
   align-items: center;
   display: flex;
   margin-right: 13px;
@@ -402,54 +417,54 @@ html body .wrapper footer .footer-wrapper .footer-block .social li {
   border-radius: 50%;
   text-align: center;
 }
-html body .wrapper footer .footer-wrapper .footer-block .social li:nth-child(1) {
+.wrapper footer .footer-wrapper .footer-block .social li:nth-child(1) {
   background: #3b5997;
 }
-html body .wrapper footer .footer-wrapper .footer-block .social li:nth-child(2) {
+.wrapper footer .footer-wrapper .footer-block .social li:nth-child(2) {
   background: #3ec2f3;
 }
-html body .wrapper footer .footer-wrapper .footer-block .social li:nth-child(3) {
+.wrapper footer .footer-wrapper .footer-block .social li:nth-child(3) {
   background: #e44c41;
 }
-html body .wrapper footer .footer-wrapper .footer-block .social li a {
+.wrapper footer .footer-wrapper .footer-block .social li a {
   color: #ffffff;
   text-decoration: none;
   width: 100%;
 }
-html body .wrapper footer .footer-wrapper .footer-block .social li a .fa {
+.wrapper footer .footer-wrapper .footer-block .social li a .fa {
   margin: 0 auto;
   font-size: 24px;
 }
-html body .wrapper footer .footer-wrapper .footer-block .author-info {
+.wrapper footer .footer-wrapper .footer-block .author-info {
   color: #bface2;
   padding: 0;
   margin: 0;
 }
-html body .wrapper footer .footer-wrapper .footer-block .author-info li {
+.wrapper footer .footer-wrapper .footer-block .author-info li {
   font-size: 14px;
   line-height: 21px;
   display: block;
 }
-html body .wrapper footer .footer-wrapper .footer-block form {
+.wrapper footer .footer-wrapper .footer-block form {
   font-family: 'open_sansregular', sans-serif;
   margin: 0;
   overflow: hidden;
   padding-left: 15px;
   width: 100%;
 }
-html body .wrapper footer .footer-wrapper .footer-block form .form-field {
+.wrapper footer .footer-wrapper .footer-block form .form-field {
   float: left;
   width: 100%;
   margin-bottom: 30px;
 }
-html body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
+.wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
   float: left;
   margin: 0;
   overflow: hidden;
   width: 48.5%;
   padding-right: 7px;
 }
-html body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
+.wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
   float: left;
   margin: 0;
   overflow: hidden;
@@ -459,7 +474,7 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field .form-f
   padding-left: 7px;
   margin-left: 13.3px;
 }
-html body .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
+.wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
   float: left;
   width: 100%;
   border-radius: 3px;
@@ -467,7 +482,7 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field .form-n
   line-height: 45px;
   padding-left: 20px;
 }
-html body .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
+.wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
   float: left;
   width: 100%;
   border-radius: 3px;
@@ -475,7 +490,7 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field .form-e
   line-height: 45px;
   padding-left: 20px;
 }
-html body .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
+.wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
   width: 100%;
   height: 180px;
   border-radius: 3px;
@@ -483,19 +498,19 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field .form-t
   line-height: 45px;
   padding-left: 20px;
 }
-html body .wrapper footer .footer-wrapper .footer-block form .form-field ::-webkit-input-placeholder {
+.wrapper footer .footer-wrapper .footer-block form .form-field ::-webkit-input-placeholder {
   font-family: 'open_sansregular', sans-serif;
 }
-html body .wrapper footer .footer-wrapper .footer-block form .form-field :-moz-placeholder {
+.wrapper footer .footer-wrapper .footer-block form .form-field :-moz-placeholder {
   font-family: 'open_sansregular', sans-serif;
 }
-html body .wrapper footer .footer-wrapper .footer-block form .form-field ::-moz-placeholder {
+.wrapper footer .footer-wrapper .footer-block form .form-field ::-moz-placeholder {
   font-family: 'open_sansregular', sans-serif;
 }
-html body .wrapper footer .footer-wrapper .footer-block form .form-field :-ms-input-placeholder {
+.wrapper footer .footer-wrapper .footer-block form .form-field :-ms-input-placeholder {
   font-family: 'open_sansregular', sans-serif;
 }
-html body .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
+.wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
   background: #49cbcd;
   float: right;
   width: 30%;
@@ -503,229 +518,229 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field .form-i
   border: none;
   line-height: 50px;
 }
-html body .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
+.wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
   color: #ffffff;
   font-family: 'open_sansregular', sans-serif;
   font-size: 22px;
 }
 @media screen and (max-width: 320px) {
-  body #wrapper-container {
-    max-width: 260px !important;
-    margin: 0 auto;
-  }
-  body #wrapper-container-fluid {
+  .wrapper {
     max-width: 320px !important;
     margin: 0 auto;
   }
-  body .wrapper {
-    max-width: 320px !important;
-    margin: 0 auto;
-  }
-  body .wrapper header {
+  .wrapper #wrapper-container {
     max-width: 260px !important;
     margin: 0 auto;
   }
-  body .wrapper header .logo span {
+  .wrapper #wrapper-container-fluid {
+    max-width: 320px !important;
+    margin: 0 auto;
+  }
+  .wrapper header {
+    max-width: 260px !important;
+    margin: 0 auto;
+  }
+  .wrapper header .logo span {
     font-size: 43px;
     line-height: 100px;
   }
-  body .wrapper header .navigation {
+  .wrapper header .navigation {
     min-height: 100px;
   }
-  body .wrapper header .navigation ul li {
+  .wrapper header .navigation ul li {
     margin: 0 0 0 8px;
     width: 85px;
   }
-  body .wrapper header .navigation ul li a {
+  .wrapper header .navigation ul li a {
     line-height: 97px;
     font-size: 15px;
   }
-  body .wrapper .container {
+  .wrapper .container {
     max-width: 320px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .slider .slick-slide .text {
+  .wrapper .container .slider .slick-slide .text {
     top: 18%;
     right: 0;
     left: 0;
     bottom: 0;
   }
-  body .wrapper .container .slider .slick-slide .text h1 {
+  .wrapper .container .slider .slick-slide .text h1 {
     font-size: 63px;
     margin: 0;
   }
-  body .wrapper .container .slider .slick-slide .text p {
+  .wrapper .container .slider .slick-slide .text p {
     font-size: 23px;
     line-height: 38px;
     font-weight: 100px;
     margin: 3.5% 0 4.2%;
   }
-  body .wrapper .container .slider .slick-slide .text a {
+  .wrapper .container .slider .slick-slide .text a {
     font-size: 26px;
     padding: 0.85% 1.1%;
   }
-  body .wrapper .container .slider .slick-prev {
+  .wrapper .container .slider .slick-prev {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-prev:before {
+  .wrapper .container .slider .slick-prev:before {
     margin-left: -3px;
   }
-  body .wrapper .container .slider .slick-next {
+  .wrapper .container .slider .slick-next {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-next:before {
+  .wrapper .container .slider .slick-next:before {
     margin-left: 0;
   }
-  body .wrapper .container .team-container {
+  .wrapper .container .team-container {
     max-width: 260px !important;
     margin: 0 auto;
     width: 100%;
   }
-  body .wrapper .container .team-container .caption {
+  .wrapper .container .team-container .caption {
     margin: 0;
     font-size: 42px;
     line-height: 240px;
   }
-  body .wrapper .container .team-container .team-block {
+  .wrapper .container .team-container .team-block {
     width: 25%;
     padding: 20px;
   }
-  body .wrapper .container .team-container .team-block .circle {
+  .wrapper .container .team-container .team-block .circle {
     max-height: 200px;
     max-width: 200px;
     margin-bottom: 50px;
   }
-  body .wrapper .container .team-container .team-block .name {
+  .wrapper .container .team-container .team-block .name {
     font-size: 22px;
     margin: 0;
   }
-  body .wrapper .container .team-container .team-block .prefission {
+  .wrapper .container .team-container .team-block .prefission {
     font-size: 14px;
     margin: 0;
     padding: 0;
   }
-  body .wrapper .container .team-container .team-block .biografy {
+  .wrapper .container .team-container .team-block .biografy {
     font-size: 14px;
     line-height: 30px;
   }
-  body .wrapper .container .service-container-bg {
+  .wrapper .container .service-container-bg {
     width: 100%;
     max-width: 320px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container {
+  .wrapper .container .service-container-bg .service-container {
     width: 100%;
     max-width: 260px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
     margin: 120px 0 100px;
     width: 33.3333%;
     padding: 0 10px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
     padding-left: 0px;
     padding-right: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
     padding-right: 0px;
     padding-left: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
     font-size: 14px;
     line-height: 45px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
     font-size: 26px;
     line-height: 76px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
     font-size: 20px;
     line-height: 68px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
     line-height: 100px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
     font-size: 17px;
     line-height: 40px;
     width: 45%;
   }
-  body .wrapper footer {
+  .wrapper footer {
     background-size: 100%;
     background-position: 50% 100%;
     width: 100%;
     max-width: 320px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper {
+  .wrapper footer .footer-wrapper {
     margin: 0;
     width: 100%;
     max-width: 260px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper .caption {
+  .wrapper footer .footer-wrapper .caption {
     margin: 0;
     font-size: 42px;
     font-weight: 500;
   }
-  body .wrapper footer .footer-wrapper .footer-block {
+  .wrapper footer .footer-wrapper .footer-block {
     width: 50%;
     margin-bottom: 5%;
   }
-  body .wrapper footer .footer-wrapper .footer-block h3 {
+  .wrapper footer .footer-wrapper .footer-block h3 {
     margin: 0;
     font-size: 24px;
     line-height: 26px;
   }
-  body .wrapper footer .footer-wrapper .footer-block p {
+  .wrapper footer .footer-wrapper .footer-block p {
     padding-right: 25%;
     margin: 0;
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social {
+  .wrapper footer .footer-wrapper .footer-block .social {
     padding: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li {
+  .wrapper footer .footer-wrapper .footer-block .social li {
     margin-right: 13px;
     width: 45px;
     height: 45px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li a .fa {
+  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
     margin: 0 auto;
     font-size: 24px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info {
+  .wrapper footer .footer-wrapper .footer-block .author-info {
     padding: 0;
     margin: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info li {
+  .wrapper footer .footer-wrapper .footer-block .author-info li {
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form {
+  .wrapper footer .footer-wrapper .footer-block form {
     margin: 0;
     padding-left: 15px;
     width: 100%;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field {
+  .wrapper footer .footer-wrapper .footer-block form .form-field {
     width: 100%;
     margin-bottom: 30px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
@@ -733,248 +748,248 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field input[v
     padding-left: 7px;
     margin-left: 13.3px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
     width: 100%;
     height: 180px;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
     width: 30%;
     line-height: 50px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
+  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 720px) {
-  body #wrapper-container {
-    max-width: 585px !important;
-    margin: 0 auto;
-  }
-  body #wrapper-container-fluid {
+  .wrapper {
     max-width: 720px !important;
     margin: 0 auto;
   }
-  body .wrapper {
-    max-width: 720px !important;
-    margin: 0 auto;
-  }
-  body .wrapper header {
+  .wrapper #wrapper-container {
     max-width: 585px !important;
     margin: 0 auto;
   }
-  body .wrapper header .logo span {
+  .wrapper #wrapper-container-fluid {
+    max-width: 720px !important;
+    margin: 0 auto;
+  }
+  .wrapper header {
+    max-width: 585px !important;
+    margin: 0 auto;
+  }
+  .wrapper header .logo span {
     font-size: 43px;
     line-height: 100px;
   }
-  body .wrapper header .navigation {
+  .wrapper header .navigation {
     min-height: 100px;
   }
-  body .wrapper header .navigation ul li {
+  .wrapper header .navigation ul li {
     margin: 0 0 0 8px;
     width: 85px;
   }
-  body .wrapper header .navigation ul li a {
+  .wrapper header .navigation ul li a {
     line-height: 97px;
     font-size: 15px;
   }
-  body .wrapper .container {
+  .wrapper .container {
     max-width: 720px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .slider .slick-slide .text {
+  .wrapper .container .slider .slick-slide .text {
     top: 18%;
     right: 0;
     left: 0;
     bottom: 0;
   }
-  body .wrapper .container .slider .slick-slide .text h1 {
+  .wrapper .container .slider .slick-slide .text h1 {
     font-size: 63px;
     margin: 0;
   }
-  body .wrapper .container .slider .slick-slide .text p {
+  .wrapper .container .slider .slick-slide .text p {
     font-size: 23px;
     line-height: 38px;
     font-weight: 100px;
     margin: 3.5% 0 4.2%;
   }
-  body .wrapper .container .slider .slick-slide .text a {
+  .wrapper .container .slider .slick-slide .text a {
     font-size: 26px;
     padding: 0.85% 1.1%;
   }
-  body .wrapper .container .slider .slick-prev {
+  .wrapper .container .slider .slick-prev {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-prev:before {
+  .wrapper .container .slider .slick-prev:before {
     margin-left: -3px;
   }
-  body .wrapper .container .slider .slick-next {
+  .wrapper .container .slider .slick-next {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-next:before {
+  .wrapper .container .slider .slick-next:before {
     margin-left: 0;
   }
-  body .wrapper .container .team-container {
+  .wrapper .container .team-container {
     max-width: 585px !important;
     margin: 0 auto;
     width: 100%;
   }
-  body .wrapper .container .team-container .caption {
+  .wrapper .container .team-container .caption {
     margin: 0;
     font-size: 42px;
     line-height: 240px;
   }
-  body .wrapper .container .team-container .team-block {
+  .wrapper .container .team-container .team-block {
     width: 25%;
     padding: 20px;
   }
-  body .wrapper .container .team-container .team-block .circle {
+  .wrapper .container .team-container .team-block .circle {
     max-height: 200px;
     max-width: 200px;
     margin-bottom: 50px;
   }
-  body .wrapper .container .team-container .team-block .name {
+  .wrapper .container .team-container .team-block .name {
     font-size: 22px;
     margin: 0;
   }
-  body .wrapper .container .team-container .team-block .prefission {
+  .wrapper .container .team-container .team-block .prefission {
     font-size: 14px;
     margin: 0;
     padding: 0;
   }
-  body .wrapper .container .team-container .team-block .biografy {
+  .wrapper .container .team-container .team-block .biografy {
     font-size: 14px;
     line-height: 30px;
   }
-  body .wrapper .container .service-container-bg {
+  .wrapper .container .service-container-bg {
     width: 100%;
     max-width: 720px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container {
+  .wrapper .container .service-container-bg .service-container {
     width: 100%;
     max-width: 585px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
     margin: 120px 0 100px;
     width: 33.3333%;
     padding: 0 10px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
     padding-left: 0px;
     padding-right: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
     padding-right: 0px;
     padding-left: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
     font-size: 14px;
     line-height: 45px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
     font-size: 26px;
     line-height: 76px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
     font-size: 20px;
     line-height: 68px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
     line-height: 100px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
     font-size: 17px;
     line-height: 40px;
     width: 45%;
   }
-  body .wrapper footer {
+  .wrapper footer {
     background-size: 100%;
     background-position: 50% 100%;
     width: 100%;
     max-width: 720px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper {
+  .wrapper footer .footer-wrapper {
     margin: 0;
     width: 100%;
     max-width: 585px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper .caption {
+  .wrapper footer .footer-wrapper .caption {
     margin: 0;
     font-size: 42px;
     font-weight: 500;
   }
-  body .wrapper footer .footer-wrapper .footer-block {
+  .wrapper footer .footer-wrapper .footer-block {
     width: 50%;
     margin-bottom: 5%;
   }
-  body .wrapper footer .footer-wrapper .footer-block h3 {
+  .wrapper footer .footer-wrapper .footer-block h3 {
     margin: 0;
     font-size: 24px;
     line-height: 26px;
   }
-  body .wrapper footer .footer-wrapper .footer-block p {
+  .wrapper footer .footer-wrapper .footer-block p {
     padding-right: 25%;
     margin: 0;
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social {
+  .wrapper footer .footer-wrapper .footer-block .social {
     padding: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li {
+  .wrapper footer .footer-wrapper .footer-block .social li {
     margin-right: 13px;
     width: 45px;
     height: 45px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li a .fa {
+  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
     margin: 0 auto;
     font-size: 24px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info {
+  .wrapper footer .footer-wrapper .footer-block .author-info {
     padding: 0;
     margin: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info li {
+  .wrapper footer .footer-wrapper .footer-block .author-info li {
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form {
+  .wrapper footer .footer-wrapper .footer-block form {
     margin: 0;
     padding-left: 15px;
     width: 100%;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field {
+  .wrapper footer .footer-wrapper .footer-block form .form-field {
     width: 100%;
     margin-bottom: 30px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
@@ -982,248 +997,248 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field input[v
     padding-left: 7px;
     margin-left: 13.3px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
     width: 100%;
     height: 180px;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
     width: 30%;
     line-height: 50px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
+  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 721px) and (max-width: 800px) {
-  body #wrapper-container {
-    max-width: 650px !important;
-    margin: 0 auto;
-  }
-  body #wrapper-container-fluid {
+  .wrapper {
     max-width: 800px !important;
     margin: 0 auto;
   }
-  body .wrapper {
-    max-width: 800px !important;
-    margin: 0 auto;
-  }
-  body .wrapper header {
+  .wrapper #wrapper-container {
     max-width: 650px !important;
     margin: 0 auto;
   }
-  body .wrapper header .logo span {
+  .wrapper #wrapper-container-fluid {
+    max-width: 800px !important;
+    margin: 0 auto;
+  }
+  .wrapper header {
+    max-width: 650px !important;
+    margin: 0 auto;
+  }
+  .wrapper header .logo span {
     font-size: 43px;
     line-height: 100px;
   }
-  body .wrapper header .navigation {
+  .wrapper header .navigation {
     min-height: 100px;
   }
-  body .wrapper header .navigation ul li {
+  .wrapper header .navigation ul li {
     margin: 0 0 0 8px;
     width: 85px;
   }
-  body .wrapper header .navigation ul li a {
+  .wrapper header .navigation ul li a {
     line-height: 97px;
     font-size: 15px;
   }
-  body .wrapper .container {
+  .wrapper .container {
     max-width: 800px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .slider .slick-slide .text {
+  .wrapper .container .slider .slick-slide .text {
     top: 18%;
     right: 0;
     left: 0;
     bottom: 0;
   }
-  body .wrapper .container .slider .slick-slide .text h1 {
+  .wrapper .container .slider .slick-slide .text h1 {
     font-size: 63px;
     margin: 0;
   }
-  body .wrapper .container .slider .slick-slide .text p {
+  .wrapper .container .slider .slick-slide .text p {
     font-size: 23px;
     line-height: 38px;
     font-weight: 100px;
     margin: 3.5% 0 4.2%;
   }
-  body .wrapper .container .slider .slick-slide .text a {
+  .wrapper .container .slider .slick-slide .text a {
     font-size: 26px;
     padding: 0.85% 1.1%;
   }
-  body .wrapper .container .slider .slick-prev {
+  .wrapper .container .slider .slick-prev {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-prev:before {
+  .wrapper .container .slider .slick-prev:before {
     margin-left: -3px;
   }
-  body .wrapper .container .slider .slick-next {
+  .wrapper .container .slider .slick-next {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-next:before {
+  .wrapper .container .slider .slick-next:before {
     margin-left: 0;
   }
-  body .wrapper .container .team-container {
+  .wrapper .container .team-container {
     max-width: 650px !important;
     margin: 0 auto;
     width: 100%;
   }
-  body .wrapper .container .team-container .caption {
+  .wrapper .container .team-container .caption {
     margin: 0;
     font-size: 42px;
     line-height: 240px;
   }
-  body .wrapper .container .team-container .team-block {
+  .wrapper .container .team-container .team-block {
     width: 25%;
     padding: 20px;
   }
-  body .wrapper .container .team-container .team-block .circle {
+  .wrapper .container .team-container .team-block .circle {
     max-height: 200px;
     max-width: 200px;
     margin-bottom: 50px;
   }
-  body .wrapper .container .team-container .team-block .name {
+  .wrapper .container .team-container .team-block .name {
     font-size: 22px;
     margin: 0;
   }
-  body .wrapper .container .team-container .team-block .prefission {
+  .wrapper .container .team-container .team-block .prefission {
     font-size: 14px;
     margin: 0;
     padding: 0;
   }
-  body .wrapper .container .team-container .team-block .biografy {
+  .wrapper .container .team-container .team-block .biografy {
     font-size: 14px;
     line-height: 30px;
   }
-  body .wrapper .container .service-container-bg {
+  .wrapper .container .service-container-bg {
     width: 100%;
     max-width: 800px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container {
+  .wrapper .container .service-container-bg .service-container {
     width: 100%;
     max-width: 650px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
     margin: 120px 0 100px;
     width: 33.3333%;
     padding: 0 10px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
     padding-left: 0px;
     padding-right: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
     padding-right: 0px;
     padding-left: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
     font-size: 14px;
     line-height: 45px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
     font-size: 26px;
     line-height: 76px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
     font-size: 20px;
     line-height: 68px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
     line-height: 100px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
     font-size: 17px;
     line-height: 40px;
     width: 45%;
   }
-  body .wrapper footer {
+  .wrapper footer {
     background-size: 100%;
     background-position: 50% 100%;
     width: 100%;
     max-width: 800px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper {
+  .wrapper footer .footer-wrapper {
     margin: 0;
     width: 100%;
     max-width: 650px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper .caption {
+  .wrapper footer .footer-wrapper .caption {
     margin: 0;
     font-size: 42px;
     font-weight: 500;
   }
-  body .wrapper footer .footer-wrapper .footer-block {
+  .wrapper footer .footer-wrapper .footer-block {
     width: 50%;
     margin-bottom: 5%;
   }
-  body .wrapper footer .footer-wrapper .footer-block h3 {
+  .wrapper footer .footer-wrapper .footer-block h3 {
     margin: 0;
     font-size: 24px;
     line-height: 26px;
   }
-  body .wrapper footer .footer-wrapper .footer-block p {
+  .wrapper footer .footer-wrapper .footer-block p {
     padding-right: 25%;
     margin: 0;
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social {
+  .wrapper footer .footer-wrapper .footer-block .social {
     padding: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li {
+  .wrapper footer .footer-wrapper .footer-block .social li {
     margin-right: 13px;
     width: 45px;
     height: 45px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li a .fa {
+  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
     margin: 0 auto;
     font-size: 24px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info {
+  .wrapper footer .footer-wrapper .footer-block .author-info {
     padding: 0;
     margin: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info li {
+  .wrapper footer .footer-wrapper .footer-block .author-info li {
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form {
+  .wrapper footer .footer-wrapper .footer-block form {
     margin: 0;
     padding-left: 15px;
     width: 100%;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field {
+  .wrapper footer .footer-wrapper .footer-block form .form-field {
     width: 100%;
     margin-bottom: 30px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
@@ -1231,248 +1246,248 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field input[v
     padding-left: 7px;
     margin-left: 13.3px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
     width: 100%;
     height: 180px;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
     width: 30%;
     line-height: 50px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
+  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 801px) and (max-width: 854px) {
-  body #wrapper-container {
-    max-width: 693px !important;
-    margin: 0 auto;
-  }
-  body #wrapper-container-fluid {
+  .wrapper {
     max-width: 854px !important;
     margin: 0 auto;
   }
-  body .wrapper {
-    max-width: 854px !important;
-    margin: 0 auto;
-  }
-  body .wrapper header {
+  .wrapper #wrapper-container {
     max-width: 693px !important;
     margin: 0 auto;
   }
-  body .wrapper header .logo span {
+  .wrapper #wrapper-container-fluid {
+    max-width: 854px !important;
+    margin: 0 auto;
+  }
+  .wrapper header {
+    max-width: 693px !important;
+    margin: 0 auto;
+  }
+  .wrapper header .logo span {
     font-size: 43px;
     line-height: 100px;
   }
-  body .wrapper header .navigation {
+  .wrapper header .navigation {
     min-height: 100px;
   }
-  body .wrapper header .navigation ul li {
+  .wrapper header .navigation ul li {
     margin: 0 0 0 8px;
     width: 85px;
   }
-  body .wrapper header .navigation ul li a {
+  .wrapper header .navigation ul li a {
     line-height: 97px;
     font-size: 15px;
   }
-  body .wrapper .container {
+  .wrapper .container {
     max-width: 854px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .slider .slick-slide .text {
+  .wrapper .container .slider .slick-slide .text {
     top: 18%;
     right: 0;
     left: 0;
     bottom: 0;
   }
-  body .wrapper .container .slider .slick-slide .text h1 {
+  .wrapper .container .slider .slick-slide .text h1 {
     font-size: 63px;
     margin: 0;
   }
-  body .wrapper .container .slider .slick-slide .text p {
+  .wrapper .container .slider .slick-slide .text p {
     font-size: 23px;
     line-height: 38px;
     font-weight: 100px;
     margin: 3.5% 0 4.2%;
   }
-  body .wrapper .container .slider .slick-slide .text a {
+  .wrapper .container .slider .slick-slide .text a {
     font-size: 26px;
     padding: 0.85% 1.1%;
   }
-  body .wrapper .container .slider .slick-prev {
+  .wrapper .container .slider .slick-prev {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-prev:before {
+  .wrapper .container .slider .slick-prev:before {
     margin-left: -3px;
   }
-  body .wrapper .container .slider .slick-next {
+  .wrapper .container .slider .slick-next {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-next:before {
+  .wrapper .container .slider .slick-next:before {
     margin-left: 0;
   }
-  body .wrapper .container .team-container {
+  .wrapper .container .team-container {
     max-width: 693px !important;
     margin: 0 auto;
     width: 100%;
   }
-  body .wrapper .container .team-container .caption {
+  .wrapper .container .team-container .caption {
     margin: 0;
     font-size: 42px;
     line-height: 240px;
   }
-  body .wrapper .container .team-container .team-block {
+  .wrapper .container .team-container .team-block {
     width: 25%;
     padding: 20px;
   }
-  body .wrapper .container .team-container .team-block .circle {
+  .wrapper .container .team-container .team-block .circle {
     max-height: 200px;
     max-width: 200px;
     margin-bottom: 50px;
   }
-  body .wrapper .container .team-container .team-block .name {
+  .wrapper .container .team-container .team-block .name {
     font-size: 22px;
     margin: 0;
   }
-  body .wrapper .container .team-container .team-block .prefission {
+  .wrapper .container .team-container .team-block .prefission {
     font-size: 14px;
     margin: 0;
     padding: 0;
   }
-  body .wrapper .container .team-container .team-block .biografy {
+  .wrapper .container .team-container .team-block .biografy {
     font-size: 14px;
     line-height: 30px;
   }
-  body .wrapper .container .service-container-bg {
+  .wrapper .container .service-container-bg {
     width: 100%;
     max-width: 854px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container {
+  .wrapper .container .service-container-bg .service-container {
     width: 100%;
     max-width: 693px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
     margin: 120px 0 100px;
     width: 33.3333%;
     padding: 0 10px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
     padding-left: 0px;
     padding-right: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
     padding-right: 0px;
     padding-left: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
     font-size: 14px;
     line-height: 45px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
     font-size: 26px;
     line-height: 76px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
     font-size: 20px;
     line-height: 68px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
     line-height: 100px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
     font-size: 17px;
     line-height: 40px;
     width: 45%;
   }
-  body .wrapper footer {
+  .wrapper footer {
     background-size: 100%;
     background-position: 50% 100%;
     width: 100%;
     max-width: 854px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper {
+  .wrapper footer .footer-wrapper {
     margin: 0;
     width: 100%;
     max-width: 693px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper .caption {
+  .wrapper footer .footer-wrapper .caption {
     margin: 0;
     font-size: 42px;
     font-weight: 500;
   }
-  body .wrapper footer .footer-wrapper .footer-block {
+  .wrapper footer .footer-wrapper .footer-block {
     width: 50%;
     margin-bottom: 5%;
   }
-  body .wrapper footer .footer-wrapper .footer-block h3 {
+  .wrapper footer .footer-wrapper .footer-block h3 {
     margin: 0;
     font-size: 24px;
     line-height: 26px;
   }
-  body .wrapper footer .footer-wrapper .footer-block p {
+  .wrapper footer .footer-wrapper .footer-block p {
     padding-right: 25%;
     margin: 0;
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social {
+  .wrapper footer .footer-wrapper .footer-block .social {
     padding: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li {
+  .wrapper footer .footer-wrapper .footer-block .social li {
     margin-right: 13px;
     width: 45px;
     height: 45px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li a .fa {
+  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
     margin: 0 auto;
     font-size: 24px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info {
+  .wrapper footer .footer-wrapper .footer-block .author-info {
     padding: 0;
     margin: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info li {
+  .wrapper footer .footer-wrapper .footer-block .author-info li {
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form {
+  .wrapper footer .footer-wrapper .footer-block form {
     margin: 0;
     padding-left: 15px;
     width: 100%;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field {
+  .wrapper footer .footer-wrapper .footer-block form .form-field {
     width: 100%;
     margin-bottom: 30px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
@@ -1480,248 +1495,248 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field input[v
     padding-left: 7px;
     margin-left: 13.3px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
     width: 100%;
     height: 180px;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
     width: 30%;
     line-height: 50px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
+  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 855px) and (max-width: 1024px) {
-  body #wrapper-container {
-    max-width: 832px !important;
-    margin: 0 auto;
-  }
-  body #wrapper-container-fluid {
+  .wrapper {
     max-width: 1024px !important;
     margin: 0 auto;
   }
-  body .wrapper {
-    max-width: 1024px !important;
-    margin: 0 auto;
-  }
-  body .wrapper header {
+  .wrapper #wrapper-container {
     max-width: 832px !important;
     margin: 0 auto;
   }
-  body .wrapper header .logo span {
+  .wrapper #wrapper-container-fluid {
+    max-width: 1024px !important;
+    margin: 0 auto;
+  }
+  .wrapper header {
+    max-width: 832px !important;
+    margin: 0 auto;
+  }
+  .wrapper header .logo span {
     font-size: 43px;
     line-height: 100px;
   }
-  body .wrapper header .navigation {
+  .wrapper header .navigation {
     min-height: 100px;
   }
-  body .wrapper header .navigation ul li {
+  .wrapper header .navigation ul li {
     margin: 0 0 0 8px;
     width: 85px;
   }
-  body .wrapper header .navigation ul li a {
+  .wrapper header .navigation ul li a {
     line-height: 97px;
     font-size: 15px;
   }
-  body .wrapper .container {
+  .wrapper .container {
     max-width: 1024px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .slider .slick-slide .text {
+  .wrapper .container .slider .slick-slide .text {
     top: 18%;
     right: 0;
     left: 0;
     bottom: 0;
   }
-  body .wrapper .container .slider .slick-slide .text h1 {
+  .wrapper .container .slider .slick-slide .text h1 {
     font-size: 63px;
     margin: 0;
   }
-  body .wrapper .container .slider .slick-slide .text p {
+  .wrapper .container .slider .slick-slide .text p {
     font-size: 23px;
     line-height: 38px;
     font-weight: 100px;
     margin: 3.5% 0 4.2%;
   }
-  body .wrapper .container .slider .slick-slide .text a {
+  .wrapper .container .slider .slick-slide .text a {
     font-size: 26px;
     padding: 0.85% 1.1%;
   }
-  body .wrapper .container .slider .slick-prev {
+  .wrapper .container .slider .slick-prev {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-prev:before {
+  .wrapper .container .slider .slick-prev:before {
     margin-left: -3px;
   }
-  body .wrapper .container .slider .slick-next {
+  .wrapper .container .slider .slick-next {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-next:before {
+  .wrapper .container .slider .slick-next:before {
     margin-left: 0;
   }
-  body .wrapper .container .team-container {
+  .wrapper .container .team-container {
     max-width: 832px !important;
     margin: 0 auto;
     width: 100%;
   }
-  body .wrapper .container .team-container .caption {
+  .wrapper .container .team-container .caption {
     margin: 0;
     font-size: 42px;
     line-height: 240px;
   }
-  body .wrapper .container .team-container .team-block {
+  .wrapper .container .team-container .team-block {
     width: 25%;
     padding: 20px;
   }
-  body .wrapper .container .team-container .team-block .circle {
+  .wrapper .container .team-container .team-block .circle {
     max-height: 200px;
     max-width: 200px;
     margin-bottom: 50px;
   }
-  body .wrapper .container .team-container .team-block .name {
+  .wrapper .container .team-container .team-block .name {
     font-size: 22px;
     margin: 0;
   }
-  body .wrapper .container .team-container .team-block .prefission {
+  .wrapper .container .team-container .team-block .prefission {
     font-size: 14px;
     margin: 0;
     padding: 0;
   }
-  body .wrapper .container .team-container .team-block .biografy {
+  .wrapper .container .team-container .team-block .biografy {
     font-size: 14px;
     line-height: 30px;
   }
-  body .wrapper .container .service-container-bg {
+  .wrapper .container .service-container-bg {
     width: 100%;
     max-width: 1024px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container {
+  .wrapper .container .service-container-bg .service-container {
     width: 100%;
     max-width: 832px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
     margin: 120px 0 100px;
     width: 33.3333%;
     padding: 0 10px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
     padding-left: 0px;
     padding-right: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
     padding-right: 0px;
     padding-left: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
     font-size: 14px;
     line-height: 45px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
     font-size: 26px;
     line-height: 76px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
     font-size: 20px;
     line-height: 68px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
     line-height: 100px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
     font-size: 17px;
     line-height: 40px;
     width: 45%;
   }
-  body .wrapper footer {
+  .wrapper footer {
     background-size: 100%;
     background-position: 50% 100%;
     width: 100%;
     max-width: 1024px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper {
+  .wrapper footer .footer-wrapper {
     margin: 0;
     width: 100%;
     max-width: 832px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper .caption {
+  .wrapper footer .footer-wrapper .caption {
     margin: 0;
     font-size: 42px;
     font-weight: 500;
   }
-  body .wrapper footer .footer-wrapper .footer-block {
+  .wrapper footer .footer-wrapper .footer-block {
     width: 50%;
     margin-bottom: 5%;
   }
-  body .wrapper footer .footer-wrapper .footer-block h3 {
+  .wrapper footer .footer-wrapper .footer-block h3 {
     margin: 0;
     font-size: 24px;
     line-height: 26px;
   }
-  body .wrapper footer .footer-wrapper .footer-block p {
+  .wrapper footer .footer-wrapper .footer-block p {
     padding-right: 25%;
     margin: 0;
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social {
+  .wrapper footer .footer-wrapper .footer-block .social {
     padding: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li {
+  .wrapper footer .footer-wrapper .footer-block .social li {
     margin-right: 13px;
     width: 45px;
     height: 45px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li a .fa {
+  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
     margin: 0 auto;
     font-size: 24px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info {
+  .wrapper footer .footer-wrapper .footer-block .author-info {
     padding: 0;
     margin: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info li {
+  .wrapper footer .footer-wrapper .footer-block .author-info li {
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form {
+  .wrapper footer .footer-wrapper .footer-block form {
     margin: 0;
     padding-left: 15px;
     width: 100%;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field {
+  .wrapper footer .footer-wrapper .footer-block form .form-field {
     width: 100%;
     margin-bottom: 30px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
@@ -1729,248 +1744,248 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field input[v
     padding-left: 7px;
     margin-left: 13.3px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
     width: 100%;
     height: 180px;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
     width: 30%;
     line-height: 50px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
+  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-  body #wrapper-container {
-    max-width: 975px !important;
-    margin: 0 auto;
-  }
-  body #wrapper-container-fluid {
+  .wrapper {
     max-width: 1200px !important;
     margin: 0 auto;
   }
-  body .wrapper {
-    max-width: 1200px !important;
-    margin: 0 auto;
-  }
-  body .wrapper header {
+  .wrapper #wrapper-container {
     max-width: 975px !important;
     margin: 0 auto;
   }
-  body .wrapper header .logo span {
+  .wrapper #wrapper-container-fluid {
+    max-width: 1200px !important;
+    margin: 0 auto;
+  }
+  .wrapper header {
+    max-width: 975px !important;
+    margin: 0 auto;
+  }
+  .wrapper header .logo span {
     font-size: 43px;
     line-height: 100px;
   }
-  body .wrapper header .navigation {
+  .wrapper header .navigation {
     min-height: 100px;
   }
-  body .wrapper header .navigation ul li {
+  .wrapper header .navigation ul li {
     margin: 0 0 0 8px;
     width: 85px;
   }
-  body .wrapper header .navigation ul li a {
+  .wrapper header .navigation ul li a {
     line-height: 97px;
     font-size: 15px;
   }
-  body .wrapper .container {
+  .wrapper .container {
     max-width: 1200px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .slider .slick-slide .text {
+  .wrapper .container .slider .slick-slide .text {
     top: 18%;
     right: 0;
     left: 0;
     bottom: 0;
   }
-  body .wrapper .container .slider .slick-slide .text h1 {
+  .wrapper .container .slider .slick-slide .text h1 {
     font-size: 63px;
     margin: 0;
   }
-  body .wrapper .container .slider .slick-slide .text p {
+  .wrapper .container .slider .slick-slide .text p {
     font-size: 23px;
     line-height: 38px;
     font-weight: 100px;
     margin: 3.5% 0 4.2%;
   }
-  body .wrapper .container .slider .slick-slide .text a {
+  .wrapper .container .slider .slick-slide .text a {
     font-size: 26px;
     padding: 0.85% 1.1%;
   }
-  body .wrapper .container .slider .slick-prev {
+  .wrapper .container .slider .slick-prev {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-prev:before {
+  .wrapper .container .slider .slick-prev:before {
     margin-left: -3px;
   }
-  body .wrapper .container .slider .slick-next {
+  .wrapper .container .slider .slick-next {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-next:before {
+  .wrapper .container .slider .slick-next:before {
     margin-left: 0;
   }
-  body .wrapper .container .team-container {
+  .wrapper .container .team-container {
     max-width: 975px !important;
     margin: 0 auto;
     width: 100%;
   }
-  body .wrapper .container .team-container .caption {
+  .wrapper .container .team-container .caption {
     margin: 0;
     font-size: 42px;
     line-height: 240px;
   }
-  body .wrapper .container .team-container .team-block {
+  .wrapper .container .team-container .team-block {
     width: 25%;
     padding: 20px;
   }
-  body .wrapper .container .team-container .team-block .circle {
+  .wrapper .container .team-container .team-block .circle {
     max-height: 200px;
     max-width: 200px;
     margin-bottom: 50px;
   }
-  body .wrapper .container .team-container .team-block .name {
+  .wrapper .container .team-container .team-block .name {
     font-size: 22px;
     margin: 0;
   }
-  body .wrapper .container .team-container .team-block .prefission {
+  .wrapper .container .team-container .team-block .prefission {
     font-size: 14px;
     margin: 0;
     padding: 0;
   }
-  body .wrapper .container .team-container .team-block .biografy {
+  .wrapper .container .team-container .team-block .biografy {
     font-size: 14px;
     line-height: 30px;
   }
-  body .wrapper .container .service-container-bg {
+  .wrapper .container .service-container-bg {
     width: 100%;
     max-width: 1200px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container {
+  .wrapper .container .service-container-bg .service-container {
     width: 100%;
     max-width: 975px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
     margin: 120px 0 100px;
     width: 33.3333%;
     padding: 0 10px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
     padding-left: 0px;
     padding-right: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
     padding-right: 0px;
     padding-left: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
     font-size: 14px;
     line-height: 45px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
     font-size: 26px;
     line-height: 76px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
     font-size: 20px;
     line-height: 68px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
     line-height: 100px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
     font-size: 17px;
     line-height: 40px;
     width: 45%;
   }
-  body .wrapper footer {
+  .wrapper footer {
     background-size: 100%;
     background-position: 50% 100%;
     width: 100%;
     max-width: 1200px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper {
+  .wrapper footer .footer-wrapper {
     margin: 0;
     width: 100%;
     max-width: 975px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper .caption {
+  .wrapper footer .footer-wrapper .caption {
     margin: 0;
     font-size: 42px;
     font-weight: 500;
   }
-  body .wrapper footer .footer-wrapper .footer-block {
+  .wrapper footer .footer-wrapper .footer-block {
     width: 50%;
     margin-bottom: 5%;
   }
-  body .wrapper footer .footer-wrapper .footer-block h3 {
+  .wrapper footer .footer-wrapper .footer-block h3 {
     margin: 0;
     font-size: 24px;
     line-height: 26px;
   }
-  body .wrapper footer .footer-wrapper .footer-block p {
+  .wrapper footer .footer-wrapper .footer-block p {
     padding-right: 25%;
     margin: 0;
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social {
+  .wrapper footer .footer-wrapper .footer-block .social {
     padding: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li {
+  .wrapper footer .footer-wrapper .footer-block .social li {
     margin-right: 13px;
     width: 45px;
     height: 45px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li a .fa {
+  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
     margin: 0 auto;
     font-size: 24px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info {
+  .wrapper footer .footer-wrapper .footer-block .author-info {
     padding: 0;
     margin: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info li {
+  .wrapper footer .footer-wrapper .footer-block .author-info li {
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form {
+  .wrapper footer .footer-wrapper .footer-block form {
     margin: 0;
     padding-left: 15px;
     width: 100%;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field {
+  .wrapper footer .footer-wrapper .footer-block form .form-field {
     width: 100%;
     margin-bottom: 30px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
@@ -1978,248 +1993,248 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field input[v
     padding-left: 7px;
     margin-left: 13.3px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
     width: 100%;
     height: 180px;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
     width: 30%;
     line-height: 50px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
+  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 1280px) {
-  body #wrapper-container {
-    max-width: 1040px !important;
-    margin: 0 auto;
-  }
-  body #wrapper-container-fluid {
+  .wrapper {
     max-width: 1280px !important;
     margin: 0 auto;
   }
-  body .wrapper {
-    max-width: 1280px !important;
-    margin: 0 auto;
-  }
-  body .wrapper header {
+  .wrapper #wrapper-container {
     max-width: 1040px !important;
     margin: 0 auto;
   }
-  body .wrapper header .logo span {
+  .wrapper #wrapper-container-fluid {
+    max-width: 1280px !important;
+    margin: 0 auto;
+  }
+  .wrapper header {
+    max-width: 1040px !important;
+    margin: 0 auto;
+  }
+  .wrapper header .logo span {
     font-size: 43px;
     line-height: 100px;
   }
-  body .wrapper header .navigation {
+  .wrapper header .navigation {
     min-height: 100px;
   }
-  body .wrapper header .navigation ul li {
+  .wrapper header .navigation ul li {
     margin: 0 0 0 8px;
     width: 85px;
   }
-  body .wrapper header .navigation ul li a {
+  .wrapper header .navigation ul li a {
     line-height: 97px;
     font-size: 15px;
   }
-  body .wrapper .container {
+  .wrapper .container {
     max-width: 1280px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .slider .slick-slide .text {
+  .wrapper .container .slider .slick-slide .text {
     top: 18%;
     right: 0;
     left: 0;
     bottom: 0;
   }
-  body .wrapper .container .slider .slick-slide .text h1 {
+  .wrapper .container .slider .slick-slide .text h1 {
     font-size: 63px;
     margin: 0;
   }
-  body .wrapper .container .slider .slick-slide .text p {
+  .wrapper .container .slider .slick-slide .text p {
     font-size: 23px;
     line-height: 38px;
     font-weight: 100px;
     margin: 3.5% 0 4.2%;
   }
-  body .wrapper .container .slider .slick-slide .text a {
+  .wrapper .container .slider .slick-slide .text a {
     font-size: 26px;
     padding: 0.85% 1.1%;
   }
-  body .wrapper .container .slider .slick-prev {
+  .wrapper .container .slider .slick-prev {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-prev:before {
+  .wrapper .container .slider .slick-prev:before {
     margin-left: -3px;
   }
-  body .wrapper .container .slider .slick-next {
+  .wrapper .container .slider .slick-next {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-next:before {
+  .wrapper .container .slider .slick-next:before {
     margin-left: 0;
   }
-  body .wrapper .container .team-container {
+  .wrapper .container .team-container {
     max-width: 1040px !important;
     margin: 0 auto;
     width: 100%;
   }
-  body .wrapper .container .team-container .caption {
+  .wrapper .container .team-container .caption {
     margin: 0;
     font-size: 42px;
     line-height: 240px;
   }
-  body .wrapper .container .team-container .team-block {
+  .wrapper .container .team-container .team-block {
     width: 25%;
     padding: 20px;
   }
-  body .wrapper .container .team-container .team-block .circle {
+  .wrapper .container .team-container .team-block .circle {
     max-height: 200px;
     max-width: 200px;
     margin-bottom: 50px;
   }
-  body .wrapper .container .team-container .team-block .name {
+  .wrapper .container .team-container .team-block .name {
     font-size: 22px;
     margin: 0;
   }
-  body .wrapper .container .team-container .team-block .prefission {
+  .wrapper .container .team-container .team-block .prefission {
     font-size: 14px;
     margin: 0;
     padding: 0;
   }
-  body .wrapper .container .team-container .team-block .biografy {
+  .wrapper .container .team-container .team-block .biografy {
     font-size: 14px;
     line-height: 30px;
   }
-  body .wrapper .container .service-container-bg {
+  .wrapper .container .service-container-bg {
     width: 100%;
     max-width: 1280px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container {
+  .wrapper .container .service-container-bg .service-container {
     width: 100%;
     max-width: 1040px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
     margin: 120px 0 100px;
     width: 33.3333%;
     padding: 0 10px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
     padding-left: 0px;
     padding-right: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
     padding-right: 0px;
     padding-left: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
     font-size: 14px;
     line-height: 45px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
     font-size: 26px;
     line-height: 76px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
     font-size: 20px;
     line-height: 68px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
     line-height: 100px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
     font-size: 17px;
     line-height: 40px;
     width: 45%;
   }
-  body .wrapper footer {
+  .wrapper footer {
     background-size: 100%;
     background-position: 50% 100%;
     width: 100%;
     max-width: 1280px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper {
+  .wrapper footer .footer-wrapper {
     margin: 0;
     width: 100%;
     max-width: 1040px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper .caption {
+  .wrapper footer .footer-wrapper .caption {
     margin: 0;
     font-size: 42px;
     font-weight: 500;
   }
-  body .wrapper footer .footer-wrapper .footer-block {
+  .wrapper footer .footer-wrapper .footer-block {
     width: 50%;
     margin-bottom: 5%;
   }
-  body .wrapper footer .footer-wrapper .footer-block h3 {
+  .wrapper footer .footer-wrapper .footer-block h3 {
     margin: 0;
     font-size: 24px;
     line-height: 26px;
   }
-  body .wrapper footer .footer-wrapper .footer-block p {
+  .wrapper footer .footer-wrapper .footer-block p {
     padding-right: 25%;
     margin: 0;
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social {
+  .wrapper footer .footer-wrapper .footer-block .social {
     padding: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li {
+  .wrapper footer .footer-wrapper .footer-block .social li {
     margin-right: 13px;
     width: 45px;
     height: 45px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li a .fa {
+  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
     margin: 0 auto;
     font-size: 24px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info {
+  .wrapper footer .footer-wrapper .footer-block .author-info {
     padding: 0;
     margin: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info li {
+  .wrapper footer .footer-wrapper .footer-block .author-info li {
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form {
+  .wrapper footer .footer-wrapper .footer-block form {
     margin: 0;
     padding-left: 15px;
     width: 100%;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field {
+  .wrapper footer .footer-wrapper .footer-block form .form-field {
     width: 100%;
     margin-bottom: 30px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
@@ -2227,248 +2242,248 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field input[v
     padding-left: 7px;
     margin-left: 13.3px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
     width: 100%;
     height: 180px;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
     width: 30%;
     line-height: 50px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
+  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 1281px) and (max-width: 1440px) {
-  body #wrapper-container {
-    max-width: 1170px !important;
-    margin: 0 auto;
-  }
-  body #wrapper-container-fluid {
+  .wrapper {
     max-width: 1440px !important;
     margin: 0 auto;
   }
-  body .wrapper {
-    max-width: 1440px !important;
-    margin: 0 auto;
-  }
-  body .wrapper header {
+  .wrapper #wrapper-container {
     max-width: 1170px !important;
     margin: 0 auto;
   }
-  body .wrapper header .logo span {
+  .wrapper #wrapper-container-fluid {
+    max-width: 1440px !important;
+    margin: 0 auto;
+  }
+  .wrapper header {
+    max-width: 1170px !important;
+    margin: 0 auto;
+  }
+  .wrapper header .logo span {
     font-size: 43px;
     line-height: 100px;
   }
-  body .wrapper header .navigation {
+  .wrapper header .navigation {
     min-height: 100px;
   }
-  body .wrapper header .navigation ul li {
+  .wrapper header .navigation ul li {
     margin: 0 0 0 8px;
     width: 85px;
   }
-  body .wrapper header .navigation ul li a {
+  .wrapper header .navigation ul li a {
     line-height: 97px;
     font-size: 15px;
   }
-  body .wrapper .container {
+  .wrapper .container {
     max-width: 1440px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .slider .slick-slide .text {
+  .wrapper .container .slider .slick-slide .text {
     top: 18%;
     right: 0;
     left: 0;
     bottom: 0;
   }
-  body .wrapper .container .slider .slick-slide .text h1 {
+  .wrapper .container .slider .slick-slide .text h1 {
     font-size: 63px;
     margin: 0;
   }
-  body .wrapper .container .slider .slick-slide .text p {
+  .wrapper .container .slider .slick-slide .text p {
     font-size: 23px;
     line-height: 38px;
     font-weight: 100px;
     margin: 3.5% 0 4.2%;
   }
-  body .wrapper .container .slider .slick-slide .text a {
+  .wrapper .container .slider .slick-slide .text a {
     font-size: 26px;
     padding: 0.85% 1.1%;
   }
-  body .wrapper .container .slider .slick-prev {
+  .wrapper .container .slider .slick-prev {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-prev:before {
+  .wrapper .container .slider .slick-prev:before {
     margin-left: -3px;
   }
-  body .wrapper .container .slider .slick-next {
+  .wrapper .container .slider .slick-next {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-next:before {
+  .wrapper .container .slider .slick-next:before {
     margin-left: 0;
   }
-  body .wrapper .container .team-container {
+  .wrapper .container .team-container {
     max-width: 1170px !important;
     margin: 0 auto;
     width: 100%;
   }
-  body .wrapper .container .team-container .caption {
+  .wrapper .container .team-container .caption {
     margin: 0;
     font-size: 42px;
     line-height: 240px;
   }
-  body .wrapper .container .team-container .team-block {
+  .wrapper .container .team-container .team-block {
     width: 25%;
     padding: 20px;
   }
-  body .wrapper .container .team-container .team-block .circle {
+  .wrapper .container .team-container .team-block .circle {
     max-height: 200px;
     max-width: 200px;
     margin-bottom: 50px;
   }
-  body .wrapper .container .team-container .team-block .name {
+  .wrapper .container .team-container .team-block .name {
     font-size: 22px;
     margin: 0;
   }
-  body .wrapper .container .team-container .team-block .prefission {
+  .wrapper .container .team-container .team-block .prefission {
     font-size: 14px;
     margin: 0;
     padding: 0;
   }
-  body .wrapper .container .team-container .team-block .biografy {
+  .wrapper .container .team-container .team-block .biografy {
     font-size: 14px;
     line-height: 30px;
   }
-  body .wrapper .container .service-container-bg {
+  .wrapper .container .service-container-bg {
     width: 100%;
     max-width: 1440px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container {
+  .wrapper .container .service-container-bg .service-container {
     width: 100%;
     max-width: 1170px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
     margin: 120px 0 100px;
     width: 33.3333%;
     padding: 0 10px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
     padding-left: 0px;
     padding-right: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
     padding-right: 0px;
     padding-left: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
     font-size: 14px;
     line-height: 45px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
     font-size: 26px;
     line-height: 76px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
     font-size: 20px;
     line-height: 68px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
     line-height: 100px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
     font-size: 17px;
     line-height: 40px;
     width: 45%;
   }
-  body .wrapper footer {
+  .wrapper footer {
     background-size: 100%;
     background-position: 50% 100%;
     width: 100%;
     max-width: 1440px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper {
+  .wrapper footer .footer-wrapper {
     margin: 0;
     width: 100%;
     max-width: 1170px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper .caption {
+  .wrapper footer .footer-wrapper .caption {
     margin: 0;
     font-size: 42px;
     font-weight: 500;
   }
-  body .wrapper footer .footer-wrapper .footer-block {
+  .wrapper footer .footer-wrapper .footer-block {
     width: 50%;
     margin-bottom: 5%;
   }
-  body .wrapper footer .footer-wrapper .footer-block h3 {
+  .wrapper footer .footer-wrapper .footer-block h3 {
     margin: 0;
     font-size: 24px;
     line-height: 26px;
   }
-  body .wrapper footer .footer-wrapper .footer-block p {
+  .wrapper footer .footer-wrapper .footer-block p {
     padding-right: 25%;
     margin: 0;
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social {
+  .wrapper footer .footer-wrapper .footer-block .social {
     padding: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li {
+  .wrapper footer .footer-wrapper .footer-block .social li {
     margin-right: 13px;
     width: 45px;
     height: 45px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li a .fa {
+  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
     margin: 0 auto;
     font-size: 24px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info {
+  .wrapper footer .footer-wrapper .footer-block .author-info {
     padding: 0;
     margin: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info li {
+  .wrapper footer .footer-wrapper .footer-block .author-info li {
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form {
+  .wrapper footer .footer-wrapper .footer-block form {
     margin: 0;
     padding-left: 15px;
     width: 100%;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field {
+  .wrapper footer .footer-wrapper .footer-block form .form-field {
     width: 100%;
     margin-bottom: 30px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
@@ -2476,248 +2491,248 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field input[v
     padding-left: 7px;
     margin-left: 13.3px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
     width: 100%;
     height: 180px;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
     width: 30%;
     line-height: 50px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
+  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 1441px) and (max-width: 1680px) {
-  body #wrapper-container {
-    max-width: 1365px !important;
-    margin: 0 auto;
-  }
-  body #wrapper-container-fluid {
+  .wrapper {
     max-width: 1680px !important;
     margin: 0 auto;
   }
-  body .wrapper {
-    max-width: 1680px !important;
-    margin: 0 auto;
-  }
-  body .wrapper header {
+  .wrapper #wrapper-container {
     max-width: 1365px !important;
     margin: 0 auto;
   }
-  body .wrapper header .logo span {
+  .wrapper #wrapper-container-fluid {
+    max-width: 1680px !important;
+    margin: 0 auto;
+  }
+  .wrapper header {
+    max-width: 1365px !important;
+    margin: 0 auto;
+  }
+  .wrapper header .logo span {
     font-size: 43px;
     line-height: 100px;
   }
-  body .wrapper header .navigation {
+  .wrapper header .navigation {
     min-height: 100px;
   }
-  body .wrapper header .navigation ul li {
+  .wrapper header .navigation ul li {
     margin: 0 0 0 8px;
     width: 85px;
   }
-  body .wrapper header .navigation ul li a {
+  .wrapper header .navigation ul li a {
     line-height: 97px;
     font-size: 15px;
   }
-  body .wrapper .container {
+  .wrapper .container {
     max-width: 1680px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .slider .slick-slide .text {
+  .wrapper .container .slider .slick-slide .text {
     top: 18%;
     right: 0;
     left: 0;
     bottom: 0;
   }
-  body .wrapper .container .slider .slick-slide .text h1 {
+  .wrapper .container .slider .slick-slide .text h1 {
     font-size: 63px;
     margin: 0;
   }
-  body .wrapper .container .slider .slick-slide .text p {
+  .wrapper .container .slider .slick-slide .text p {
     font-size: 23px;
     line-height: 38px;
     font-weight: 100px;
     margin: 3.5% 0 4.2%;
   }
-  body .wrapper .container .slider .slick-slide .text a {
+  .wrapper .container .slider .slick-slide .text a {
     font-size: 26px;
     padding: 0.85% 1.1%;
   }
-  body .wrapper .container .slider .slick-prev {
+  .wrapper .container .slider .slick-prev {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-prev:before {
+  .wrapper .container .slider .slick-prev:before {
     margin-left: -3px;
   }
-  body .wrapper .container .slider .slick-next {
+  .wrapper .container .slider .slick-next {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-next:before {
+  .wrapper .container .slider .slick-next:before {
     margin-left: 0;
   }
-  body .wrapper .container .team-container {
+  .wrapper .container .team-container {
     max-width: 1365px !important;
     margin: 0 auto;
     width: 100%;
   }
-  body .wrapper .container .team-container .caption {
+  .wrapper .container .team-container .caption {
     margin: 0;
     font-size: 42px;
     line-height: 240px;
   }
-  body .wrapper .container .team-container .team-block {
+  .wrapper .container .team-container .team-block {
     width: 25%;
     padding: 20px;
   }
-  body .wrapper .container .team-container .team-block .circle {
+  .wrapper .container .team-container .team-block .circle {
     max-height: 200px;
     max-width: 200px;
     margin-bottom: 50px;
   }
-  body .wrapper .container .team-container .team-block .name {
+  .wrapper .container .team-container .team-block .name {
     font-size: 22px;
     margin: 0;
   }
-  body .wrapper .container .team-container .team-block .prefission {
+  .wrapper .container .team-container .team-block .prefission {
     font-size: 14px;
     margin: 0;
     padding: 0;
   }
-  body .wrapper .container .team-container .team-block .biografy {
+  .wrapper .container .team-container .team-block .biografy {
     font-size: 14px;
     line-height: 30px;
   }
-  body .wrapper .container .service-container-bg {
+  .wrapper .container .service-container-bg {
     width: 100%;
     max-width: 1680px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container {
+  .wrapper .container .service-container-bg .service-container {
     width: 100%;
     max-width: 1365px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
     margin: 120px 0 100px;
     width: 33.3333%;
     padding: 0 10px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
     padding-left: 0px;
     padding-right: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
     padding-right: 0px;
     padding-left: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
     font-size: 14px;
     line-height: 45px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
     font-size: 26px;
     line-height: 76px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
     font-size: 20px;
     line-height: 68px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
     line-height: 100px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
     font-size: 17px;
     line-height: 40px;
     width: 45%;
   }
-  body .wrapper footer {
+  .wrapper footer {
     background-size: 100%;
     background-position: 50% 100%;
     width: 100%;
     max-width: 1680px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper {
+  .wrapper footer .footer-wrapper {
     margin: 0;
     width: 100%;
     max-width: 1365px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper .caption {
+  .wrapper footer .footer-wrapper .caption {
     margin: 0;
     font-size: 42px;
     font-weight: 500;
   }
-  body .wrapper footer .footer-wrapper .footer-block {
+  .wrapper footer .footer-wrapper .footer-block {
     width: 50%;
     margin-bottom: 5%;
   }
-  body .wrapper footer .footer-wrapper .footer-block h3 {
+  .wrapper footer .footer-wrapper .footer-block h3 {
     margin: 0;
     font-size: 24px;
     line-height: 26px;
   }
-  body .wrapper footer .footer-wrapper .footer-block p {
+  .wrapper footer .footer-wrapper .footer-block p {
     padding-right: 25%;
     margin: 0;
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social {
+  .wrapper footer .footer-wrapper .footer-block .social {
     padding: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li {
+  .wrapper footer .footer-wrapper .footer-block .social li {
     margin-right: 13px;
     width: 45px;
     height: 45px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li a .fa {
+  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
     margin: 0 auto;
     font-size: 24px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info {
+  .wrapper footer .footer-wrapper .footer-block .author-info {
     padding: 0;
     margin: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info li {
+  .wrapper footer .footer-wrapper .footer-block .author-info li {
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form {
+  .wrapper footer .footer-wrapper .footer-block form {
     margin: 0;
     padding-left: 15px;
     width: 100%;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field {
+  .wrapper footer .footer-wrapper .footer-block form .form-field {
     width: 100%;
     margin-bottom: 30px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
@@ -2725,248 +2740,248 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field input[v
     padding-left: 7px;
     margin-left: 13.3px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
     width: 100%;
     height: 180px;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
     width: 30%;
     line-height: 50px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
+  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 1681px) and (max-width: 1920px) {
-  body #wrapper-container {
-    max-width: 1560px !important;
-    margin: 0 auto;
-  }
-  body #wrapper-container-fluid {
+  .wrapper {
     max-width: 1920px !important;
     margin: 0 auto;
   }
-  body .wrapper {
-    max-width: 1920px !important;
-    margin: 0 auto;
-  }
-  body .wrapper header {
+  .wrapper #wrapper-container {
     max-width: 1560px !important;
     margin: 0 auto;
   }
-  body .wrapper header .logo span {
+  .wrapper #wrapper-container-fluid {
+    max-width: 1920px !important;
+    margin: 0 auto;
+  }
+  .wrapper header {
+    max-width: 1560px !important;
+    margin: 0 auto;
+  }
+  .wrapper header .logo span {
     font-size: 43px;
     line-height: 100px;
   }
-  body .wrapper header .navigation {
+  .wrapper header .navigation {
     min-height: 100px;
   }
-  body .wrapper header .navigation ul li {
+  .wrapper header .navigation ul li {
     margin: 0 0 0 8px;
     width: 85px;
   }
-  body .wrapper header .navigation ul li a {
+  .wrapper header .navigation ul li a {
     line-height: 97px;
     font-size: 15px;
   }
-  body .wrapper .container {
+  .wrapper .container {
     max-width: 1920px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .slider .slick-slide .text {
+  .wrapper .container .slider .slick-slide .text {
     top: 18%;
     right: 0;
     left: 0;
     bottom: 0;
   }
-  body .wrapper .container .slider .slick-slide .text h1 {
+  .wrapper .container .slider .slick-slide .text h1 {
     font-size: 63px;
     margin: 0;
   }
-  body .wrapper .container .slider .slick-slide .text p {
+  .wrapper .container .slider .slick-slide .text p {
     font-size: 23px;
     line-height: 38px;
     font-weight: 100px;
     margin: 3.5% 0 4.2%;
   }
-  body .wrapper .container .slider .slick-slide .text a {
+  .wrapper .container .slider .slick-slide .text a {
     font-size: 26px;
     padding: 0.85% 1.1%;
   }
-  body .wrapper .container .slider .slick-prev {
+  .wrapper .container .slider .slick-prev {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-prev:before {
+  .wrapper .container .slider .slick-prev:before {
     margin-left: -3px;
   }
-  body .wrapper .container .slider .slick-next {
+  .wrapper .container .slider .slick-next {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-next:before {
+  .wrapper .container .slider .slick-next:before {
     margin-left: 0;
   }
-  body .wrapper .container .team-container {
+  .wrapper .container .team-container {
     max-width: 1560px !important;
     margin: 0 auto;
     width: 100%;
   }
-  body .wrapper .container .team-container .caption {
+  .wrapper .container .team-container .caption {
     margin: 0;
     font-size: 42px;
     line-height: 240px;
   }
-  body .wrapper .container .team-container .team-block {
+  .wrapper .container .team-container .team-block {
     width: 25%;
     padding: 20px;
   }
-  body .wrapper .container .team-container .team-block .circle {
+  .wrapper .container .team-container .team-block .circle {
     max-height: 200px;
     max-width: 200px;
     margin-bottom: 50px;
   }
-  body .wrapper .container .team-container .team-block .name {
+  .wrapper .container .team-container .team-block .name {
     font-size: 22px;
     margin: 0;
   }
-  body .wrapper .container .team-container .team-block .prefission {
+  .wrapper .container .team-container .team-block .prefission {
     font-size: 14px;
     margin: 0;
     padding: 0;
   }
-  body .wrapper .container .team-container .team-block .biografy {
+  .wrapper .container .team-container .team-block .biografy {
     font-size: 14px;
     line-height: 30px;
   }
-  body .wrapper .container .service-container-bg {
+  .wrapper .container .service-container-bg {
     width: 100%;
     max-width: 1920px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container {
+  .wrapper .container .service-container-bg .service-container {
     width: 100%;
     max-width: 1560px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
     margin: 120px 0 100px;
     width: 33.3333%;
     padding: 0 10px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
     padding-left: 0px;
     padding-right: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
     padding-right: 0px;
     padding-left: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
     font-size: 14px;
     line-height: 45px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
     font-size: 26px;
     line-height: 76px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
     font-size: 20px;
     line-height: 68px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
     line-height: 100px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
     font-size: 17px;
     line-height: 40px;
     width: 45%;
   }
-  body .wrapper footer {
+  .wrapper footer {
     background-size: 100%;
     background-position: 50% 100%;
     width: 100%;
     max-width: 1920px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper {
+  .wrapper footer .footer-wrapper {
     margin: 0;
     width: 100%;
     max-width: 1560px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper .caption {
+  .wrapper footer .footer-wrapper .caption {
     margin: 0;
     font-size: 42px;
     font-weight: 500;
   }
-  body .wrapper footer .footer-wrapper .footer-block {
+  .wrapper footer .footer-wrapper .footer-block {
     width: 50%;
     margin-bottom: 5%;
   }
-  body .wrapper footer .footer-wrapper .footer-block h3 {
+  .wrapper footer .footer-wrapper .footer-block h3 {
     margin: 0;
     font-size: 24px;
     line-height: 26px;
   }
-  body .wrapper footer .footer-wrapper .footer-block p {
+  .wrapper footer .footer-wrapper .footer-block p {
     padding-right: 25%;
     margin: 0;
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social {
+  .wrapper footer .footer-wrapper .footer-block .social {
     padding: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li {
+  .wrapper footer .footer-wrapper .footer-block .social li {
     margin-right: 13px;
     width: 45px;
     height: 45px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li a .fa {
+  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
     margin: 0 auto;
     font-size: 24px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info {
+  .wrapper footer .footer-wrapper .footer-block .author-info {
     padding: 0;
     margin: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info li {
+  .wrapper footer .footer-wrapper .footer-block .author-info li {
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form {
+  .wrapper footer .footer-wrapper .footer-block form {
     margin: 0;
     padding-left: 15px;
     width: 100%;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field {
+  .wrapper footer .footer-wrapper .footer-block form .form-field {
     width: 100%;
     margin-bottom: 30px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
@@ -2974,248 +2989,248 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field input[v
     padding-left: 7px;
     margin-left: 13.3px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
     width: 100%;
     height: 180px;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
     width: 30%;
     line-height: 50px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
+  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 1920px) {
-  body #wrapper-container {
-    max-width: 1560px !important;
-    margin: 0 auto;
-  }
-  body #wrapper-container-fluid {
+  .wrapper {
     max-width: 1920px !important;
     margin: 0 auto;
   }
-  body .wrapper {
-    max-width: 1920px !important;
-    margin: 0 auto;
-  }
-  body .wrapper header {
+  .wrapper #wrapper-container {
     max-width: 1560px !important;
     margin: 0 auto;
   }
-  body .wrapper header .logo span {
+  .wrapper #wrapper-container-fluid {
+    max-width: 1920px !important;
+    margin: 0 auto;
+  }
+  .wrapper header {
+    max-width: 1560px !important;
+    margin: 0 auto;
+  }
+  .wrapper header .logo span {
     font-size: 43px;
     line-height: 100px;
   }
-  body .wrapper header .navigation {
+  .wrapper header .navigation {
     min-height: 100px;
   }
-  body .wrapper header .navigation ul li {
+  .wrapper header .navigation ul li {
     margin: 0 0 0 8px;
     width: 85px;
   }
-  body .wrapper header .navigation ul li a {
+  .wrapper header .navigation ul li a {
     line-height: 97px;
     font-size: 15px;
   }
-  body .wrapper .container {
+  .wrapper .container {
     max-width: 1920px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .slider .slick-slide .text {
+  .wrapper .container .slider .slick-slide .text {
     top: 18%;
     right: 0;
     left: 0;
     bottom: 0;
   }
-  body .wrapper .container .slider .slick-slide .text h1 {
+  .wrapper .container .slider .slick-slide .text h1 {
     font-size: 63px;
     margin: 0;
   }
-  body .wrapper .container .slider .slick-slide .text p {
+  .wrapper .container .slider .slick-slide .text p {
     font-size: 23px;
     line-height: 38px;
     font-weight: 100px;
     margin: 3.5% 0 4.2%;
   }
-  body .wrapper .container .slider .slick-slide .text a {
+  .wrapper .container .slider .slick-slide .text a {
     font-size: 26px;
     padding: 0.85% 1.1%;
   }
-  body .wrapper .container .slider .slick-prev {
+  .wrapper .container .slider .slick-prev {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-prev:before {
+  .wrapper .container .slider .slick-prev:before {
     margin-left: -3px;
   }
-  body .wrapper .container .slider .slick-next {
+  .wrapper .container .slider .slick-next {
     min-width: 50px;
     min-height: 50px;
   }
-  body .wrapper .container .slider .slick-next:before {
+  .wrapper .container .slider .slick-next:before {
     margin-left: 0;
   }
-  body .wrapper .container .team-container {
+  .wrapper .container .team-container {
     max-width: 1560px !important;
     margin: 0 auto;
     width: 100%;
   }
-  body .wrapper .container .team-container .caption {
+  .wrapper .container .team-container .caption {
     margin: 0;
     font-size: 42px;
     line-height: 240px;
   }
-  body .wrapper .container .team-container .team-block {
+  .wrapper .container .team-container .team-block {
     width: 25%;
     padding: 20px;
   }
-  body .wrapper .container .team-container .team-block .circle {
+  .wrapper .container .team-container .team-block .circle {
     max-height: 200px;
     max-width: 200px;
     margin-bottom: 50px;
   }
-  body .wrapper .container .team-container .team-block .name {
+  .wrapper .container .team-container .team-block .name {
     font-size: 22px;
     margin: 0;
   }
-  body .wrapper .container .team-container .team-block .prefission {
+  .wrapper .container .team-container .team-block .prefission {
     font-size: 14px;
     margin: 0;
     padding: 0;
   }
-  body .wrapper .container .team-container .team-block .biografy {
+  .wrapper .container .team-container .team-block .biografy {
     font-size: 14px;
     line-height: 30px;
   }
-  body .wrapper .container .service-container-bg {
+  .wrapper .container .service-container-bg {
     width: 100%;
     max-width: 1920px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container {
+  .wrapper .container .service-container-bg .service-container {
     width: 100%;
     max-width: 1560px !important;
     margin: 0 auto;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
     margin: 120px 0 100px;
     width: 33.3333%;
     padding: 0 10px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
     padding-left: 0px;
     padding-right: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
     padding-right: 0px;
     padding-left: 20px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
     font-size: 14px;
     line-height: 45px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
     font-size: 26px;
     line-height: 76px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
     font-size: 20px;
     line-height: 68px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
     line-height: 100px;
   }
-  body .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
+  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
     font-size: 17px;
     line-height: 40px;
     width: 45%;
   }
-  body .wrapper footer {
+  .wrapper footer {
     background-size: 100%;
     background-position: 50% 100%;
     width: 100%;
     max-width: 1920px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper {
+  .wrapper footer .footer-wrapper {
     margin: 0;
     width: 100%;
     max-width: 1560px !important;
     margin: 0 auto;
   }
-  body .wrapper footer .footer-wrapper .caption {
+  .wrapper footer .footer-wrapper .caption {
     margin: 0;
     font-size: 42px;
     font-weight: 500;
   }
-  body .wrapper footer .footer-wrapper .footer-block {
+  .wrapper footer .footer-wrapper .footer-block {
     width: 50%;
     margin-bottom: 5%;
   }
-  body .wrapper footer .footer-wrapper .footer-block h3 {
+  .wrapper footer .footer-wrapper .footer-block h3 {
     margin: 0;
     font-size: 24px;
     line-height: 26px;
   }
-  body .wrapper footer .footer-wrapper .footer-block p {
+  .wrapper footer .footer-wrapper .footer-block p {
     padding-right: 25%;
     margin: 0;
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social {
+  .wrapper footer .footer-wrapper .footer-block .social {
     padding: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li {
+  .wrapper footer .footer-wrapper .footer-block .social li {
     margin-right: 13px;
     width: 45px;
     height: 45px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .social li a .fa {
+  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
     margin: 0 auto;
     font-size: 24px;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info {
+  .wrapper footer .footer-wrapper .footer-block .author-info {
     padding: 0;
     margin: 0;
   }
-  body .wrapper footer .footer-wrapper .footer-block .author-info li {
+  .wrapper footer .footer-wrapper .footer-block .author-info li {
     font-size: 14px;
     line-height: 21px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form {
+  .wrapper footer .footer-wrapper .footer-block form {
     margin: 0;
     padding-left: 15px;
     width: 100%;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field {
+  .wrapper footer .footer-wrapper .footer-block form .form-field {
     width: 100%;
     margin-bottom: 30px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
     margin: 0;
     width: 48.5%;
     padding-right: 7px;
@@ -3223,27 +3238,27 @@ html body .wrapper footer .footer-wrapper .footer-block form .form-field input[v
     padding-left: 7px;
     margin-left: 13.3px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
     width: 100%;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
     width: 100%;
     height: 180px;
     line-height: 45px;
     padding-left: 20px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
+  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
     width: 30%;
     line-height: 50px;
   }
-  body .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
+  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
     font-size: 22px;
   }
 }
