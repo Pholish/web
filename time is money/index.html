@@ -60,13 +60,18 @@
     	});
 		</script>
 		<!-- Slider end -->
+		
+		<!--	Hover start	-->
 		<script>
 			jQuery(document).ready(function(){
-				$('button').on('mouseover', function(){
-  				$(this).parents('.service-block-wrapper ul li:nth-child(1)').css({'background': '#49cbcd'});
+				$('.hover-button').hover(function() {
+					$(this).parents('.service').find('.hover-js').addClass('hover');
+				},function() {
+					$(this).parents('.service').find('.hover-js').removeClass('hover');
 				});
 			})
 		</script>
+		<!--	Hover end	-->
   </head>
   <body>
 		<div class="wrapper">
@@ -121,35 +126,39 @@
 				<div id="team" class="team-container">
 					<h2 class="caption">Team</h2>
 					<div class="team-block">
-						<div class="circle">
+						<div class="circle relative">
 							<img src="images/circle.png">
+							<div class="hover-item absolute"><span>+</span></div>
 						</div>
 						<h3 class="name">Adrian Thomas</h3>
 						<p class="profession">CEO & Founder</p>
 						<p class="biografy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
 					</div>		
 					<div class="team-block">
-						<div class="circle">
+						<div class="circle relative">
 							<img src="images/circle.png">
+							<div class="hover-item absolute"><span>+</span></div>
 						</div>
-						<h3 class="name">Adrian Thomas</h3>
+						<h3 class="name">Narate Ketram</h3>
+						<p class="profession">Creative Director</p>
+						<p class="biografy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+					</div>	
+					<div class="team-block">
+						<div class="circle relative">
+							<img src="images/circle.png">
+							<div class="hover-item absolute"><span>+</span></div>
+						</div>
+						<h3 class="name">Fernando Comet</h3>
 						<p class="profession">CEO & Founder</p>
 						<p class="biografy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
 					</div>	
 					<div class="team-block">
-						<div class="circle">
+						<div class="circle relative">
 							<img src="images/circle.png">
+							<div class="hover-item absolute"><span>+</span></div>
 						</div>
-						<h3 class="name">Adrian Thomas</h3>
-						<p class="profession">CEO & Founder</p>
-						<p class="biografy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
-					</div>	
-					<div class="team-block">
-						<div class="circle">
-							<img src="images/circle.png">
-						</div>
-						<h3 class="name">Adrian Thomas</h3>
-						<p class="profession">CEO & Founder</p>
+						<h3 class="name">Adedayo saheed</h3>
+						<p class="profession">Creative Director</p>
 						<p class="biografy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
 					</div>	
 				</div>
@@ -157,7 +166,7 @@
 					<div id="service" class="service-container">
 						<div class="service-block-wrapper">
 							<ul class="service">
-								<li>Basic</li>
+								<li class="hover-js">Basic</li>
 								<li>$5.01/ Month</li>
 								<li>Lorem ipsum </li>
 								<li>Dolor sit amet, consect</li>
@@ -165,12 +174,12 @@
 								<li>Proin commodo turpis</li>
 								<li>lacus pulvinarvel </li>
 								<li>Prnare nisi pretium.</li>
-								<li><button>Buy now</button></li>
+								<li><button class="hover-button">Buy now</button></li>
 							</ul>
 						</div>
 						<div class="service-block-wrapper">
 							<ul class="service">
-								<li>Basic</li>
+								<li class="hover-js">Basic</li>
 								<li>$5.01/ Month</li>
 								<li>Lorem ipsum </li>
 								<li>Dolor sit amet, consect</li>
@@ -178,12 +187,12 @@
 								<li>Proin commodo turpis</li>
 								<li>lacus pulvinarvel </li>
 								<li>Prnare nisi pretium.</li>
-								<li><button>Buy now</button></li>
+								<li><button class="hover-button">Buy now</button></li>
 							</ul>
 						</div>
 						<div class="service-block-wrapper">
 							<ul class="service">
-								<li>Basic</li>
+								<li class="hover-js">Basic</li>
 								<li>$5.01/ Month</li>
 								<li>Lorem ipsum </li>
 								<li>Dolor sit amet, consect</li>
@@ -191,7 +200,7 @@
 								<li>Proin commodo turpis</li>
 								<li>lacus pulvinarvel </li>
 								<li>Prnare nisi pretium.</li>
-								<li><button>Buy now</button></li>
+								<li><button class="hover-button">Buy now</button></li>
 							</ul>
 						</div>
 					</div>

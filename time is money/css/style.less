@@ -18,37 +18,37 @@
 @Twittercolor:#3ec2f3;
 @Googlecolor:#e44c41;
 
-@media0max:1920px;
-@media1max:1680px;
-@media2max:1440px;
-@media3max:1280px;
-@media4max:1200px;
-@media5max:1024px;
-@media6max:854px;
-@media7max:800px;
-@media8max:720px;
-@media9max:320px;
+@media0max: 1920px;
+@media1max: 1680px;
+@media2max: 1440px;
+@media3max: 1280px;
+@media4max: 1200px;
+@media5max: 1024px;
+@media6max: 854px;
+@media7max: 800px;
+@media8max: 720px;
+@media9max: 320px;
 
-@media0min:1681px;
-@media1min:1441px;
-@media2min:1281px;
-@media3min:1201px;
-@media4min:1025px;
-@media5min:855px;
-@media6min:801px;
-@media7min:721px;
-@media8min:321px;
+@media0min: 1681px;
+@media1min: 1441px;
+@media2min: 1281px;
+@media3min: 1201px;
+@media4min: 1025px;
+@media5min: 855px;
+@media6min: 801px;
+@media7min: 721px;
+@media8min: 321px; 
 
-@media0wrapper:1560px;
-@media1wrapper:1365px;
-@media2wrapper:1170px;
-@media3wrapper:1040px;
-@media4wrapper:975px;
-@media5wrapper:832px;
-@media6wrapper:693px;
-@media7wrapper:650px;
-@media8wrapper:585px;
-@media9wrapper:260px;
+@media0wrapper: 1560px;
+@media1wrapper: 1365px;
+@media2wrapper: 1170px;
+@media3wrapper: 1040px;
+@media4wrapper: 975px;
+@media5wrapper: 832px;
+@media6wrapper: 693px;
+@media7wrapper: 650px;
+@media8wrapper: 585px;
+@media9wrapper: 260px; 
 
 @font-face {
     font-family: 'lobsterregular';
@@ -93,6 +93,15 @@
 }
 
 @font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icons/icomoon.eot?y2ri5h');
   src:  url('../fonts/icons/icomoon.eot?y2ri5h#iefix') format('embedded-opentype'),
@@ -105,8 +114,8 @@
 
 @font-face{
 	font-family:'FontAwesome';
-	src:url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-	src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+	src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+	src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
 		url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
 		url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
 		url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
@@ -124,11 +133,19 @@
 }
 
 #logoff(){
-	font-family: 'lobsterregular'; 
+	font-family: 'lobsterregular', sans-serif; 
+}
+
+#hoverff(){
+	font-family: 'open_sansextrabold', sans-serif;
 }
 
 .container {
 	width: 100%;
+}
+
+.hover {
+	background: @HoverColor !important;
 }
 
 html {
@@ -308,7 +325,27 @@ html {
 							max-width: 200px;
 							border-radius: 50%;
 							margin-bottom: 50px;
-							
+							.hover-item{
+								display: flex;
+								top: 0;
+								right: 0;
+								left: 0;
+								bottom: 0;
+								margin: 0 auto;
+								&:hover span {
+									opacity: 1;
+								}
+								span{
+									opacity: 0;
+									#hoverff();
+									font-size: 85px;
+									align-self: center;
+									margin: 0 auto;
+									padding: 0;
+									line-height: 85px;
+									color: #f46d6d;
+								}
+							}
 						}
 						.name {
 							font-size: 22px;
@@ -403,10 +440,10 @@ html {
 			}
 			footer {
 				background-attachment: fixed;
-				background-image:url('../images/footer-bg.png');
-				background-repeat:no-repeat;
-				background-size:100%;
-				background-position:50% 100%;
+				background-image: url('../images/footer-bg.png');
+				background-repeat: no-repeat;
+				background-size: 100%;
+				background-position: 50% 100%;
 				overflow: hidden;
 				width: 100%;
 				#wrapper-container-fluid;
@@ -543,7 +580,7 @@ html {
 								}
 								.form-input {
 									background: @HoverColor;
-									float:right;
+									float: right;
 									width: 30%;
 									border-radius: 3px;
 									border: none;
@@ -725,8 +762,8 @@ html {
 				}
 			}
 			footer {
-				background-size:100%;
-				background-position:50% 100%;
+				background-size: 100%;
+				background-position: 50% 100%;
 				width: 100%;
 				#wrapper-container-fluid;
 				.footer-wrapper{
@@ -986,8 +1023,8 @@ html {
 				}
 			}
 			footer {
-				background-size:100%;
-				background-position:50% 100%;
+				background-size: 100%;
+				background-position: 50% 100%;
 				width: 100%;
 				#wrapper-container-fluid;
 				.footer-wrapper{
@@ -1247,8 +1284,8 @@ html {
 				}
 			}
 			footer {
-				background-size:100%;
-				background-position:50% 100%;
+				background-size: 100%;
+				background-position: 50% 100%;
 				width: 100%;
 				#wrapper-container-fluid;
 				.footer-wrapper{
@@ -1508,8 +1545,8 @@ html {
 				}
 			}
 			footer {
-				background-size:100%;
-				background-position:50% 100%;
+				background-size: 100%;
+				background-position: 50% 100%;
 				width: 100%;
 				#wrapper-container-fluid;
 				.footer-wrapper{
@@ -1769,8 +1806,8 @@ html {
 				}
 			}
 			footer {
-				background-size:100%;
-				background-position:50% 100%;
+				background-size: 100%;
+				background-position: 50% 100%;
 				width: 100%;
 				#wrapper-container-fluid;
 				.footer-wrapper{
@@ -2030,8 +2067,8 @@ html {
 				}
 			}
 			footer {
-				background-size:100%;
-				background-position:50% 100%;
+				background-size: 100%;
+				background-position: 50% 100%;
 				width: 100%;
 				#wrapper-container-fluid;
 				.footer-wrapper{
@@ -2291,8 +2328,8 @@ html {
 				}
 			}
 			footer {
-				background-size:100%;
-				background-position:50% 100%;
+				background-size: 100%;
+				background-position: 50% 100%;
 				width: 100%;
 				#wrapper-container-fluid;
 				.footer-wrapper{
@@ -2552,8 +2589,8 @@ html {
 				}
 			}
 			footer {
-				background-size:100%;
-				background-position:50% 100%;
+				background-size: 100%;
+				background-position: 50% 100%;
 				width: 100%;
 				#wrapper-container-fluid;
 				.footer-wrapper{
@@ -2813,8 +2850,8 @@ html {
 				}
 			}
 			footer {
-				background-size:100%;
-				background-position:50% 100%;
+				background-size: 100%;
+				background-position: 50% 100%;
 				width: 100%;
 				#wrapper-container-fluid;
 				.footer-wrapper{
@@ -3074,8 +3111,8 @@ html {
 				}
 			}
 			footer {
-				background-size:100%;
-				background-position:50% 100%;
+				background-size: 100%;
+				background-position: 50% 100%;
 				width: 100%;
 				#wrapper-container-fluid;
 				.footer-wrapper{
@@ -3335,8 +3372,8 @@ html {
 				}
 			}
 			footer {
-				background-size:100%;
-				background-position:50% 100%;
+				background-size: 100%;
+				background-position: 50% 100%;
 				width: 100%;
 				#wrapper-container-fluid;
 				.footer-wrapper{

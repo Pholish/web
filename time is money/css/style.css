@@ -29,6 +29,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'open_sansextrabold';
+  src: url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'), url('../fonts/opensans-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'icomoon';
   src: url('../fonts/icons/icomoon.eot?y2ri5h');
   src: url('../fonts/icons/icomoon.eot?y2ri5h#iefix') format('embedded-opentype'), url('../fonts/icons/icomoon.ttf?y2ri5h') format('truetype'), url('../fonts/icons/icomoon.woff?y2ri5h') format('woff'), url('../fonts/icons/icomoon.svg?y2ri5h#icomoon') format('svg');
@@ -44,6 +50,9 @@
 }
 .container {
   width: 100%;
+}
+.hover {
+  background: #49cbcd !important;
 }
 html body {
   width: 100%;
@@ -92,7 +101,7 @@ html body .wrapper header .logo {
 html body .wrapper header .logo span {
   font-size: 43px;
   line-height: 100px;
-  font-family: 'lobsterregular';
+  font-family: 'lobsterregular', sans-serif;
   color: #44c0c2;
 }
 html body .wrapper header .navigation {
@@ -221,6 +230,27 @@ html body .wrapper .container .team-container .team-block .circle {
   max-width: 200px;
   border-radius: 50%;
   margin-bottom: 50px;
+}
+html body .wrapper .container .team-container .team-block .circle .hover-item {
+  display: flex;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+html body .wrapper .container .team-container .team-block .circle .hover-item:hover span {
+  opacity: 1;
+}
+html body .wrapper .container .team-container .team-block .circle .hover-item span {
+  opacity: 0;
+  font-family: 'open_sansextrabold', sans-serif;
+  font-size: 85px;
+  align-self: center;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 85px;
+  color: #f46d6d;
 }
 html body .wrapper .container .team-container .team-block .name {
   font-size: 22px;
