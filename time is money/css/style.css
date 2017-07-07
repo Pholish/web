@@ -483,6 +483,7 @@ form {
   border-radius: 3px;
   border: none;
   line-height: 45px;
+  -ms-line-height: 45px;
   padding-left: 20px;
 }
 .form-field .form-email {
@@ -491,6 +492,7 @@ form {
   border-radius: 3px;
   border: none;
   line-height: 45px;
+  -ms-line-height: 45px;
   padding-left: 20px;
 }
 .form-field .form-textarea {
