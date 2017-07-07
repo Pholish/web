@@ -25,64 +25,6 @@
 		<!--	start	slick.js 	-->
     <script type="text/javascript" src="js/slick.min.js"></script>
 		<!--	end	slick.js 	-->
-		
-		<!-- Scroll start -->
-		<script type="text/javascript">
-				$(function() {
-					$('a[href*="#"]:not([href="#"])').click(function() {
-						if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-							var target = $(this.hash);
-							target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-							if (target.length) {
-								$('html, body').stop().animate({
-									scrollTop: target.offset().top
-								}, 600);
-							return false;
-							}
-						}
-					});
-				});
-			
-		</script>
-		<!-- Scroll end -->
-		
-		<!-- Slider start -->
-		<script type="text/javascript">
-    	jQuery(document).ready(function(){
-    	    jQuery('.slider').slick({
-						dots:false,
-    	     	infinite: true,
-    	     	fade: true,
-    	     	cssEase: 'linear',
-    	    });
-    	});
-		</script>
-		<!-- Slider end -->
-		
-		<!--	Hover start	-->
-		<script>
-			jQuery(document).ready(function(){
-				$('.hover-button').hover(function() {
-					$(this).parents('.service').find('.hover-js').addClass('hover');
-				},function() {
-					$(this).parents('.service').find('.hover-js').removeClass('hover');
-				});
-			});
-		</script>
-		<!--	Hover end	-->
-		
-		<script>
-			$(document).ready(function(){
-				$(window).scroll(function(){
-  				var sticky = $('.headhesive'),
-							scroll = $(window).scrollTop();
-					if (scroll >= 100) sticky.addClass('fixed');
-					else sticky.removeClass('fixed');
-				});
-			});
-		
-		</script>
-		
   </head>
   <body id="home" class="relative">
 		<div class="wrapper">
@@ -134,9 +76,9 @@
 						</div>
 					</div>
 					<div>
-						<img src="images/03.jpg">
+						<img src="images/1.jpg">
 						<div class="text">
-							<h1>This is a main heading</h1>
+							<h1>Test 1</h1>
 							<p>
 								Lorem Ipsum is simply dummy text <br> of the printing 
 							</p>
@@ -144,9 +86,9 @@
 						</div>
 					</div>
 					<div>
-						<img src="images/03.jpg">
+						<img src="images/2.jpg">
 						<div class="text">
-							<h1>This is a main heading</h1>
+							<h1>Test 2</h1>
 							<p>
 								Lorem Ipsum is simply dummy text <br> of the printing 
 							</p>
@@ -276,5 +218,61 @@
 				</div>
 			</footer>
     </div>
+		<!-- Scroll start -->
+		<script type="text/javascript">
+				$(function() {
+					$('a[href*="#"]:not([href="#"])').click(function() {
+						if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+							var target = $(this.hash);
+							target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+							if (target.length) {
+								$('html, body').stop().animate({
+									scrollTop: target.offset().top
+								}, 600);
+							return false;
+							}
+						}
+					});
+				});
+		</script>
+		<!-- Scroll end -->
+		
+		<!-- Slider start -->
+		<script type="text/javascript">
+    	jQuery(document).ready(function(){
+    	    jQuery('.slider').slick({
+						dots:false,
+    	     	infinite: true,
+    	     	fade: true,
+    	     	cssEase: 'linear',
+    	    });
+    	});
+		</script>
+		<!-- Slider end -->
+		
+		<!--	Hover start	-->
+		<script type="text/javascript">
+			jQuery(document).ready(function(){
+				$('.hover-button').hover(function() {
+					$(this).parents('.service').find('.hover-js').addClass('hover');
+				},function() {
+					$(this).parents('.service').find('.hover-js').removeClass('hover');
+				});
+			});
+		</script>
+		<!--	Hover end	-->
+		
+<!--	scroll start	-->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(window).scroll(function(){
+  				var sticky = $('.headhesive'),
+							scroll = $(window).scrollTop();
+					if (scroll >= 100) sticky.addClass('fixed');
+					else sticky.removeClass('fixed');
+				});
+			});
+		</script>
+<!--		scroll end		-->
   </body>	
 </html>

@@ -52,7 +52,7 @@
 
 @wrapper-container:0px;
 @wrapper-container-fluid:0px;
-
+  
 @font-face {
     font-family: 'lobsterregular';
     src: url('../fonts/lobster-regular-webfont.woff2') format('woff2'),
@@ -119,7 +119,7 @@
 	font-weight:normal;
 	font-style:normal
 }
-
+  
 .absolute {
 	position: absolute;
 }
@@ -149,8 +149,8 @@ body {
 }
 img {
 	width: 100%;
-	max-width: 100%;
-	height: auto;
+	max-width: none;
+	height: 100%;
 }
 #logoff(){
 	font-family: 'lobsterregular', sans-serif; 
@@ -168,7 +168,7 @@ img {
 #wrapper-container-fluid {
 				max-width: @media2max;
 		 		margin: 0 auto;
-			}	 	  
+			}	 	    
 .wrapper {
 			.container;
 			#wrapper-container-fluid;
@@ -211,7 +211,7 @@ img {
 		flex-wrap: nowrap;
 		justify-content: center;
 		margin: auto;
-		li {
+		li {  
 			margin: 0 0 0 8px;
 			list-style: none;
 			text-align: center;
@@ -244,14 +244,14 @@ img {
 			top: 18%;
 			right: 0;
 			left: 0;
-			bottom: 0;
+			bottom: 0; 
 			text-align: center;
 			z-index: 10;
 			h1 {
 				#captionff();
 				font-size: 63px;
 				margin: 0;
-			}
+			}   
 			p {
 				#mainff();
 				font-size: 23px;	

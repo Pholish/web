@@ -1,12 +1,12 @@
-@media (max-width: @media11max) {
+@media (max-width: @media12max) {
 	@inputpadding: 5px;
 	@headersize: 70px;
 	#wrapper-container {
-				max-width: @media11wrapper;
+				max-width: @media12wrapper;
 				margin: 0 auto;
 			}
 	#wrapper-container-fluid {
-				max-width: @media11max;
+				max-width: @media12max;
 				margin: 0 auto;
 			}	
 	.wrapper {
@@ -17,7 +17,8 @@
 		min-height: @headersize;
 		width: 100%;
 		.header-block {
-			#wrapper-container;
+			max-width: none;
+			width: 100%;
 		}
 	}
 	.logo {
@@ -42,7 +43,7 @@
 			width: 16.6%;
 			a {
 				line-height: @headersize - 3px;
-				font-size: 13px;
+				font-size: 12px;
 			}
 		}
 	}
@@ -53,7 +54,7 @@
 	.slider{
 	.slick-slide{
 		.text {
-			top: 8%;
+			top: 33%;
 			h1 {
 				#captionff();
 				font-size: 22px;
@@ -61,13 +62,13 @@
 			p {
 				#mainff();
 				font-size: 12px;
-				line-height: 18px;
+				line-height: 25px;
 				font-weight: 100px;
-				margin: 0 0 2%;
+				margin: 0 0 3%;
 			}
 			a {
 				font-size: 11px;
-				padding: 0.7% 0.9%;
+				padding: 1% 1.4%;
 				border: 2px @BannerColorff solid;
 				&:hover {
 					border: 2px @HoverColor solid;
@@ -171,7 +172,7 @@
 	}
 }
 	footer {
-		background-size: 315%;
+		background-size: 955%;
 		background-position: 50% 100%;
 		#wrapper-container-fluid;
 		.footer-wrapper{
@@ -206,14 +207,15 @@
 	}
 }
 	.form-field {
+		padding: @inputpadding;
 	margin-bottom: 30px;
 	.form-field-name{
-		width: 50%;
-		padding-right: @inputpadding;								
+		width: 100%;
+		padding-right: 0px;								
 	}
 	.form-field-email{
 		.form-field-name;
-		padding-left: @inputpadding ;
+		padding-left: 0px;
 		margin-left: 0px;
 		padding-right: 0px;
 									

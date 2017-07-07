@@ -71,8 +71,8 @@ body {
 }
 img {
   width: 100%;
-  max-width: 100%;
-  height: auto;
+  max-width: none;
+  height: 100%;
 }
 .relative {
   position: relative;
@@ -1437,8 +1437,11 @@ form {
     max-width: 720px;
     margin: 0 auto;
   }
+  .slider .slick-slide {
+    height: 80vh;
+  }
   .slider .slick-slide .text {
-    top: 8%;
+    top: 35%;
   }
   .slider .slick-slide .text h1 {
     font-family: 'open_sanssemibold', sans-serif;
@@ -1557,7 +1560,7 @@ form {
     background: #49cbcd;
   }
   footer {
-    background-size: 155%;
+    background-size: 355%;
     background-position: 50% 100%;
     max-width: 720px;
     margin: 0 auto;
@@ -1706,8 +1709,11 @@ form {
     max-width: 600px;
     margin: 0 auto;
   }
+  .slider .slick-slide {
+    height: 80vh;
+  }
   .slider .slick-slide .text {
-    top: 8%;
+    top: 35%;
   }
   .slider .slick-slide .text h1 {
     font-family: 'open_sanssemibold', sans-serif;
@@ -1820,7 +1826,7 @@ form {
     background: #49cbcd;
   }
   footer {
-    background-size: 200%;
+    background-size: 500%;
     background-position: 50% 100%;
     max-width: 600px;
     margin: 0 auto;
@@ -1973,8 +1979,11 @@ form {
     max-width: 480px;
     margin: 0 auto;
   }
+  .slider .slick-slide {
+    height: 80vh;
+  }
   .slider .slick-slide .text {
-    top: 8%;
+    top: 40%;
   }
   .slider .slick-slide .text h1 {
     font-family: 'open_sanssemibold', sans-serif;
@@ -2003,6 +2012,7 @@ form {
   }
   .slider .slick-prev:before {
     margin-left: -3px;
+    font-size: 13px;
   }
   .slider .slick-next {
     min-width: 20px;
@@ -2011,6 +2021,7 @@ form {
     right: 10px;
   }
   .slider .slick-next:before {
+    font-size: 13px;
     margin-left: 0;
   }
   .team-container {
@@ -2093,7 +2104,7 @@ form {
     background: #49cbcd;
   }
   footer {
-    background-size: 315%;
+    background-size: 955%;
     background-position: 50% 100%;
     max-width: 480px;
     margin: 0 auto;
@@ -2130,18 +2141,22 @@ form {
     line-height: 21px;
   }
   .form-field {
+    padding: 5px;
     margin-bottom: 30px;
   }
   .form-field .form-field-name {
-    width: 50%;
-    padding-right: 5px;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 35px;
   }
   .form-field .form-field-email {
-    width: 50%;
-    padding-right: 5px;
-    padding-left: 5px;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 35px;
+    padding-left: 0;
     margin-left: 0px;
     padding-right: 0px;
+    margin-bottom: 0px;
   }
   .form-field .form-name {
     float: left;
@@ -2193,17 +2208,17 @@ form {
     font-size: 22px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   #wrapper-container {
-    max-width: 390px;
+    max-width: 260px;
     margin: 0 auto;
   }
   #wrapper-container-fluid {
-    max-width: 480px;
+    max-width: 320px;
     margin: 0 auto;
   }
   .wrapper {
-    max-width: 480px;
+    max-width: 320px;
     margin: 0 auto;
   }
   .header {
@@ -2212,8 +2227,8 @@ form {
     width: 100%;
   }
   .header .header-block {
-    max-width: 390px;
-    margin: 0 auto;
+    max-width: none;
+    width: 100%;
   }
   .logo {
     float: left;
@@ -2240,14 +2255,14 @@ form {
   }
   .navigation ul li a {
     line-height: 67px;
-    font-size: 13px;
+    font-size: 12px;
   }
   .container {
-    max-width: 480px;
+    max-width: 320px;
     margin: 0 auto;
   }
   .slider .slick-slide .text {
-    top: 8%;
+    top: 33%;
   }
   .slider .slick-slide .text h1 {
     font-family: 'open_sanssemibold', sans-serif;
@@ -2256,13 +2271,13 @@ form {
   .slider .slick-slide .text p {
     font-family: 'open_sansregular', sans-serif;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 25px;
     font-weight: 100px;
-    margin: 0 0 2%;
+    margin: 0 0 3%;
   }
   .slider .slick-slide .text a {
     font-size: 11px;
-    padding: 0.7% 0.9%;
+    padding: 1% 1.4%;
     border: 2px #ffffff solid;
   }
   .slider .slick-slide .text a:hover {
@@ -2288,7 +2303,7 @@ form {
   }
   .team-container {
     padding-top: 70px;
-    max-width: 390px;
+    max-width: 260px;
     margin: 0 auto;
     padding-bottom: 40px;
   }
@@ -2303,11 +2318,11 @@ form {
   }
   .service-container-bg {
     padding-top: 70px;
-    max-width: 480px;
+    max-width: 320px;
     margin: 0 auto;
   }
   .service-container-bg .service-container {
-    max-width: 390px;
+    max-width: 260px;
     margin: 0 auto;
   }
   .service-block-wrapper {
@@ -2366,15 +2381,15 @@ form {
     background: #49cbcd;
   }
   footer {
-    background-size: 315%;
+    background-size: 955%;
     background-position: 50% 100%;
-    max-width: 480px;
+    max-width: 320px;
     margin: 0 auto;
   }
   footer .footer-wrapper {
     display: flex;
     flex-direction: column-reverse;
-    max-width: 390px;
+    max-width: 260px;
     margin: 0 auto;
   }
   footer .caption {
@@ -2403,16 +2418,16 @@ form {
     line-height: 21px;
   }
   .form-field {
+    padding: 5px;
     margin-bottom: 30px;
   }
   .form-field .form-field-name {
-    width: 50%;
-    padding-right: 5px;
+    width: 100%;
+    padding-right: 0px;
   }
   .form-field .form-field-email {
-    width: 50%;
-    padding-right: 5px;
-    padding-left: 5px;
+    width: 100%;
+    padding-left: 0px;
     margin-left: 0px;
     padding-right: 0px;
   }
