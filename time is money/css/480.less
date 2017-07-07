@@ -1,19 +1,20 @@
-@media (max-width: @media8max) {
+@media (max-width: @media11max) {
 	@inputpadding: 5px;
-	
+	@headersize: 70px;
 	#wrapper-container {
-				max-width: @media8wrapper;
+				max-width: @media11wrapper;
 				margin: 0 auto;
 			}
 	#wrapper-container-fluid {
-				max-width: @media8max;
+				max-width: @media11max;
 				margin: 0 auto;
 			}	
 	.wrapper {
 				#wrapper-container-fluid;
 	}
 	.header {
-		min-height: 100px;
+		padding: 0 10px;
+		min-height: @headersize;
 		width: 100%;
 		.header-block {
 			#wrapper-container;
@@ -21,33 +22,27 @@
 	}
 	.logo {
 	float: left;
+	display: none;
 	span{
-		font-size: 43px;
+		font-size: 33px;
 		line-height: @headersize;
 		#logoff();
 		color: @LogoColor;
 	}
 }
 .navigation {
+	width: 100%;
 	min-height: @headersize;
 	ul{
+		justify-content: space-between;
+		padding: 0 0px;
+		width: 100%;
 		li {
-			margin: 0 0 0 6px;
-			list-style: none;
-			text-align: center;
-			width: 75px;
-			&:hover {
-				border-bottom: 3px solid @HoverColor;
-				a {
-					color: @HoverColor;
-				}
-			}
+			margin: 0 0 0 0px;
+			width: 16.6%;
 			a {
-				color: @Navigationffcolor;
 				line-height: @headersize - 3px;
-				font-size: 15px;
-				font-weight: 500;
-				text-decoration: none;
+				font-size: 13px;
 			}
 		}
 	}
@@ -58,110 +53,131 @@
 	.slider{
 	.slick-slide{
 		.text {
-			color: @BannerColorff;
-			.absolute;
-			top: 14%;
-			right: 0;
-			left: 0;
-			bottom: 0;
-			text-align: center;
-			z-index: 10;
+			top: 8%;
 			h1 {
 				#captionff();
-				font-size: 48px;
-				margin: 0;
+				font-size: 25px;
 			}
 			p {
 				#mainff();
-				font-size: 19px;
-				line-height: 32px;
+				font-size: 15px;
+				line-height: 18px;
 				font-weight: 100px;
-				margin: 3.5% 0 4.2%;
+				margin: 0 0 2%;
 			}
 			a {
-				#captionff();
-				font-size: 22px;
-				color: @BannerColorff;
-				text-decoration: none;
-				padding: 0.85% 1.1%;
-				border: 3px @BannerColorff solid;
-				border-radius: 5px;
+				font-size: 13px;
+				padding: 0.8% 1%;
+				border: 2px @BannerColorff solid;
 				&:hover {
-					color: @HoverColor;
-					border: 3px @HoverColor solid;
+					border: 2px @HoverColor solid;
 				}
 			}
 		}	
 	}
 	.slick-prev {
-		min-width: 50px;
-		min-height: 50px;
+		min-width: 20px;
+		min-height: 20px;
 		border-radius: 50%;
-		background: @colorarrows;
-		color: @HoverColor;
-		font-family: 'icomoon' !important;
+		left: 10px;
 		&:before {  
-			color: #49cbcd;
-			font-family: 'icomoon' !important;
 			margin-left: -3px;
-			content: "\70";
-			z-index: 10;
 		}
 	}
 	.slick-next {
-		min-width: 50px;
-		min-height: 50px;
+		min-width: 20px;
+		min-height: 20px;
 		border-radius: 50%;
-		background: @colorarrows;
-		color: @HoverColor;
-		font-family: 'icomoon' !important;
+		right: 10px;
 		&:before {
-				color: #49cbcd;
-			font-family: 'icomoon' !important;
 			margin-left: 0;
-			content: "\6e";
-			z-index: 10;
 		}
 	}
 }	
 .team-container {
+	padding-top: @headersize ;
 	#wrapper-container;
 	padding-bottom: 40px;	
 	.caption {
 		margin: 0;
-		font-size: 42px;
-		line-height: 0px;
+		font-size: 35px;
+		line-height: 50px;
 	}
 	.team-block{
-		width: 50%;
-		padding: @teampadding;
+		width: 100%;
+		padding-bottom: @teampadding;
 	}
 }			
 	.service-container-bg{
+		padding-top: @headersize;
 		#wrapper-container-fluid;
 		.service-container{
 			#wrapper-container;
 		}
 	}
-	footer {
-		background-size: 230%;
-		background-position: 50% 100%;
-		#wrapper-container-fluid;
-		.footer-block-center{
-			display: flex;
-			justify-content: center;
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-			p{
-				padding: 0 10%;
+	.service-block-wrapper{
+	float: left;
+	margin-top: 20px;
+	width: 100%;
+	&:last-child{
+		margin-bottom: 20px;
+	}
+}
+	.service{
+	border: 1px solid @Servicecolorbg;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	li{
+		color: @Servicecolorff;
+		background: #ffffff;
+		border-bottom: 1px solid @Servicecolorbg;
+		font-size: 14px;
+		list-style: none;
+		line-height: 45px;
+		&:nth-child(1){
+				background: @Servicecolorcaption;
+				border-top-left-radius: 2px;
+				border-top-right-radius: 2px;
+				color: @MainColorBackground;
+				font-size: 26px;
+				line-height: 76px;
+			}
+		&:nth-child(2){
+				background: #f8f9fb;
+				font-size: 20px;
+				line-height: 68px;
+			}
+		&:last-child{
+				border: none;
+				border-bottom-left-radius: 1px;
+				border-bottom-right-radius: 1px;
+				line-height: 100px;
+			}
+		button{
+			background: @Servicebutton;
+			border-radius: 3px;
+			border: none;
+			color: @MainColorBackground;
+			#captionff();
+			font-size: 17px;
+			line-height: 40px;
+			width: 45%;
+			&:hover {
+				background: @HoverColor;
 			}
 		}
+	}
+}
+	footer {
+		background-size: 315%;
+		background-position: 50% 100%;
+		#wrapper-container-fluid;
 		.footer-wrapper{
 			display: flex;
 			flex-direction: column-reverse;
 			#wrapper-container;
-			
 		}
 		.caption {
 		order: 1;
@@ -172,25 +188,22 @@
 	}
 	.footer-block {
 		display: block;
-		float: right;
-		width: 100%;
-		margin-bottom: 5%;
-		form{
-			padding: 0;
-		}
-		h3 {
-			color:@MainColorBackground;
-			margin: 0;
-			font-size: 24px;
-			font-weight: 500;
-			line-height: 26px;	
-		}
-		p {	
-			padding-right: 25%;
-			margin: 0;	
-			font-size: 14px;
-			line-height: 21px;
-		}
+	float: right;
+	width: 100%;
+	margin-bottom: 5%;
+	h3 {
+		color:@MainColorBackground;
+		margin: 0;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 26px;	
+	}
+	p {	
+		padding-right: 25%;
+		margin: 0;	
+		font-size: 14px;
+		line-height: 21px;
+	}
 }
 	.form-field {
 	margin-bottom: 30px;
