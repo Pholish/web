@@ -1,0 +1,254 @@
+@media (max-width: @media8max) {
+	@inputpadding: 5px;
+	
+	#wrapper-container {
+				max-width: @media8wrapper;
+				margin: 0 auto;
+			}
+	#wrapper-container-fluid {
+				max-width: @media8max;
+				margin: 0 auto;
+			}	
+	.wrapper {
+				#wrapper-container-fluid;
+	}
+	.header {
+		min-height: 100px;
+		width: 100%;
+		.header-block {
+			#wrapper-container;
+		}
+	}
+	.logo {
+	float: left;
+	span{
+		font-size: 43px;
+		line-height: @headersize;
+		#logoff();
+		color: @LogoColor;
+	}
+}
+.navigation {
+	min-height: @headersize;
+	ul{
+		li {
+			margin: 0 0 0 6px;
+			list-style: none;
+			text-align: center;
+			width: 75px;
+			&:hover {
+				border-bottom: 3px solid @HoverColor;
+				a {
+					color: @HoverColor;
+				}
+			}
+			a {
+				color: @Navigationffcolor;
+				line-height: @headersize - 3px;
+				font-size: 15px;
+				font-weight: 500;
+				text-decoration: none;
+			}
+		}
+	}
+}
+	.container{
+					#wrapper-container-fluid;
+	}	
+	.slider{
+	.slick-slide{
+		.text {
+			color: @BannerColorff;
+			.absolute;
+			top: 14%;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			text-align: center;
+			z-index: 10;
+			h1 {
+				#captionff();
+				font-size: 48px;
+				margin: 0;
+			}
+			p {
+				#mainff();
+				font-size: 19px;
+				line-height: 32px;
+				font-weight: 100px;
+				margin: 3.5% 0 4.2%;
+			}
+			a {
+				#captionff();
+				font-size: 22px;
+				color: @BannerColorff;
+				text-decoration: none;
+				padding: 0.85% 1.1%;
+				border: 3px @BannerColorff solid;
+				border-radius: 5px;
+				&:hover {
+					color: @HoverColor;
+					border: 3px @HoverColor solid;
+				}
+			}
+		}	
+	}
+	.slick-prev {
+		min-width: 50px;
+		min-height: 50px;
+		border-radius: 50%;
+		background: @colorarrows;
+		color: @HoverColor;
+		font-family: 'icomoon' !important;
+		&:before {  
+			color: #49cbcd;
+			font-family: 'icomoon' !important;
+			margin-left: -3px;
+			content: "\70";
+			z-index: 10;
+		}
+	}
+	.slick-next {
+		min-width: 50px;
+		min-height: 50px;
+		border-radius: 50%;
+		background: @colorarrows;
+		color: @HoverColor;
+		font-family: 'icomoon' !important;
+		&:before {
+				color: #49cbcd;
+			font-family: 'icomoon' !important;
+			margin-left: 0;
+			content: "\6e";
+			z-index: 10;
+		}
+	}
+}	
+.team-container {
+	#wrapper-container;
+	padding-bottom: 40px;	
+	.caption {
+		margin: 0;
+		font-size: 42px;
+		line-height: 180px;
+	}
+	.team-block{
+		width: 50%;
+		padding: @teampadding;
+	}
+}			
+	.service-container-bg{
+		#wrapper-container-fluid;
+		.service-container{
+			#wrapper-container;
+		}
+	}
+	footer {
+		background-size: 145%;
+		background-position: 50% 100%;
+		#wrapper-container-fluid;
+		.footer-block-center{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			p{
+				padding: 0 10%;
+			}
+		}
+		.footer-wrapper{
+			display: flex;
+			flex-direction: column-reverse;
+			#wrapper-container;
+			
+		}
+		.caption {
+		order: 1;
+		font-size: 42px;
+		font-weight: 500;
+		line-height: 180px;
+		}
+	}
+	.footer-block {
+		display: block;
+		float: right;
+		width: 100%;
+		margin-bottom: 5%;
+		form{
+			padding: 0;
+		}
+		h3 {
+			color:@MainColorBackground;
+			margin: 0;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 26px;	
+		}
+		p {	
+			padding-right: 25%;
+			margin: 0;	
+			font-size: 14px;
+			line-height: 21px;
+		}
+}
+	.form-field {
+	margin-bottom: 30px;
+	.form-field-name{
+		width: 50%;
+		padding-right: @inputpadding;								
+	}
+	.form-field-email{
+		.form-field-name;
+		padding-left: @inputpadding ;
+		margin-left: 0px;
+		padding-right: 0px;
+									
+	}
+	.form-name {	
+		float: left;
+		width: 100%;
+		border-radius: 3px;
+		border: none;
+		line-height: 45px;
+		padding-left: 20px;
+	}
+	.form-email {
+		.form-name;							
+	}
+	.form-textarea {
+		width: 100%;
+		height: 180px;
+		border-radius: 3px;
+		resize: none;	
+		line-height: 45px;
+		padding-left: 20px;
+	}
+	::-webkit-input-placeholder {
+		#mainff();
+	}
+	:-moz-placeholder {
+		#mainff();
+	}
+	::-moz-placeholder {
+		#mainff();
+	}
+	:-ms-input-placeholder {
+		#mainff();
+	}
+	.form-input {
+		background: @HoverColor;
+		float: right;
+		width: 30%;
+		border-radius: 3px;
+		border: none;
+		line-height: 50px;	
+	}
+	input[value="Send"] {
+		color: #ffffff;
+		#mainff();
+		font-size: 22px;
+	}
+}
+ 
+}

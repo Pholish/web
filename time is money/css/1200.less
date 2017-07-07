@@ -1,4 +1,38 @@
 @media (max-width: @media4max) {
-.max-width-1200(){
-	max-width: @media4max;
+	#wrapper-container {
+				max-width: @media4wrapper;
+				margin: 0 auto;
+			}
+	#wrapper-container-fluid {
+				max-width: @media4max;
+				margin: 0 auto;
+			}	
+	.wrapper {
+				#wrapper-container-fluid;
+	}
+	.header {
+		min-height: 100px;
+		width: 100%;
+		.header-block {
+			#wrapper-container;
+		}
+	}
+	.container{
+					#wrapper-container-fluid;
+	}	
+	.team-container {
+		#wrapper-container;
+	}			
+	.service-container-bg{
+		#wrapper-container-fluid;
+		.service-container{
+			#wrapper-container;
+		}
+	}
+	footer {
+		#wrapper-container-fluid;
+		.footer-wrapper{
+			#wrapper-container;
+		}
+	}
 }
