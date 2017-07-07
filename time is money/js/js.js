@@ -1,4 +1,13 @@
 var options = {
-  offset: 500
+  // Set options
+        var options = {
+            offset: '#showHere',
+            offsetSide: 'top',
+            classes: {
+                clone:   'banner--clone',
+                stick:   'banner--stick',
+                unstick: 'banner--unstick'
+            }
+        };
 }
-var header = new Headhesive('.header', options);
+var header = new Headhesive('.banner', options);

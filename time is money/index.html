@@ -6,10 +6,6 @@
 		
     <title>DOCTYPE</title>
 		
-		<!-- start	header fixed css	-->
-		
-		<!--	end	header fixed css	-->
-		
 		<!--	start	slider.css 	-->
 		<link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
@@ -71,29 +67,61 @@
 				},function() {
 					$(this).parents('.service').find('.hover-js').removeClass('hover');
 				});
-			})
+			});
 		</script>
 		<!--	Hover end	-->
 		
+		<script>
+			$(document).ready(function(){
+				$(window).scroll(function(){
+  				var sticky = $('.headhesive'),
+							scroll = $(window).scrollTop();
+					if (scroll >= 100) sticky.addClass('fixed');
+					else sticky.removeClass('fixed');
+				});
+			});
+		
+		</script>
+		
   </head>
-  <body id="top">
+  <body id="top" class="relative">
 		<div class="wrapper">
 			<header class="header">
-				<div class="logo">
-					<span>Author</span>
+				<div class="header-block">
+					<div class="logo">
+						<span>Author</span>
+					</div>
+					<div class="navigation">
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#service">Service</a></li>
+							<li><a href="#portfilio">Portfolio</a></li>
+							<li><a href="#team">Team</a></li>
+							<li><a href="#blog">Blog</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="navigation">
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#service">Service</a></li>
-						<li><a href="#portfilio">Portfolio</a></li>
-						<li><a href="#team">Team</a></li>
-						<li><a href="#blog">Blog</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
+			</header>
+			<header class="header headhesive">
+				<div class="header-block">
+					<div class="logo">
+						<span>Author</span>
+					</div>
+					<div class="navigation">
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#service">Service</a></li>
+							<li><a href="#portfilio">Portfolio</a></li>
+							<li><a href="#team">Team</a></li>
+							<li><a href="#blog">Blog</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
 				</div>
 			</header>
 			<div id="home" class="container">
+				<a id="showHere"></a>
 				<div class="slider">
 					<div>
 						<img src="images/03.jpg">
@@ -248,7 +276,5 @@
 				</div>
 			</footer>
     </div>
-		<script type="text/javascript" src="js/headhesive.min.js"></script>
-		<script type="text/javascript" src="js/js.js"></script>
   </body>	
 </html>

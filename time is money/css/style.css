@@ -48,114 +48,115 @@
   font-weight: normal;
   font-style: normal;
 }
+.absolute {
+  position: absolute;
+}
+body {
+  margin: 0;
+}
 .container {
   width: 100%;
+}
+.fixed {
+  display: block !important;
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
 }
 .hover {
   background: #49cbcd !important;
 }
-.wrapper {
-  margin: 0;
-  color: #97999e;
-  background: #ffffff;
-  font-family: 'open_sansregular', sans-serif;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-.wrapper * {
-  box-sizing: border-box;
-}
-.wrapper .absolute {
-  position: absolute;
-}
-.wrapper .relative {
-  position: relative;
-}
-.wrapper #wrapper-container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-.wrapper #wrapper-container-fluid {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-.wrapper img {
+img {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
-.wrapper .header {
+.relative {
+  position: relative;
+}
+#wrapper-container {
   max-width: 1170px;
   margin: 0 auto;
+}
+#wrapper-container-fluid {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  color: #97999e;
+  background: #ffffff;
+  font-family: 'open_sansregular', sans-serif;
+}
+.wrapper * {
+  box-sizing: border-box;
+}
+.header {
   min-height: 100px;
   width: 100%;
   overflow: hidden;
 }
-.wrapper .header.headhesive {
-  position: fixed !important;
-  z-index: 1 !important;
-  top: 0 !important;
-  left: 0 !important;
-  background: #c95a5d !important;
-  -webkit-transform: translateY(-100%) !important;
-  -ms-transform: translateY(-100%) !important;
-  transform: translateY(-100%) !important;
-  -webkit-transition: all 300ms ease-in-out !important;
-  -moz-transition: all 300ms ease-in-out !important;
-  transition: all 300ms ease-in-out !important;
+.header.headhesive {
+  background: #ffffff;
+  display: none;
 }
-.wrapper .header.headhesive.headhesive--stick {
-  -webkit-transform: translateY(0%) !important;
-  -ms-transform: translateY(0%) !important;
-  transform: translateY(0%) !important;
+.header .header-block {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
 }
-.wrapper .header .logo {
+.logo {
   float: left;
 }
-.wrapper .header .logo span {
+.logo span {
   font-size: 43px;
   line-height: 100px;
   font-family: 'lobsterregular', sans-serif;
   color: #44c0c2;
 }
-.wrapper .header .navigation {
+.navigation {
   min-height: 100px;
   float: right;
 }
-.wrapper .header .navigation ul {
+.navigation ul {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   margin: auto;
 }
-.wrapper .header .navigation ul li {
+.navigation ul li {
   margin: 0 0 0 8px;
   list-style: none;
   text-align: center;
   width: 85px;
 }
-.wrapper .header .navigation ul li:hover {
+.navigation ul li:hover {
   border-bottom: 3px solid #49cbcd;
 }
-.wrapper .header .navigation ul li:hover a {
+.navigation ul li:hover a {
   color: #49cbcd;
 }
-.wrapper .header .navigation ul li a {
+.navigation ul li a {
   color: #484c55;
   line-height: 97px;
   font-size: 15px;
   font-weight: 500;
   text-decoration: none;
 }
-.wrapper .container {
+.container {
   max-width: 1440px;
   margin: 0 auto;
 }
-.wrapper .container .slider .slick-slide {
+.slider .slick-slide {
   position: relative;
 }
-.wrapper .container .slider .slick-slide .text {
+.slider .slick-slide .text {
   color: #ffffff;
   position: absolute;
   top: 18%;
@@ -165,19 +166,19 @@
   text-align: center;
   z-index: 10;
 }
-.wrapper .container .slider .slick-slide .text h1 {
+.slider .slick-slide .text h1 {
   font-family: 'open_sanssemibold', sans-serif;
   font-size: 63px;
   margin: 0;
 }
-.wrapper .container .slider .slick-slide .text p {
+.slider .slick-slide .text p {
   font-family: 'open_sansregular', sans-serif;
   font-size: 23px;
   line-height: 38px;
   font-weight: 100px;
   margin: 3.5% 0 4.2%;
 }
-.wrapper .container .slider .slick-slide .text a {
+.slider .slick-slide .text a {
   font-family: 'open_sanssemibold', sans-serif;
   font-size: 26px;
   color: #ffffff;
@@ -186,11 +187,11 @@
   border: 3px #ffffff solid;
   border-radius: 5px;
 }
-.wrapper .container .slider .slick-slide .text a:hover {
+.slider .slick-slide .text a:hover {
   color: #49cbcd;
   border: 3px #49cbcd solid;
 }
-.wrapper .container .slider .slick-prev {
+.slider .slick-prev {
   min-width: 50px;
   min-height: 50px;
   border-radius: 50%;
@@ -198,14 +199,14 @@
   color: #49cbcd;
   font-family: 'icomoon' !important;
 }
-.wrapper .container .slider .slick-prev:before {
+.slider .slick-prev:before {
   color: #49cbcd;
   font-family: 'icomoon' !important;
   margin-left: -3px;
   content: "\70";
   z-index: 10;
 }
-.wrapper .container .slider .slick-next {
+.slider .slick-next {
   min-width: 50px;
   min-height: 50px;
   border-radius: 50%;
@@ -213,26 +214,26 @@
   color: #49cbcd;
   font-family: 'icomoon' !important;
 }
-.wrapper .container .slider .slick-next:before {
+.slider .slick-next:before {
   color: #49cbcd;
   font-family: 'icomoon' !important;
   margin-left: 0;
   content: "\6e";
   z-index: 10;
 }
-.wrapper .container .team-container {
+.team-container {
   max-width: 1170px;
   margin: 0 auto;
   width: 100%;
   color: #4e525d;
 }
-.wrapper .container .team-container .caption {
+.team-container .caption {
   margin: 0;
   font-size: 42px;
   line-height: 240px;
   text-align: center;
 }
-.wrapper .container .team-container .team-block {
+.team-container .team-block {
   float: left;
   width: 25%;
   display: flex;
@@ -240,13 +241,13 @@
   align-items: center;
   padding: 20px;
 }
-.wrapper .container .team-container .team-block .circle {
+.circle {
   max-height: 200px;
   max-width: 200px;
   border-radius: 50%;
   margin-bottom: 50px;
 }
-.wrapper .container .team-container .team-block .circle .hover-item {
+.circle .hover-item {
   display: flex;
   top: 0;
   right: 0;
@@ -254,10 +255,10 @@
   bottom: 0;
   margin: 0 auto;
 }
-.wrapper .container .team-container .team-block .circle .hover-item:hover span {
+.circle .hover-item:hover span {
   opacity: 1;
 }
-.wrapper .container .team-container .team-block .circle .hover-item span {
+.circle .hover-item span {
   opacity: 0;
   font-family: 'open_sansextrabold', sans-serif;
   font-size: 85px;
@@ -267,57 +268,57 @@
   line-height: 85px;
   color: #f46d6d;
 }
-.wrapper .container .team-container .team-block .name {
+.name {
   font-size: 22px;
   margin: 0;
 }
-.wrapper .container .team-container .team-block .prefission {
+.prefission {
   font-size: 14px;
   font-weight: 950;
   margin: 0;
   padding: 0;
 }
-.wrapper .container .team-container .team-block .biografy {
+.biografy {
   font-size: 14px;
   font-weight: 950;
   line-height: 30px;
   text-align: center;
 }
-.wrapper .container .service-container-bg {
+.service-container-bg {
   background: #f1f1f1;
   overflow: hidden;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
 }
-.wrapper .container .service-container-bg .service-container {
+.service-container-bg .service-container {
   overflow: hidden;
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
-.wrapper .container .service-container-bg .service-container .service-block-wrapper {
+.service-block-wrapper {
   float: left;
   margin: 120px 0 100px;
   width: 33.3333%;
   padding: 0 10px;
 }
-.wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
+.service-block-wrapper:first-child {
   padding-left: 0px;
   padding-right: 20px;
 }
-.wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
+.service-block-wrapper:last-child {
   padding-right: 0px;
   padding-left: 20px;
 }
-.wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
+.service {
   border: 1px solid #ecf0f1;
   width: 100%;
   padding: 0;
   margin: 0;
   text-align: center;
 }
-.wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
+.service li {
   color: #8c9299;
   background: #ffffff;
   border-bottom: 1px solid #ecf0f1;
@@ -325,7 +326,7 @@
   list-style: none;
   line-height: 45px;
 }
-.wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
+.service li:nth-child(1) {
   background: #485460;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -333,18 +334,18 @@
   font-size: 26px;
   line-height: 76px;
 }
-.wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
+.service li:nth-child(2) {
   background: #f8f9fb;
   font-size: 20px;
   line-height: 68px;
 }
-.wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
+.service li:last-child {
   border: none;
   border-bottom-left-radius: 1px;
   border-bottom-right-radius: 1px;
   line-height: 100px;
 }
-.wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
+.service li button {
   background: #788492;
   border-radius: 3px;
   border: none;
@@ -354,10 +355,10 @@
   line-height: 40px;
   width: 45%;
 }
-.wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button:hover {
+.service li button:hover {
   background: #49cbcd;
 }
-.wrapper footer {
+footer {
   background-attachment: fixed;
   background-image: url('../images/footer-bg.png');
   background-repeat: no-repeat;
@@ -368,14 +369,14 @@
   max-width: 1440px;
   margin: 0 auto;
 }
-.wrapper footer .footer-wrapper {
+footer .footer-wrapper {
   overflow: hidden;
   margin: 0;
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
-.wrapper footer .footer-wrapper .caption {
+.caption {
   color: #ffffff;
   margin: 0;
   font-size: 42px;
@@ -384,31 +385,31 @@
   overflow: hidden;
   text-align: center;
 }
-.wrapper footer .footer-wrapper .footer-block {
+.footer-block {
   float: left;
   width: 50%;
   margin-bottom: 5%;
 }
-.wrapper footer .footer-wrapper .footer-block h3 {
+.footer-block h3 {
   color: #ffffff;
   margin: 0;
   font-size: 24px;
   font-weight: 500;
   line-height: 26px;
 }
-.wrapper footer .footer-wrapper .footer-block p {
+.footer-block p {
   padding-right: 25%;
   margin: 0;
   font-size: 14px;
   line-height: 21px;
 }
-.wrapper footer .footer-wrapper .footer-block .social {
+.social {
   display: inline-flex;
   list-style: none;
   overflow: hidden;
   padding: 0;
 }
-.wrapper footer .footer-wrapper .footer-block .social li {
+.social li {
   align-items: center;
   display: flex;
   margin-right: 13px;
@@ -417,54 +418,54 @@
   border-radius: 50%;
   text-align: center;
 }
-.wrapper footer .footer-wrapper .footer-block .social li:nth-child(1) {
+.social li:nth-child(1) {
   background: #3b5997;
 }
-.wrapper footer .footer-wrapper .footer-block .social li:nth-child(2) {
+.social li:nth-child(2) {
   background: #3ec2f3;
 }
-.wrapper footer .footer-wrapper .footer-block .social li:nth-child(3) {
+.social li:nth-child(3) {
   background: #e44c41;
 }
-.wrapper footer .footer-wrapper .footer-block .social li a {
+.social li a {
   color: #ffffff;
   text-decoration: none;
   width: 100%;
 }
-.wrapper footer .footer-wrapper .footer-block .social li a .fa {
+.social li .fa {
   margin: 0 auto;
   font-size: 24px;
 }
-.wrapper footer .footer-wrapper .footer-block .author-info {
+.author-info {
   color: #bface2;
   padding: 0;
   margin: 0;
 }
-.wrapper footer .footer-wrapper .footer-block .author-info li {
+.author-info li {
   font-size: 14px;
   line-height: 21px;
   display: block;
 }
-.wrapper footer .footer-wrapper .footer-block form {
+form {
   font-family: 'open_sansregular', sans-serif;
   margin: 0;
   overflow: hidden;
   padding-left: 15px;
   width: 100%;
 }
-.wrapper footer .footer-wrapper .footer-block form .form-field {
+.form-field {
   float: left;
   width: 100%;
   margin-bottom: 30px;
 }
-.wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
+.form-field .form-field-name {
   float: left;
   margin: 0;
   overflow: hidden;
   width: 48.5%;
   padding-right: 7px;
 }
-.wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
+.form-field .form-field-email {
   float: left;
   margin: 0;
   overflow: hidden;
@@ -474,7 +475,7 @@
   padding-left: 7px;
   margin-left: 13.3px;
 }
-.wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
+.form-field .form-name {
   float: left;
   width: 100%;
   border-radius: 3px;
@@ -482,7 +483,7 @@
   line-height: 45px;
   padding-left: 20px;
 }
-.wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
+.form-field .form-email {
   float: left;
   width: 100%;
   border-radius: 3px;
@@ -490,7 +491,7 @@
   line-height: 45px;
   padding-left: 20px;
 }
-.wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
+.form-field .form-textarea {
   width: 100%;
   height: 180px;
   border-radius: 3px;
@@ -498,19 +499,19 @@
   line-height: 45px;
   padding-left: 20px;
 }
-.wrapper footer .footer-wrapper .footer-block form .form-field ::-webkit-input-placeholder {
+.form-field ::-webkit-input-placeholder {
   font-family: 'open_sansregular', sans-serif;
 }
-.wrapper footer .footer-wrapper .footer-block form .form-field :-moz-placeholder {
+.form-field :-moz-placeholder {
   font-family: 'open_sansregular', sans-serif;
 }
-.wrapper footer .footer-wrapper .footer-block form .form-field ::-moz-placeholder {
+.form-field ::-moz-placeholder {
   font-family: 'open_sansregular', sans-serif;
 }
-.wrapper footer .footer-wrapper .footer-block form .form-field :-ms-input-placeholder {
+.form-field :-ms-input-placeholder {
   font-family: 'open_sansregular', sans-serif;
 }
-.wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
+.form-field .form-input {
   background: #49cbcd;
   float: right;
   width: 30%;
@@ -518,2747 +519,8 @@
   border: none;
   line-height: 50px;
 }
-.wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
+.form-field input[value="Send"] {
   color: #ffffff;
   font-family: 'open_sansregular', sans-serif;
   font-size: 22px;
-}
-@media screen and (max-width: 320px) {
-  .wrapper {
-    max-width: 320px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container {
-    max-width: 260px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container-fluid {
-    max-width: 320px !important;
-    margin: 0 auto;
-  }
-  .wrapper header {
-    max-width: 260px !important;
-    margin: 0 auto;
-  }
-  .wrapper header .logo span {
-    font-size: 43px;
-    line-height: 100px;
-  }
-  .wrapper header .navigation {
-    min-height: 100px;
-  }
-  .wrapper header .navigation ul li {
-    margin: 0 0 0 8px;
-    width: 85px;
-  }
-  .wrapper header .navigation ul li a {
-    line-height: 97px;
-    font-size: 15px;
-  }
-  .wrapper .container {
-    max-width: 320px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .slider .slick-slide .text {
-    top: 18%;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .wrapper .container .slider .slick-slide .text h1 {
-    font-size: 63px;
-    margin: 0;
-  }
-  .wrapper .container .slider .slick-slide .text p {
-    font-size: 23px;
-    line-height: 38px;
-    font-weight: 100px;
-    margin: 3.5% 0 4.2%;
-  }
-  .wrapper .container .slider .slick-slide .text a {
-    font-size: 26px;
-    padding: 0.85% 1.1%;
-  }
-  .wrapper .container .slider .slick-prev {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-prev:before {
-    margin-left: -3px;
-  }
-  .wrapper .container .slider .slick-next {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-next:before {
-    margin-left: 0;
-  }
-  .wrapper .container .team-container {
-    max-width: 260px !important;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .wrapper .container .team-container .caption {
-    margin: 0;
-    font-size: 42px;
-    line-height: 240px;
-  }
-  .wrapper .container .team-container .team-block {
-    width: 25%;
-    padding: 20px;
-  }
-  .wrapper .container .team-container .team-block .circle {
-    max-height: 200px;
-    max-width: 200px;
-    margin-bottom: 50px;
-  }
-  .wrapper .container .team-container .team-block .name {
-    font-size: 22px;
-    margin: 0;
-  }
-  .wrapper .container .team-container .team-block .prefission {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-  }
-  .wrapper .container .team-container .team-block .biografy {
-    font-size: 14px;
-    line-height: 30px;
-  }
-  .wrapper .container .service-container-bg {
-    width: 100%;
-    max-width: 320px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container {
-    width: 100%;
-    max-width: 260px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
-    margin: 120px 0 100px;
-    width: 33.3333%;
-    padding: 0 10px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
-    padding-left: 0px;
-    padding-right: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
-    padding-right: 0px;
-    padding-left: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
-    font-size: 14px;
-    line-height: 45px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
-    font-size: 26px;
-    line-height: 76px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
-    font-size: 20px;
-    line-height: 68px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
-    line-height: 100px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
-    font-size: 17px;
-    line-height: 40px;
-    width: 45%;
-  }
-  .wrapper footer {
-    background-size: 100%;
-    background-position: 50% 100%;
-    width: 100%;
-    max-width: 320px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper {
-    margin: 0;
-    width: 100%;
-    max-width: 260px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper .caption {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 500;
-  }
-  .wrapper footer .footer-wrapper .footer-block {
-    width: 50%;
-    margin-bottom: 5%;
-  }
-  .wrapper footer .footer-wrapper .footer-block h3 {
-    margin: 0;
-    font-size: 24px;
-    line-height: 26px;
-  }
-  .wrapper footer .footer-wrapper .footer-block p {
-    padding-right: 25%;
-    margin: 0;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social {
-    padding: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li {
-    margin-right: 13px;
-    width: 45px;
-    height: 45px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
-    margin: 0 auto;
-    font-size: 24px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info {
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info li {
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form {
-    margin: 0;
-    padding-left: 15px;
-    width: 100%;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-    padding-right: 0px;
-    padding-left: 7px;
-    margin-left: 13.3px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
-    width: 100%;
-    height: 180px;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
-    width: 30%;
-    line-height: 50px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 720px) {
-  .wrapper {
-    max-width: 720px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container {
-    max-width: 585px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container-fluid {
-    max-width: 720px !important;
-    margin: 0 auto;
-  }
-  .wrapper header {
-    max-width: 585px !important;
-    margin: 0 auto;
-  }
-  .wrapper header .logo span {
-    font-size: 43px;
-    line-height: 100px;
-  }
-  .wrapper header .navigation {
-    min-height: 100px;
-  }
-  .wrapper header .navigation ul li {
-    margin: 0 0 0 8px;
-    width: 85px;
-  }
-  .wrapper header .navigation ul li a {
-    line-height: 97px;
-    font-size: 15px;
-  }
-  .wrapper .container {
-    max-width: 720px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .slider .slick-slide .text {
-    top: 18%;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .wrapper .container .slider .slick-slide .text h1 {
-    font-size: 63px;
-    margin: 0;
-  }
-  .wrapper .container .slider .slick-slide .text p {
-    font-size: 23px;
-    line-height: 38px;
-    font-weight: 100px;
-    margin: 3.5% 0 4.2%;
-  }
-  .wrapper .container .slider .slick-slide .text a {
-    font-size: 26px;
-    padding: 0.85% 1.1%;
-  }
-  .wrapper .container .slider .slick-prev {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-prev:before {
-    margin-left: -3px;
-  }
-  .wrapper .container .slider .slick-next {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-next:before {
-    margin-left: 0;
-  }
-  .wrapper .container .team-container {
-    max-width: 585px !important;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .wrapper .container .team-container .caption {
-    margin: 0;
-    font-size: 42px;
-    line-height: 240px;
-  }
-  .wrapper .container .team-container .team-block {
-    width: 25%;
-    padding: 20px;
-  }
-  .wrapper .container .team-container .team-block .circle {
-    max-height: 200px;
-    max-width: 200px;
-    margin-bottom: 50px;
-  }
-  .wrapper .container .team-container .team-block .name {
-    font-size: 22px;
-    margin: 0;
-  }
-  .wrapper .container .team-container .team-block .prefission {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-  }
-  .wrapper .container .team-container .team-block .biografy {
-    font-size: 14px;
-    line-height: 30px;
-  }
-  .wrapper .container .service-container-bg {
-    width: 100%;
-    max-width: 720px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container {
-    width: 100%;
-    max-width: 585px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
-    margin: 120px 0 100px;
-    width: 33.3333%;
-    padding: 0 10px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
-    padding-left: 0px;
-    padding-right: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
-    padding-right: 0px;
-    padding-left: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
-    font-size: 14px;
-    line-height: 45px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
-    font-size: 26px;
-    line-height: 76px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
-    font-size: 20px;
-    line-height: 68px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
-    line-height: 100px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
-    font-size: 17px;
-    line-height: 40px;
-    width: 45%;
-  }
-  .wrapper footer {
-    background-size: 100%;
-    background-position: 50% 100%;
-    width: 100%;
-    max-width: 720px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper {
-    margin: 0;
-    width: 100%;
-    max-width: 585px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper .caption {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 500;
-  }
-  .wrapper footer .footer-wrapper .footer-block {
-    width: 50%;
-    margin-bottom: 5%;
-  }
-  .wrapper footer .footer-wrapper .footer-block h3 {
-    margin: 0;
-    font-size: 24px;
-    line-height: 26px;
-  }
-  .wrapper footer .footer-wrapper .footer-block p {
-    padding-right: 25%;
-    margin: 0;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social {
-    padding: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li {
-    margin-right: 13px;
-    width: 45px;
-    height: 45px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
-    margin: 0 auto;
-    font-size: 24px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info {
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info li {
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form {
-    margin: 0;
-    padding-left: 15px;
-    width: 100%;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-    padding-right: 0px;
-    padding-left: 7px;
-    margin-left: 13.3px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
-    width: 100%;
-    height: 180px;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
-    width: 30%;
-    line-height: 50px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 721px) and (max-width: 800px) {
-  .wrapper {
-    max-width: 800px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container {
-    max-width: 650px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container-fluid {
-    max-width: 800px !important;
-    margin: 0 auto;
-  }
-  .wrapper header {
-    max-width: 650px !important;
-    margin: 0 auto;
-  }
-  .wrapper header .logo span {
-    font-size: 43px;
-    line-height: 100px;
-  }
-  .wrapper header .navigation {
-    min-height: 100px;
-  }
-  .wrapper header .navigation ul li {
-    margin: 0 0 0 8px;
-    width: 85px;
-  }
-  .wrapper header .navigation ul li a {
-    line-height: 97px;
-    font-size: 15px;
-  }
-  .wrapper .container {
-    max-width: 800px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .slider .slick-slide .text {
-    top: 18%;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .wrapper .container .slider .slick-slide .text h1 {
-    font-size: 63px;
-    margin: 0;
-  }
-  .wrapper .container .slider .slick-slide .text p {
-    font-size: 23px;
-    line-height: 38px;
-    font-weight: 100px;
-    margin: 3.5% 0 4.2%;
-  }
-  .wrapper .container .slider .slick-slide .text a {
-    font-size: 26px;
-    padding: 0.85% 1.1%;
-  }
-  .wrapper .container .slider .slick-prev {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-prev:before {
-    margin-left: -3px;
-  }
-  .wrapper .container .slider .slick-next {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-next:before {
-    margin-left: 0;
-  }
-  .wrapper .container .team-container {
-    max-width: 650px !important;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .wrapper .container .team-container .caption {
-    margin: 0;
-    font-size: 42px;
-    line-height: 240px;
-  }
-  .wrapper .container .team-container .team-block {
-    width: 25%;
-    padding: 20px;
-  }
-  .wrapper .container .team-container .team-block .circle {
-    max-height: 200px;
-    max-width: 200px;
-    margin-bottom: 50px;
-  }
-  .wrapper .container .team-container .team-block .name {
-    font-size: 22px;
-    margin: 0;
-  }
-  .wrapper .container .team-container .team-block .prefission {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-  }
-  .wrapper .container .team-container .team-block .biografy {
-    font-size: 14px;
-    line-height: 30px;
-  }
-  .wrapper .container .service-container-bg {
-    width: 100%;
-    max-width: 800px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container {
-    width: 100%;
-    max-width: 650px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
-    margin: 120px 0 100px;
-    width: 33.3333%;
-    padding: 0 10px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
-    padding-left: 0px;
-    padding-right: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
-    padding-right: 0px;
-    padding-left: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
-    font-size: 14px;
-    line-height: 45px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
-    font-size: 26px;
-    line-height: 76px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
-    font-size: 20px;
-    line-height: 68px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
-    line-height: 100px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
-    font-size: 17px;
-    line-height: 40px;
-    width: 45%;
-  }
-  .wrapper footer {
-    background-size: 100%;
-    background-position: 50% 100%;
-    width: 100%;
-    max-width: 800px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper {
-    margin: 0;
-    width: 100%;
-    max-width: 650px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper .caption {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 500;
-  }
-  .wrapper footer .footer-wrapper .footer-block {
-    width: 50%;
-    margin-bottom: 5%;
-  }
-  .wrapper footer .footer-wrapper .footer-block h3 {
-    margin: 0;
-    font-size: 24px;
-    line-height: 26px;
-  }
-  .wrapper footer .footer-wrapper .footer-block p {
-    padding-right: 25%;
-    margin: 0;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social {
-    padding: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li {
-    margin-right: 13px;
-    width: 45px;
-    height: 45px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
-    margin: 0 auto;
-    font-size: 24px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info {
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info li {
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form {
-    margin: 0;
-    padding-left: 15px;
-    width: 100%;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-    padding-right: 0px;
-    padding-left: 7px;
-    margin-left: 13.3px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
-    width: 100%;
-    height: 180px;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
-    width: 30%;
-    line-height: 50px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 801px) and (max-width: 854px) {
-  .wrapper {
-    max-width: 854px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container {
-    max-width: 693px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container-fluid {
-    max-width: 854px !important;
-    margin: 0 auto;
-  }
-  .wrapper header {
-    max-width: 693px !important;
-    margin: 0 auto;
-  }
-  .wrapper header .logo span {
-    font-size: 43px;
-    line-height: 100px;
-  }
-  .wrapper header .navigation {
-    min-height: 100px;
-  }
-  .wrapper header .navigation ul li {
-    margin: 0 0 0 8px;
-    width: 85px;
-  }
-  .wrapper header .navigation ul li a {
-    line-height: 97px;
-    font-size: 15px;
-  }
-  .wrapper .container {
-    max-width: 854px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .slider .slick-slide .text {
-    top: 18%;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .wrapper .container .slider .slick-slide .text h1 {
-    font-size: 63px;
-    margin: 0;
-  }
-  .wrapper .container .slider .slick-slide .text p {
-    font-size: 23px;
-    line-height: 38px;
-    font-weight: 100px;
-    margin: 3.5% 0 4.2%;
-  }
-  .wrapper .container .slider .slick-slide .text a {
-    font-size: 26px;
-    padding: 0.85% 1.1%;
-  }
-  .wrapper .container .slider .slick-prev {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-prev:before {
-    margin-left: -3px;
-  }
-  .wrapper .container .slider .slick-next {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-next:before {
-    margin-left: 0;
-  }
-  .wrapper .container .team-container {
-    max-width: 693px !important;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .wrapper .container .team-container .caption {
-    margin: 0;
-    font-size: 42px;
-    line-height: 240px;
-  }
-  .wrapper .container .team-container .team-block {
-    width: 25%;
-    padding: 20px;
-  }
-  .wrapper .container .team-container .team-block .circle {
-    max-height: 200px;
-    max-width: 200px;
-    margin-bottom: 50px;
-  }
-  .wrapper .container .team-container .team-block .name {
-    font-size: 22px;
-    margin: 0;
-  }
-  .wrapper .container .team-container .team-block .prefission {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-  }
-  .wrapper .container .team-container .team-block .biografy {
-    font-size: 14px;
-    line-height: 30px;
-  }
-  .wrapper .container .service-container-bg {
-    width: 100%;
-    max-width: 854px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container {
-    width: 100%;
-    max-width: 693px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
-    margin: 120px 0 100px;
-    width: 33.3333%;
-    padding: 0 10px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
-    padding-left: 0px;
-    padding-right: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
-    padding-right: 0px;
-    padding-left: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
-    font-size: 14px;
-    line-height: 45px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
-    font-size: 26px;
-    line-height: 76px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
-    font-size: 20px;
-    line-height: 68px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
-    line-height: 100px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
-    font-size: 17px;
-    line-height: 40px;
-    width: 45%;
-  }
-  .wrapper footer {
-    background-size: 100%;
-    background-position: 50% 100%;
-    width: 100%;
-    max-width: 854px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper {
-    margin: 0;
-    width: 100%;
-    max-width: 693px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper .caption {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 500;
-  }
-  .wrapper footer .footer-wrapper .footer-block {
-    width: 50%;
-    margin-bottom: 5%;
-  }
-  .wrapper footer .footer-wrapper .footer-block h3 {
-    margin: 0;
-    font-size: 24px;
-    line-height: 26px;
-  }
-  .wrapper footer .footer-wrapper .footer-block p {
-    padding-right: 25%;
-    margin: 0;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social {
-    padding: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li {
-    margin-right: 13px;
-    width: 45px;
-    height: 45px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
-    margin: 0 auto;
-    font-size: 24px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info {
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info li {
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form {
-    margin: 0;
-    padding-left: 15px;
-    width: 100%;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-    padding-right: 0px;
-    padding-left: 7px;
-    margin-left: 13.3px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
-    width: 100%;
-    height: 180px;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
-    width: 30%;
-    line-height: 50px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 855px) and (max-width: 1024px) {
-  .wrapper {
-    max-width: 1024px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container {
-    max-width: 832px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container-fluid {
-    max-width: 1024px !important;
-    margin: 0 auto;
-  }
-  .wrapper header {
-    max-width: 832px !important;
-    margin: 0 auto;
-  }
-  .wrapper header .logo span {
-    font-size: 43px;
-    line-height: 100px;
-  }
-  .wrapper header .navigation {
-    min-height: 100px;
-  }
-  .wrapper header .navigation ul li {
-    margin: 0 0 0 8px;
-    width: 85px;
-  }
-  .wrapper header .navigation ul li a {
-    line-height: 97px;
-    font-size: 15px;
-  }
-  .wrapper .container {
-    max-width: 1024px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .slider .slick-slide .text {
-    top: 18%;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .wrapper .container .slider .slick-slide .text h1 {
-    font-size: 63px;
-    margin: 0;
-  }
-  .wrapper .container .slider .slick-slide .text p {
-    font-size: 23px;
-    line-height: 38px;
-    font-weight: 100px;
-    margin: 3.5% 0 4.2%;
-  }
-  .wrapper .container .slider .slick-slide .text a {
-    font-size: 26px;
-    padding: 0.85% 1.1%;
-  }
-  .wrapper .container .slider .slick-prev {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-prev:before {
-    margin-left: -3px;
-  }
-  .wrapper .container .slider .slick-next {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-next:before {
-    margin-left: 0;
-  }
-  .wrapper .container .team-container {
-    max-width: 832px !important;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .wrapper .container .team-container .caption {
-    margin: 0;
-    font-size: 42px;
-    line-height: 240px;
-  }
-  .wrapper .container .team-container .team-block {
-    width: 25%;
-    padding: 20px;
-  }
-  .wrapper .container .team-container .team-block .circle {
-    max-height: 200px;
-    max-width: 200px;
-    margin-bottom: 50px;
-  }
-  .wrapper .container .team-container .team-block .name {
-    font-size: 22px;
-    margin: 0;
-  }
-  .wrapper .container .team-container .team-block .prefission {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-  }
-  .wrapper .container .team-container .team-block .biografy {
-    font-size: 14px;
-    line-height: 30px;
-  }
-  .wrapper .container .service-container-bg {
-    width: 100%;
-    max-width: 1024px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container {
-    width: 100%;
-    max-width: 832px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
-    margin: 120px 0 100px;
-    width: 33.3333%;
-    padding: 0 10px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
-    padding-left: 0px;
-    padding-right: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
-    padding-right: 0px;
-    padding-left: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
-    font-size: 14px;
-    line-height: 45px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
-    font-size: 26px;
-    line-height: 76px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
-    font-size: 20px;
-    line-height: 68px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
-    line-height: 100px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
-    font-size: 17px;
-    line-height: 40px;
-    width: 45%;
-  }
-  .wrapper footer {
-    background-size: 100%;
-    background-position: 50% 100%;
-    width: 100%;
-    max-width: 1024px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper {
-    margin: 0;
-    width: 100%;
-    max-width: 832px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper .caption {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 500;
-  }
-  .wrapper footer .footer-wrapper .footer-block {
-    width: 50%;
-    margin-bottom: 5%;
-  }
-  .wrapper footer .footer-wrapper .footer-block h3 {
-    margin: 0;
-    font-size: 24px;
-    line-height: 26px;
-  }
-  .wrapper footer .footer-wrapper .footer-block p {
-    padding-right: 25%;
-    margin: 0;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social {
-    padding: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li {
-    margin-right: 13px;
-    width: 45px;
-    height: 45px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
-    margin: 0 auto;
-    font-size: 24px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info {
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info li {
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form {
-    margin: 0;
-    padding-left: 15px;
-    width: 100%;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-    padding-right: 0px;
-    padding-left: 7px;
-    margin-left: 13.3px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
-    width: 100%;
-    height: 180px;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
-    width: 30%;
-    line-height: 50px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-  .wrapper {
-    max-width: 1200px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container {
-    max-width: 975px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container-fluid {
-    max-width: 1200px !important;
-    margin: 0 auto;
-  }
-  .wrapper header {
-    max-width: 975px !important;
-    margin: 0 auto;
-  }
-  .wrapper header .logo span {
-    font-size: 43px;
-    line-height: 100px;
-  }
-  .wrapper header .navigation {
-    min-height: 100px;
-  }
-  .wrapper header .navigation ul li {
-    margin: 0 0 0 8px;
-    width: 85px;
-  }
-  .wrapper header .navigation ul li a {
-    line-height: 97px;
-    font-size: 15px;
-  }
-  .wrapper .container {
-    max-width: 1200px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .slider .slick-slide .text {
-    top: 18%;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .wrapper .container .slider .slick-slide .text h1 {
-    font-size: 63px;
-    margin: 0;
-  }
-  .wrapper .container .slider .slick-slide .text p {
-    font-size: 23px;
-    line-height: 38px;
-    font-weight: 100px;
-    margin: 3.5% 0 4.2%;
-  }
-  .wrapper .container .slider .slick-slide .text a {
-    font-size: 26px;
-    padding: 0.85% 1.1%;
-  }
-  .wrapper .container .slider .slick-prev {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-prev:before {
-    margin-left: -3px;
-  }
-  .wrapper .container .slider .slick-next {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-next:before {
-    margin-left: 0;
-  }
-  .wrapper .container .team-container {
-    max-width: 975px !important;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .wrapper .container .team-container .caption {
-    margin: 0;
-    font-size: 42px;
-    line-height: 240px;
-  }
-  .wrapper .container .team-container .team-block {
-    width: 25%;
-    padding: 20px;
-  }
-  .wrapper .container .team-container .team-block .circle {
-    max-height: 200px;
-    max-width: 200px;
-    margin-bottom: 50px;
-  }
-  .wrapper .container .team-container .team-block .name {
-    font-size: 22px;
-    margin: 0;
-  }
-  .wrapper .container .team-container .team-block .prefission {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-  }
-  .wrapper .container .team-container .team-block .biografy {
-    font-size: 14px;
-    line-height: 30px;
-  }
-  .wrapper .container .service-container-bg {
-    width: 100%;
-    max-width: 1200px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container {
-    width: 100%;
-    max-width: 975px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
-    margin: 120px 0 100px;
-    width: 33.3333%;
-    padding: 0 10px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
-    padding-left: 0px;
-    padding-right: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
-    padding-right: 0px;
-    padding-left: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
-    font-size: 14px;
-    line-height: 45px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
-    font-size: 26px;
-    line-height: 76px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
-    font-size: 20px;
-    line-height: 68px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
-    line-height: 100px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
-    font-size: 17px;
-    line-height: 40px;
-    width: 45%;
-  }
-  .wrapper footer {
-    background-size: 100%;
-    background-position: 50% 100%;
-    width: 100%;
-    max-width: 1200px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper {
-    margin: 0;
-    width: 100%;
-    max-width: 975px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper .caption {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 500;
-  }
-  .wrapper footer .footer-wrapper .footer-block {
-    width: 50%;
-    margin-bottom: 5%;
-  }
-  .wrapper footer .footer-wrapper .footer-block h3 {
-    margin: 0;
-    font-size: 24px;
-    line-height: 26px;
-  }
-  .wrapper footer .footer-wrapper .footer-block p {
-    padding-right: 25%;
-    margin: 0;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social {
-    padding: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li {
-    margin-right: 13px;
-    width: 45px;
-    height: 45px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
-    margin: 0 auto;
-    font-size: 24px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info {
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info li {
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form {
-    margin: 0;
-    padding-left: 15px;
-    width: 100%;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-    padding-right: 0px;
-    padding-left: 7px;
-    margin-left: 13.3px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
-    width: 100%;
-    height: 180px;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
-    width: 30%;
-    line-height: 50px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 1201px) and (max-width: 1280px) {
-  .wrapper {
-    max-width: 1280px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container {
-    max-width: 1040px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container-fluid {
-    max-width: 1280px !important;
-    margin: 0 auto;
-  }
-  .wrapper header {
-    max-width: 1040px !important;
-    margin: 0 auto;
-  }
-  .wrapper header .logo span {
-    font-size: 43px;
-    line-height: 100px;
-  }
-  .wrapper header .navigation {
-    min-height: 100px;
-  }
-  .wrapper header .navigation ul li {
-    margin: 0 0 0 8px;
-    width: 85px;
-  }
-  .wrapper header .navigation ul li a {
-    line-height: 97px;
-    font-size: 15px;
-  }
-  .wrapper .container {
-    max-width: 1280px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .slider .slick-slide .text {
-    top: 18%;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .wrapper .container .slider .slick-slide .text h1 {
-    font-size: 63px;
-    margin: 0;
-  }
-  .wrapper .container .slider .slick-slide .text p {
-    font-size: 23px;
-    line-height: 38px;
-    font-weight: 100px;
-    margin: 3.5% 0 4.2%;
-  }
-  .wrapper .container .slider .slick-slide .text a {
-    font-size: 26px;
-    padding: 0.85% 1.1%;
-  }
-  .wrapper .container .slider .slick-prev {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-prev:before {
-    margin-left: -3px;
-  }
-  .wrapper .container .slider .slick-next {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-next:before {
-    margin-left: 0;
-  }
-  .wrapper .container .team-container {
-    max-width: 1040px !important;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .wrapper .container .team-container .caption {
-    margin: 0;
-    font-size: 42px;
-    line-height: 240px;
-  }
-  .wrapper .container .team-container .team-block {
-    width: 25%;
-    padding: 20px;
-  }
-  .wrapper .container .team-container .team-block .circle {
-    max-height: 200px;
-    max-width: 200px;
-    margin-bottom: 50px;
-  }
-  .wrapper .container .team-container .team-block .name {
-    font-size: 22px;
-    margin: 0;
-  }
-  .wrapper .container .team-container .team-block .prefission {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-  }
-  .wrapper .container .team-container .team-block .biografy {
-    font-size: 14px;
-    line-height: 30px;
-  }
-  .wrapper .container .service-container-bg {
-    width: 100%;
-    max-width: 1280px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container {
-    width: 100%;
-    max-width: 1040px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
-    margin: 120px 0 100px;
-    width: 33.3333%;
-    padding: 0 10px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
-    padding-left: 0px;
-    padding-right: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
-    padding-right: 0px;
-    padding-left: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
-    font-size: 14px;
-    line-height: 45px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
-    font-size: 26px;
-    line-height: 76px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
-    font-size: 20px;
-    line-height: 68px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
-    line-height: 100px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
-    font-size: 17px;
-    line-height: 40px;
-    width: 45%;
-  }
-  .wrapper footer {
-    background-size: 100%;
-    background-position: 50% 100%;
-    width: 100%;
-    max-width: 1280px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper {
-    margin: 0;
-    width: 100%;
-    max-width: 1040px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper .caption {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 500;
-  }
-  .wrapper footer .footer-wrapper .footer-block {
-    width: 50%;
-    margin-bottom: 5%;
-  }
-  .wrapper footer .footer-wrapper .footer-block h3 {
-    margin: 0;
-    font-size: 24px;
-    line-height: 26px;
-  }
-  .wrapper footer .footer-wrapper .footer-block p {
-    padding-right: 25%;
-    margin: 0;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social {
-    padding: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li {
-    margin-right: 13px;
-    width: 45px;
-    height: 45px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
-    margin: 0 auto;
-    font-size: 24px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info {
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info li {
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form {
-    margin: 0;
-    padding-left: 15px;
-    width: 100%;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-    padding-right: 0px;
-    padding-left: 7px;
-    margin-left: 13.3px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
-    width: 100%;
-    height: 180px;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
-    width: 30%;
-    line-height: 50px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 1281px) and (max-width: 1440px) {
-  .wrapper {
-    max-width: 1440px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container {
-    max-width: 1170px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container-fluid {
-    max-width: 1440px !important;
-    margin: 0 auto;
-  }
-  .wrapper header {
-    max-width: 1170px !important;
-    margin: 0 auto;
-  }
-  .wrapper header .logo span {
-    font-size: 43px;
-    line-height: 100px;
-  }
-  .wrapper header .navigation {
-    min-height: 100px;
-  }
-  .wrapper header .navigation ul li {
-    margin: 0 0 0 8px;
-    width: 85px;
-  }
-  .wrapper header .navigation ul li a {
-    line-height: 97px;
-    font-size: 15px;
-  }
-  .wrapper .container {
-    max-width: 1440px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .slider .slick-slide .text {
-    top: 18%;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .wrapper .container .slider .slick-slide .text h1 {
-    font-size: 63px;
-    margin: 0;
-  }
-  .wrapper .container .slider .slick-slide .text p {
-    font-size: 23px;
-    line-height: 38px;
-    font-weight: 100px;
-    margin: 3.5% 0 4.2%;
-  }
-  .wrapper .container .slider .slick-slide .text a {
-    font-size: 26px;
-    padding: 0.85% 1.1%;
-  }
-  .wrapper .container .slider .slick-prev {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-prev:before {
-    margin-left: -3px;
-  }
-  .wrapper .container .slider .slick-next {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-next:before {
-    margin-left: 0;
-  }
-  .wrapper .container .team-container {
-    max-width: 1170px !important;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .wrapper .container .team-container .caption {
-    margin: 0;
-    font-size: 42px;
-    line-height: 240px;
-  }
-  .wrapper .container .team-container .team-block {
-    width: 25%;
-    padding: 20px;
-  }
-  .wrapper .container .team-container .team-block .circle {
-    max-height: 200px;
-    max-width: 200px;
-    margin-bottom: 50px;
-  }
-  .wrapper .container .team-container .team-block .name {
-    font-size: 22px;
-    margin: 0;
-  }
-  .wrapper .container .team-container .team-block .prefission {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-  }
-  .wrapper .container .team-container .team-block .biografy {
-    font-size: 14px;
-    line-height: 30px;
-  }
-  .wrapper .container .service-container-bg {
-    width: 100%;
-    max-width: 1440px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container {
-    width: 100%;
-    max-width: 1170px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
-    margin: 120px 0 100px;
-    width: 33.3333%;
-    padding: 0 10px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
-    padding-left: 0px;
-    padding-right: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
-    padding-right: 0px;
-    padding-left: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
-    font-size: 14px;
-    line-height: 45px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
-    font-size: 26px;
-    line-height: 76px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
-    font-size: 20px;
-    line-height: 68px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
-    line-height: 100px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
-    font-size: 17px;
-    line-height: 40px;
-    width: 45%;
-  }
-  .wrapper footer {
-    background-size: 100%;
-    background-position: 50% 100%;
-    width: 100%;
-    max-width: 1440px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper {
-    margin: 0;
-    width: 100%;
-    max-width: 1170px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper .caption {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 500;
-  }
-  .wrapper footer .footer-wrapper .footer-block {
-    width: 50%;
-    margin-bottom: 5%;
-  }
-  .wrapper footer .footer-wrapper .footer-block h3 {
-    margin: 0;
-    font-size: 24px;
-    line-height: 26px;
-  }
-  .wrapper footer .footer-wrapper .footer-block p {
-    padding-right: 25%;
-    margin: 0;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social {
-    padding: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li {
-    margin-right: 13px;
-    width: 45px;
-    height: 45px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
-    margin: 0 auto;
-    font-size: 24px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info {
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info li {
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form {
-    margin: 0;
-    padding-left: 15px;
-    width: 100%;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-    padding-right: 0px;
-    padding-left: 7px;
-    margin-left: 13.3px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
-    width: 100%;
-    height: 180px;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
-    width: 30%;
-    line-height: 50px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 1441px) and (max-width: 1680px) {
-  .wrapper {
-    max-width: 1680px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container {
-    max-width: 1365px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container-fluid {
-    max-width: 1680px !important;
-    margin: 0 auto;
-  }
-  .wrapper header {
-    max-width: 1365px !important;
-    margin: 0 auto;
-  }
-  .wrapper header .logo span {
-    font-size: 43px;
-    line-height: 100px;
-  }
-  .wrapper header .navigation {
-    min-height: 100px;
-  }
-  .wrapper header .navigation ul li {
-    margin: 0 0 0 8px;
-    width: 85px;
-  }
-  .wrapper header .navigation ul li a {
-    line-height: 97px;
-    font-size: 15px;
-  }
-  .wrapper .container {
-    max-width: 1680px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .slider .slick-slide .text {
-    top: 18%;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .wrapper .container .slider .slick-slide .text h1 {
-    font-size: 63px;
-    margin: 0;
-  }
-  .wrapper .container .slider .slick-slide .text p {
-    font-size: 23px;
-    line-height: 38px;
-    font-weight: 100px;
-    margin: 3.5% 0 4.2%;
-  }
-  .wrapper .container .slider .slick-slide .text a {
-    font-size: 26px;
-    padding: 0.85% 1.1%;
-  }
-  .wrapper .container .slider .slick-prev {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-prev:before {
-    margin-left: -3px;
-  }
-  .wrapper .container .slider .slick-next {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-next:before {
-    margin-left: 0;
-  }
-  .wrapper .container .team-container {
-    max-width: 1365px !important;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .wrapper .container .team-container .caption {
-    margin: 0;
-    font-size: 42px;
-    line-height: 240px;
-  }
-  .wrapper .container .team-container .team-block {
-    width: 25%;
-    padding: 20px;
-  }
-  .wrapper .container .team-container .team-block .circle {
-    max-height: 200px;
-    max-width: 200px;
-    margin-bottom: 50px;
-  }
-  .wrapper .container .team-container .team-block .name {
-    font-size: 22px;
-    margin: 0;
-  }
-  .wrapper .container .team-container .team-block .prefission {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-  }
-  .wrapper .container .team-container .team-block .biografy {
-    font-size: 14px;
-    line-height: 30px;
-  }
-  .wrapper .container .service-container-bg {
-    width: 100%;
-    max-width: 1680px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container {
-    width: 100%;
-    max-width: 1365px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
-    margin: 120px 0 100px;
-    width: 33.3333%;
-    padding: 0 10px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
-    padding-left: 0px;
-    padding-right: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
-    padding-right: 0px;
-    padding-left: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
-    font-size: 14px;
-    line-height: 45px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
-    font-size: 26px;
-    line-height: 76px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
-    font-size: 20px;
-    line-height: 68px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
-    line-height: 100px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
-    font-size: 17px;
-    line-height: 40px;
-    width: 45%;
-  }
-  .wrapper footer {
-    background-size: 100%;
-    background-position: 50% 100%;
-    width: 100%;
-    max-width: 1680px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper {
-    margin: 0;
-    width: 100%;
-    max-width: 1365px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper .caption {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 500;
-  }
-  .wrapper footer .footer-wrapper .footer-block {
-    width: 50%;
-    margin-bottom: 5%;
-  }
-  .wrapper footer .footer-wrapper .footer-block h3 {
-    margin: 0;
-    font-size: 24px;
-    line-height: 26px;
-  }
-  .wrapper footer .footer-wrapper .footer-block p {
-    padding-right: 25%;
-    margin: 0;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social {
-    padding: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li {
-    margin-right: 13px;
-    width: 45px;
-    height: 45px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
-    margin: 0 auto;
-    font-size: 24px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info {
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info li {
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form {
-    margin: 0;
-    padding-left: 15px;
-    width: 100%;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-    padding-right: 0px;
-    padding-left: 7px;
-    margin-left: 13.3px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
-    width: 100%;
-    height: 180px;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
-    width: 30%;
-    line-height: 50px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 1681px) and (max-width: 1920px) {
-  .wrapper {
-    max-width: 1920px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container {
-    max-width: 1560px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container-fluid {
-    max-width: 1920px !important;
-    margin: 0 auto;
-  }
-  .wrapper header {
-    max-width: 1560px !important;
-    margin: 0 auto;
-  }
-  .wrapper header .logo span {
-    font-size: 43px;
-    line-height: 100px;
-  }
-  .wrapper header .navigation {
-    min-height: 100px;
-  }
-  .wrapper header .navigation ul li {
-    margin: 0 0 0 8px;
-    width: 85px;
-  }
-  .wrapper header .navigation ul li a {
-    line-height: 97px;
-    font-size: 15px;
-  }
-  .wrapper .container {
-    max-width: 1920px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .slider .slick-slide .text {
-    top: 18%;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .wrapper .container .slider .slick-slide .text h1 {
-    font-size: 63px;
-    margin: 0;
-  }
-  .wrapper .container .slider .slick-slide .text p {
-    font-size: 23px;
-    line-height: 38px;
-    font-weight: 100px;
-    margin: 3.5% 0 4.2%;
-  }
-  .wrapper .container .slider .slick-slide .text a {
-    font-size: 26px;
-    padding: 0.85% 1.1%;
-  }
-  .wrapper .container .slider .slick-prev {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-prev:before {
-    margin-left: -3px;
-  }
-  .wrapper .container .slider .slick-next {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-next:before {
-    margin-left: 0;
-  }
-  .wrapper .container .team-container {
-    max-width: 1560px !important;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .wrapper .container .team-container .caption {
-    margin: 0;
-    font-size: 42px;
-    line-height: 240px;
-  }
-  .wrapper .container .team-container .team-block {
-    width: 25%;
-    padding: 20px;
-  }
-  .wrapper .container .team-container .team-block .circle {
-    max-height: 200px;
-    max-width: 200px;
-    margin-bottom: 50px;
-  }
-  .wrapper .container .team-container .team-block .name {
-    font-size: 22px;
-    margin: 0;
-  }
-  .wrapper .container .team-container .team-block .prefission {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-  }
-  .wrapper .container .team-container .team-block .biografy {
-    font-size: 14px;
-    line-height: 30px;
-  }
-  .wrapper .container .service-container-bg {
-    width: 100%;
-    max-width: 1920px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container {
-    width: 100%;
-    max-width: 1560px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
-    margin: 120px 0 100px;
-    width: 33.3333%;
-    padding: 0 10px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
-    padding-left: 0px;
-    padding-right: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
-    padding-right: 0px;
-    padding-left: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
-    font-size: 14px;
-    line-height: 45px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
-    font-size: 26px;
-    line-height: 76px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
-    font-size: 20px;
-    line-height: 68px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
-    line-height: 100px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
-    font-size: 17px;
-    line-height: 40px;
-    width: 45%;
-  }
-  .wrapper footer {
-    background-size: 100%;
-    background-position: 50% 100%;
-    width: 100%;
-    max-width: 1920px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper {
-    margin: 0;
-    width: 100%;
-    max-width: 1560px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper .caption {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 500;
-  }
-  .wrapper footer .footer-wrapper .footer-block {
-    width: 50%;
-    margin-bottom: 5%;
-  }
-  .wrapper footer .footer-wrapper .footer-block h3 {
-    margin: 0;
-    font-size: 24px;
-    line-height: 26px;
-  }
-  .wrapper footer .footer-wrapper .footer-block p {
-    padding-right: 25%;
-    margin: 0;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social {
-    padding: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li {
-    margin-right: 13px;
-    width: 45px;
-    height: 45px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
-    margin: 0 auto;
-    font-size: 24px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info {
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info li {
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form {
-    margin: 0;
-    padding-left: 15px;
-    width: 100%;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-    padding-right: 0px;
-    padding-left: 7px;
-    margin-left: 13.3px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
-    width: 100%;
-    height: 180px;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
-    width: 30%;
-    line-height: 50px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
-    font-size: 22px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .wrapper {
-    max-width: 1920px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container {
-    max-width: 1560px !important;
-    margin: 0 auto;
-  }
-  .wrapper #wrapper-container-fluid {
-    max-width: 1920px !important;
-    margin: 0 auto;
-  }
-  .wrapper header {
-    max-width: 1560px !important;
-    margin: 0 auto;
-  }
-  .wrapper header .logo span {
-    font-size: 43px;
-    line-height: 100px;
-  }
-  .wrapper header .navigation {
-    min-height: 100px;
-  }
-  .wrapper header .navigation ul li {
-    margin: 0 0 0 8px;
-    width: 85px;
-  }
-  .wrapper header .navigation ul li a {
-    line-height: 97px;
-    font-size: 15px;
-  }
-  .wrapper .container {
-    max-width: 1920px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .slider .slick-slide .text {
-    top: 18%;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-  .wrapper .container .slider .slick-slide .text h1 {
-    font-size: 63px;
-    margin: 0;
-  }
-  .wrapper .container .slider .slick-slide .text p {
-    font-size: 23px;
-    line-height: 38px;
-    font-weight: 100px;
-    margin: 3.5% 0 4.2%;
-  }
-  .wrapper .container .slider .slick-slide .text a {
-    font-size: 26px;
-    padding: 0.85% 1.1%;
-  }
-  .wrapper .container .slider .slick-prev {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-prev:before {
-    margin-left: -3px;
-  }
-  .wrapper .container .slider .slick-next {
-    min-width: 50px;
-    min-height: 50px;
-  }
-  .wrapper .container .slider .slick-next:before {
-    margin-left: 0;
-  }
-  .wrapper .container .team-container {
-    max-width: 1560px !important;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .wrapper .container .team-container .caption {
-    margin: 0;
-    font-size: 42px;
-    line-height: 240px;
-  }
-  .wrapper .container .team-container .team-block {
-    width: 25%;
-    padding: 20px;
-  }
-  .wrapper .container .team-container .team-block .circle {
-    max-height: 200px;
-    max-width: 200px;
-    margin-bottom: 50px;
-  }
-  .wrapper .container .team-container .team-block .name {
-    font-size: 22px;
-    margin: 0;
-  }
-  .wrapper .container .team-container .team-block .prefission {
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-  }
-  .wrapper .container .team-container .team-block .biografy {
-    font-size: 14px;
-    line-height: 30px;
-  }
-  .wrapper .container .service-container-bg {
-    width: 100%;
-    max-width: 1920px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container {
-    width: 100%;
-    max-width: 1560px !important;
-    margin: 0 auto;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper {
-    margin: 120px 0 100px;
-    width: 33.3333%;
-    padding: 0 10px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:first-child {
-    padding-left: 0px;
-    padding-right: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper:last-child {
-    padding-right: 0px;
-    padding-left: 20px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li {
-    font-size: 14px;
-    line-height: 45px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(1) {
-    font-size: 26px;
-    line-height: 76px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:nth-child(2) {
-    font-size: 20px;
-    line-height: 68px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li:last-child {
-    line-height: 100px;
-  }
-  .wrapper .container .service-container-bg .service-container .service-block-wrapper ul li button {
-    font-size: 17px;
-    line-height: 40px;
-    width: 45%;
-  }
-  .wrapper footer {
-    background-size: 100%;
-    background-position: 50% 100%;
-    width: 100%;
-    max-width: 1920px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper {
-    margin: 0;
-    width: 100%;
-    max-width: 1560px !important;
-    margin: 0 auto;
-  }
-  .wrapper footer .footer-wrapper .caption {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 500;
-  }
-  .wrapper footer .footer-wrapper .footer-block {
-    width: 50%;
-    margin-bottom: 5%;
-  }
-  .wrapper footer .footer-wrapper .footer-block h3 {
-    margin: 0;
-    font-size: 24px;
-    line-height: 26px;
-  }
-  .wrapper footer .footer-wrapper .footer-block p {
-    padding-right: 25%;
-    margin: 0;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social {
-    padding: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li {
-    margin-right: 13px;
-    width: 45px;
-    height: 45px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .social li a .fa {
-    margin: 0 auto;
-    font-size: 24px;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info {
-    padding: 0;
-    margin: 0;
-  }
-  .wrapper footer .footer-wrapper .footer-block .author-info li {
-    font-size: 14px;
-    line-height: 21px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form {
-    margin: 0;
-    padding-left: 15px;
-    width: 100%;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-name {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-field-email {
-    margin: 0;
-    width: 48.5%;
-    padding-right: 7px;
-    padding-right: 0px;
-    padding-left: 7px;
-    margin-left: 13.3px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-name {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-email {
-    width: 100%;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-textarea {
-    width: 100%;
-    height: 180px;
-    line-height: 45px;
-    padding-left: 20px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field .form-input {
-    width: 30%;
-    line-height: 50px;
-  }
-  .wrapper footer .footer-wrapper .footer-block form .form-field input[value="Send"] {
-    font-size: 22px;
-  }
 }
