@@ -180,7 +180,7 @@ img {
 			}
 }
 .header {
-	min-height: 100px;
+	min-height: @headersize;
 	width: 100%;
 	overflow: hidden;
 	&.headhesive{
@@ -597,19 +597,20 @@ form {
 		-webkit-width: 30%;
 		-webkit-border-radius: 3px;
 		-webkit-border: none;
-		-webkit-line-height: 50px;
-		
+		-webkit-line-height: 50px; 
+		 
 	}
 	input[value="Send"] {
 		color: #ffffff;
 		#mainff(); 
 		font-size: 22px;
 		-webkit-color: #ffffff;
-		-webkit-:#mainff(); 
 		-webkit-font-size: 22px;
 	} 
 }   
-   
+
+@import "1920";
+@import "1640"; 
 @import "1200";
 @import "1024"; 
 @import "964";
